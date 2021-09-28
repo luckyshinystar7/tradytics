@@ -1,0 +1,10 @@
+    1  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    2  clear
+    3  ls
+    4  cd trybe
+    5  ls
+    6  cd unix_tests/
+    7  ls 
+    8  ls phrases.txt
+    9  ls
+   10  clear

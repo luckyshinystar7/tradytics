@@ -1,0 +1,8 @@
+internet
+unix
+bash
+c++
+c#
+cameo
+amianto
+handball
