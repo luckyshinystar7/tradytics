@@ -1,0 +1,1 @@
+Testando comandos. Tentando entender o motivo de não ser possível dar commit em diretórios.
