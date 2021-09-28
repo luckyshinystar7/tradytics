@@ -1,0 +1,1 @@
+Agora o diretório tem um txt dentro, vamos ver se ele será reconhecido.
