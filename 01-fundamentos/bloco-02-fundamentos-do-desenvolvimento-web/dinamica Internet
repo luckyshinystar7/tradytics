@@ -1,0 +1,17 @@
+usuario -> cliente (web browser)
+converte e rotula informações com base no protocolo TCP/IP
+a informação circula pela rede local até o roteador
+passa pelo proxy
+passa pelo firewall
+cliente (roteador/endereço IP, gerado pelo ISP) -> servidor
+servidor (recebe, através de um protocolo (HTTP) URL e (opcional um recurso)) e utilizando um DNS traduz o caminho.
+O servidor processa o pedido, localiza a informação no Banco de Dados e retorna um conteúdo
+
+Quando eu digito o endereço no navegador. O que acontece?
+
+Cliente > Request (IP) > Balanceador de Carga > Servidor > Banco de Dados
+
+Servidor > Response > navegador > Interpretar e renderizar a página (Cliente).
+
+HTTPS: protocolo de transferencia de dados
+URL: www.google.com 
