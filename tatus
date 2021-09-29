@@ -1,0 +1,71 @@
+[33mcommit 01789844e920c6736874e3cdb4f75eb416e50f59[m[33m ([m[1;36mHEAD -> [m[1;32mexercicios/3.1[m[33m)[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Wed Sep 29 13:41:20 2021 -0300
+
+    valida diretorio git
+
+[33mcommit 0ff2321285aa3a605d42079fb6a9bbbe97b380d4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Wed Sep 29 12:07:39 2021 -0300
+
+    adiciona conteúdo do dia 03 do bloco 02 - Internet
+
+[33mcommit ac2caf4fd6635028c1e0442b9337f50bcb9fad1e[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 10:51:41 2021 -0300
+
+    adiciona o .gitignore com as pastas do Visual Studio Code
+
+[33mcommit b54190d722a4132ac7826c0787c2af5fc77f19f9[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 10:34:50 2021 -0300
+
+    adiciona arquivos de aulas do bloco 01 e 02 no repositório
+
+[33mcommit 969561988ce07224e840d4e366c580a6ac6274bf[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 09:08:48 2021 -0300
+
+    corrigindo acentuação utf-8 no readme.md
+
+[33mcommit 9c192220a26205f6d1f16395208da1ea874d98b4[m
+Merge: 6ffd31e bcd91b4
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 08:47:53 2021 -0300
+
+    Merge branch 'main' of github.com:elthonvilla/trybe-exercicios into main
+
+[33mcommit 6ffd31eb16060c96b40603cfccca6cfbfb6d6e41[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 08:46:07 2021 -0300
+
+    criado um arquivo txt dentro do diretório 01-fundamentos
+
+[33mcommit bcd91b496019a89f2dca86b88fad1ba90f95b1b7[m
+Merge: 1b03d36 f8e5683
+Author: Elthon Villa <91148072+elthonvilla@users.noreply.github.com>
+Date:   Tue Sep 28 08:32:17 2021 -0300
+
+    Merge pull request #1 from elthonvilla/elthon
+    
+    cria arquivo teste.txt
+
+[33mcommit f8e56834c345718baa2b8352a8e3f86ae08fcca5[m[33m ([m[1;31morigin/elthon[m[33m, [m[1;32melthon[m[33m)[m
+Author: Elthon <elthon.rv@gmail.com>
+Date:   Tue Sep 28 08:28:53 2021 -0300
+
+    cria arquivo teste.txt
+
+[33mcommit 1b03d36a82dc02b00016471371f8e9fcc873a376[m
+Author: Elthon Villa <91148072+elthonvilla@users.noreply.github.com>
+Date:   Tue Sep 28 08:05:55 2021 -0300
+
+    Create new-file
+
+[33mcommit 5871a5625d55663b0d8e918068a6f674cdbf4947[m
+Author: Elthon Villa <91148072+elthonvilla@users.noreply.github.com>
+Date:   Tue Sep 28 07:32:39 2021 -0300
+
+    Create README.md
+    
+    Organiza o repositório.
