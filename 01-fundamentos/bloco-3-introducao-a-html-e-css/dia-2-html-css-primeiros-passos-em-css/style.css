@@ -1,0 +1,26 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 16px;
+    font-style: oblique;
+    line-height: 20px;
+    text-align: right;
+  }
+  
+  #amarelo{
+    background-color: yellow;
+  }
+  #vermelho{
+    background-color: red;
+  }
+  #marrom{
+    background-color: brown;
+  }
