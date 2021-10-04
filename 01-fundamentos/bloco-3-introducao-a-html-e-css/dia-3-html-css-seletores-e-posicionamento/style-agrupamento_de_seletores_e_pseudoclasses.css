@@ -1,0 +1,14 @@
+h1, p {
+  text-align: center;
+}
+ol:hover {
+  color: blueviolet;
+  transition: 2s;
+}
+li:active {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+ol,ul {
+  list-style: none;
+}
