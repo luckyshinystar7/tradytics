@@ -53,7 +53,7 @@ ul.links li:hover {
   color: orange;
 }
 
-.w3:hover  {
+.w3:hover, .trybe a:hover  {
   color: green;
 }
 
@@ -63,8 +63,4 @@ ul.links li:hover {
 
 .dev:hover {
   color: yellow;
-}
-
-.trybe a:hover {
-  color: green;
 }
