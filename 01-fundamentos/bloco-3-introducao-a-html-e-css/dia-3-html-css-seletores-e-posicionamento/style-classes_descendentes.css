@@ -26,3 +26,15 @@ li {
 li em {
   font-weight: bold;
 }
+
+ul.programming-list li:first-child {
+  color: blue;
+}
+
+.blue {
+  color: blue;
+}
+
+.java {
+  background-color:pink;
+}
