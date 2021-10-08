@@ -1,9 +1,8 @@
 const a = 10;
 const b = 20;
 
-if (a>b) {
+if (a > b) {
   console.log(a);
-}
-else {
+} else {
   console.log(b);
 }
