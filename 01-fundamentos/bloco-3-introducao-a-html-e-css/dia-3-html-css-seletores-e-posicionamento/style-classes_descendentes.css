@@ -1,0 +1,66 @@
+ol li {
+  background-color: yellow;
+}
+
+ol li:nth-of-type(even) {
+  color: green;
+}
+
+ol li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
+
+.header {
+  color: red;
+}
+
+.header em {
+  size: 40px;
+  border: 1px black solid;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+ul.programming-list li:first-child {
+  color: blue;
+}
+
+.blue {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+ul.links li:hover {
+  font-weight: bold;
+}
+
+/* dessa forma nao deu certo, dai fiz usando classes :( */
+
+/* ul.links li a:nth-child(1):hover {
+  color: orange;
+} */
+
+.stack a:hover  {
+  color: orange;
+}
+
+.w3:hover, .trybe a:hover  {
+  color: green;
+}
+
+.mdn:hover  {
+  color: black;
+}
+
+.dev:hover {
+  color: yellow;
+}
