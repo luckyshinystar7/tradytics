@@ -23,7 +23,7 @@
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-const salario = 3000;
+const salario = 5180;
 let inss = 0;
 let salarioBase = 0;
 let ir = 0;
@@ -31,16 +31,16 @@ let ir = 0;
 // calculo INSS
 if (salario < 1556.95 && salario >= 0) {
   inss = salario * 0.08;
-  console.log("INSS:",inss.toFixed(2));
+  console.log("INSS:", inss.toFixed(2));
 } else if (salario < 2594.93 && salario >= 0) {
   inss = salario * 0.09;
-  console.log("INSS:",inss.toFixed(2));
+  console.log("INSS:", inss.toFixed(2));
 } else if (salario < 5189.82 && salario >= 0) {
   inss = salario * 0.11;
-  console.log("INSS:",inss.toFixed(2));
+  console.log("INSS:", inss.toFixed(2));
 } else if (salario >= 5189.82) {
   inss = 570.88;
-  console.log("INSS:",inss.toFixed(2));
+  console.log("INSS:", inss.toFixed(2));
 } else {
   console.log("Salario invalido, insira um valor positivo.");
 }
@@ -52,15 +52,16 @@ if (salarioBase < 1903.99) {
   ir = 0;
   console.log("IR: Isento");
 } else if (salarioBase < 2826.66) {
-  ir = (salarioBase * 0.075) - 142.8;
-  console.log("IR:",ir.toFixed(2));
+  ir = salarioBase * 0.075 - 142.8;
+  console.log("IR:", ir.toFixed(2));
 } else if (salarioBase < 3751.06) {
-  ir = (salarioBase * 0.15) - 354.8;
-  console.log("IR:",ir.toFixed(2));
+  ir = salarioBase * 0.15 - 354.8;
+  console.log("IR:", ir.toFixed(2));
 } else if (salarioBase < 4664.69) {
-  ir = (salarioBase * 0.225) - 636.13;
-  console.log("IR:",ir.toFixed(2));
+  ir = salarioBase * 0.225 - 636.13;
+  console.log("IR:", ir.toFixed(2));
 } else {
-  ir = (salarioBase * 0.27) - 869.36;
-  console.log("IR:",ir.toFixed(2));
+  ir = salarioBase * 0.27 - 869.36;
+  console.log("IR:", ir.toFixed(2));
 }
+console.log("Seu salario liquido:", (salarioBase - ir).toFixed(2));
