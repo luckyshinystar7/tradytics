@@ -11,9 +11,9 @@ let info = {
 
 //2 - Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console.
 info["recorrente"] = "Sim";
-//console.log(info);
 
 //info.recorrente = 'Sim'; // Dúvida: Posso criar uma key com um valor dentro usando notação ponto? Quando crio funciona normalmente porém, o VSCode me da uma mensagem de alerta indicando que a propriedade não existe. ts(2339)
+console.log(info);
 
 // 3 - Faça um for/in que mostre todas as chaves do objeto.
 //for (const key in info) {
@@ -27,18 +27,18 @@ info["recorrente"] = "Sim";
 
 // 5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves.
 
-let info2 = {
-  personagem: "Tio Patinhas",
-  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
-  nota: "O último MacPatinhas",
-  recorrente: "Sim",
-};
-for (const key in info) {
-  if (key == "recorrente" && info[key] == "Sim" && info2[key] == "Sim") {
-    console.log("Ambos recorrentes");
-  } else if (key == "recorrente" && info[key] == "Não" && info2[key] == "Não") {
-    console.log("Ambos não recorrentes");
-  } else {
-    console.log(info[key], "e", info2[key]);
-  }
-}
+// let info2 = {
+//   personagem: "Tio Patinhas",
+//   origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+//   nota: "O último MacPatinhas",
+//   recorrente: "Sim",
+// };
+// for (const key in info) {
+//   if (key == "recorrente" && info[key] == "Sim" && info2[key] == "Sim") {
+//     console.log("Ambos recorrentes");
+//   } else if (key == "recorrente" && info[key] == "Não" && info2[key] == "Não") {
+//     console.log("Ambos não recorrentes");
+//   } else {
+//     console.log(info[key], "e", info2[key]);
+//   }
+// }
