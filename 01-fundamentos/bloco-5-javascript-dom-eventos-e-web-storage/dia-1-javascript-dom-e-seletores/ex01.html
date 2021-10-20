@@ -50,15 +50,24 @@
         - document.getElementsByTagName()
  Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)*/
       function updateMainSection(meInTwoYears) {
-        let text = '';
+        let text = "";
         text = meInTwoYears;
-        document.getElementsByTagName('p')[0].innerHTML = text;
-        
+        document.getElementsByTagName("p")[1].innerHTML = text;
       }
-      updateMainSection(" Crie uma função que mude o texto na tag p para uma descrição de como você se vê daqui a 2 anos. <br><br> Me vejo muuuuuuuito feliz, fazendo propaganda da <strong>Trybe</Strong> pra todas as pessoas que eu encontro pela frente enfatizando como ela transformou minha vida!!");
+      updateMainSection(
+        " Crie uma função que mude o texto na tag p para uma descrição de como você se vê daqui a 2 anos. <br><br> Me vejo muuuuuuuito feliz, fazendo propaganda da <strong>Trybe</Strong> pra todas as pessoas que eu encontro pela frente enfatizando como ela transformou minha vida!!"
+      );
 
       //  Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-      //  Crie uma função que mude a cor do quadrado vermelho para branco.
+      function changeMainSectionBackgroundColor(backgroundColor) {
+        let color = "rgb(76,164,109)";
+        document.getElementsByClassName("main-content")[0].style.background =
+          color;
+      };
+      changeMainSectionBackgroundColor("blue");
+
+      //'  Crie uma função que mude a cor do quadrado vermelho para branco.
+      
       //  Crie uma função que corrija o texto da tag <h1>.
       //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
       //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
