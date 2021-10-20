@@ -33,7 +33,7 @@
   </head>
   <body>
     <header>
-      <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
+      <h1 class="title" id="tit">Exercício 5.1 - JavaEscripito</h1>
     </header>
     <main class="main-content">
       <section class="center-content">
@@ -81,8 +81,14 @@
       }
       correctH1();
 
-      //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-      //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+      //  5- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+      function upperCaseP() {
+        document.getElementsByTagName("h1")[0].style.textTransform =
+          "uppercase";
+      }
+      upperCaseP();
+
+      //  6- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     </script>
   </body>
 </html>
