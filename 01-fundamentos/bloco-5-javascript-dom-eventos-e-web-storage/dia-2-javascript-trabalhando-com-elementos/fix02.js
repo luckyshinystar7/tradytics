@@ -1,8 +1,10 @@
+//          Parte I
+
 // 1- Acesse o elemento elementoOndeVoceEsta .
 let ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
 
 // 2- Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
-let pai = req01.parentElement;
+let pai = ondeVoceEsta.parentElement;
 pai.style.color = 'blue';
 
 //  3- Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
@@ -24,3 +26,19 @@ ondeVoceEsta.nextElementSibling;
 
 // 8- Agora acesse o terceiroFilho a partir de pai .
 pai.lastElementChild.previousElementSibling;
+
+//          Parte II
+// 1- Crie um irmão para elementoOndeVoceEsta .
+let irmaoOnde = document.createElement('section');
+ondeVoceEsta.parentElement.appendChild(irmaoOnde);
+
+// 2- Crie um filho para elementoOndeVoceEsta .
+let filhoOnde = document.createElement('section');
+ondeVoceEsta.appendChild(filhoOnde);
+
+// 3- Crie um filho para primeiroFilhoDoFilho .
+let filhoPrimeiroFilhoDoFilho = document.createElement('section');
+primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
+
+// 4- A partir desse filho criado, acesse terceiroFilho .
+filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
