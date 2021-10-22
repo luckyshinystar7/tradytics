@@ -77,3 +77,19 @@ function fridayCreator(Sextas) {
   btnContainer.appendChild(btnFriday);
 }
 fridayCreator("Sexta-Feira"); //teste de validacao da funcao
+
+// Exercicio 5
+let arrayFridays = document.getElementsByClassName("friday");
+
+btnFriday.addEventListener("click", function () {
+  for (let i = 0; i < arrayFridays.length; i += 1) {
+    let a = arrayFridays[i];
+    //a.innerText = "SEXTOU";
+    if (a.innerText !== "SEXTOU") {
+      a.innerText = "SEXTOU";
+    } else {
+      a.innerText = "eita";
+    }
+    
+  }
+});
