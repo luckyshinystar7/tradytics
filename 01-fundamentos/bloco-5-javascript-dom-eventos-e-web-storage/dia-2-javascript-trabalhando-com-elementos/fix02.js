@@ -30,15 +30,30 @@ pai.lastElementChild.previousElementSibling;
 //          Parte II
 // 1- Crie um irmão para elementoOndeVoceEsta .
 let irmaoOnde = document.createElement('section');
+irmaoOnde.id = 'irmaoOnde';
 ondeVoceEsta.parentElement.appendChild(irmaoOnde);
 
 // 2- Crie um filho para elementoOndeVoceEsta .
 let filhoOnde = document.createElement('section');
 ondeVoceEsta.appendChild(filhoOnde);
+filhoOnde.id = 'filhoOnde';
 
 // 3- Crie um filho para primeiroFilhoDoFilho .
 let filhoPrimeiroFilhoDoFilho = document.createElement('section');
 primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhoDoFilho);
+filhoPrimeiroFilhoDoFilho.id = 'filhoPrimeiroFilhoDoFilho';
 
 // 4- A partir desse filho criado, acesse terceiroFilho .
 filhoPrimeiroFilhoDoFilho.parentElement.parentElement.nextElementSibling
+
+//      Parte III
+
+// Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+ondeVoceEsta.removeChild(filhoOnde);
+ondeVoceEsta.firstElementChild.removeChild(filhoPrimeiroFilhoDoFilho);
+const segundoEUltimo = document.querySelector('#segundoEUltimoFilhoDoFilho');
+ondeVoceEsta.removeChild(segundoEUltimo);
+pai.removeChild(document.getElementById("primeiroFilho"));
+pai.removeChild(document.getElementById("irmaoOnde"));
+pai.removeChild(document.querySelector("#quartoEUltimoFilho"));
+pai.removeChild(document.querySelector("#terceiroFilho"));
