@@ -56,4 +56,6 @@ ondeVoceEsta.removeChild(segundoEUltimo);
 pai.removeChild(document.getElementById("primeiroFilho"));
 pai.removeChild(document.getElementById("irmaoOnde"));
 pai.removeChild(document.querySelector("#quartoEUltimoFilho"));
-pai.removeChild(document.querySelector("#terceiroFilho"));
+//pai.removeChild(document.querySelector("#terceiroFilho"));
+//ou
+pai.lastElementChild.remove();
