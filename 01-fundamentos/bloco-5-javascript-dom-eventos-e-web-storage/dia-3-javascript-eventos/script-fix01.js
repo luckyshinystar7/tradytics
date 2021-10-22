@@ -11,26 +11,36 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // R: A margem está com definicoes diferentes
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-function addTechFirst () {
-  firstLi.className ='tech';
-  secondLi.className = '';
-  thirdLi.className = '';
-  }
-  firstLi.addEventListener('click', addTechFirst);
-
-function addTechSec () {
-  secondLi.className = 'tech';
-  firstLi.className = '';
-  thirdLi.className = '';
-}
-secondLi.addEventListener('click', addTechSec);
-
-function addTechThird () {
-  thirdLi.className = 'tech';
-  secondLi.className = '';
+function addTech (event) {
   firstLi.className ='';
-}
-thirdLi.addEventListener('click', addTechThird);
+  secondLi.className = '';
+  thirdLi.className = '';
+  event.target.className = 'tech';
+  };
+  firstLi.addEventListener('click', addTech);
+  secondLi.addEventListener('click', addTech);
+  thirdLi.addEventListener('click', addTech);
+
+// function addTechFirst () {
+//   firstLi.className ='tech';
+//   secondLi.className = '';
+//   thirdLi.className = '';
+//   }
+//   firstLi.addEventListener('click', addTechFirst);
+
+// function addTechSec () {
+//   secondLi.className = 'tech';
+//   firstLi.className = '';
+//   thirdLi.className = '';
+// }
+// secondLi.addEventListener('click', addTechSec);
+
+// function addTechThird () {
+//   thirdLi.className = 'tech';
+//   secondLi.className = '';
+//   firstLi.className ='';
+// }
+// thirdLi.addEventListener('click', addTechThird);
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 // Implementa uma função que remove a classe dos outros ao adicionar no selecionado.
