@@ -54,7 +54,7 @@ function holidayCreator(Feriados) {
 }
 holidayCreator("Feriados"); //teste de validacao da funcao
 
-//  // Exercicio 3
+// Exercicio 3
 let arrayHolidays = document.getElementsByClassName("holiday");
 
 btnHoliday.addEventListener("click", function () {
@@ -67,3 +67,13 @@ btnHoliday.addEventListener("click", function () {
     }
   }
 });
+
+// Exercicio 4
+let btnFriday = document.createElement("button");
+
+function fridayCreator(Sextas) {
+  btnFriday.id = "btn-friday";
+  btnFriday.innerText = Sextas;
+  btnContainer.appendChild(btnFriday);
+}
+fridayCreator("Sexta-Feira"); //teste de validacao da funcao
