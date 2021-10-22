@@ -80,7 +80,7 @@ fridayCreator("Sexta-Feira"); //teste de validacao da funcao
 
 // Exercicio 5
 let arrayFridays = document.getElementsByClassName("friday");
-let arrayFridayDays = [4,11,18,25];
+let arrayFridayDays = [4, 11, 18, 25];
 
 btnFriday.addEventListener("click", function () {
   for (let i = 0; i < arrayFridays.length; i += 1) {
@@ -94,11 +94,18 @@ btnFriday.addEventListener("click", function () {
 });
 
 // Exercicio 6
-const day0 = document.getElementsByClassName('day')[0];
+const day0 = document.getElementsByClassName("day")[0];
 
-day0.addEventListener("mouseover", function (){
-day0.style.fontSize ='2em';
-})
-day0.addEventListener("mouseout", function (){
-day0.style.fontSize = '';
-})
+// day0.addEventListener("mouseover", function (){
+// day0.style.fontSize ='2em';
+// })
+// day0.addEventListener("mouseout", function (){
+// day0.style.fontSize = '';
+// })
+// entendi o conceito do event.target graças a esse site https://www.w3schools.com/jsref/tryit.asp?filename=try_dom_event_target
+daysContainer.addEventListener("mouseover", function (dente) {
+  dente.target.style.fontSize = "2em";
+});
+daysContainer.addEventListener("mouseout", function (dente) {
+  dente.target.style.fontSize = "";
+});
