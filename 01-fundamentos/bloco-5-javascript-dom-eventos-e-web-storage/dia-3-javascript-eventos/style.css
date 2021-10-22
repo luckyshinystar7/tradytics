@@ -27,7 +27,7 @@ button {
   margin: 0;
 }
 
-.days li {
+#days li {
   color: #777;
   display: inline-block;
   font-size:20px;

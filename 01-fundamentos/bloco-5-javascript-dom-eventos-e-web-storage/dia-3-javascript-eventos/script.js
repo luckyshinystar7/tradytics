@@ -28,7 +28,7 @@ const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
-const daysContainer = document.querySelector(".days-container");
+const daysContainer = document.querySelector("#days");
 for (let i = 0; i < dezDaysList.length; i += 1) {
   let day = dezDaysList[i];
   let dayItem = document.createElement("li");
@@ -80,16 +80,25 @@ fridayCreator("Sexta-Feira"); //teste de validacao da funcao
 
 // Exercicio 5
 let arrayFridays = document.getElementsByClassName("friday");
+let arrayFridayDays = [4,11,18,25];
 
 btnFriday.addEventListener("click", function () {
   for (let i = 0; i < arrayFridays.length; i += 1) {
     let a = arrayFridays[i];
-    //a.innerText = "SEXTOU";
     if (a.innerText !== "SEXTOU") {
       a.innerText = "SEXTOU";
     } else {
-      a.innerText = "eita";
+      a.innerText = arrayFridayDays[i];
     }
-    
   }
 });
+
+// Exercicio 6
+const day0 = document.getElementsByClassName('day')[0];
+
+day0.addEventListener("mouseover", function (){
+day0.style.fontSize ='2em';
+})
+day0.addEventListener("mouseout", function (){
+day0.style.fontSize = '';
+})
