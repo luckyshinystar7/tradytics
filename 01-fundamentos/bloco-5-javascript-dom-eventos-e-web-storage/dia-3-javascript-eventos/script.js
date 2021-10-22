@@ -22,13 +22,13 @@ function createDaysOfTheWeek() {
 createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
-//Exercicio 1
+// Exercicio 1
 
 const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
 ];
-const ul = document.querySelector("ul");
+const daysContainer = document.querySelector(".days-container");
 for (let i = 0; i < dezDaysList.length; i += 1) {
   let day = dezDaysList[i];
   let dayItem = document.createElement("li");
@@ -40,16 +40,30 @@ for (let i = 0; i < dezDaysList.length; i += 1) {
   if (day == 4 || day == 11 || day == 18 || day == 25) {
     dayItem.className += " friday";
   }
-  ul.appendChild(dayItem)
+  daysContainer.appendChild(dayItem);
 }
 
-//Exercicio 2
-
-function holidayCreator(Feriados) {
+// Exercicio 2
 let btnHoliday = document.createElement("button");
 let btnContainer = document.querySelector(".buttons-container");
-btnHoliday.id = 'btn-holiday';
-btnHoliday.innerText = Feriados;
-btnContainer.appendChild(btnHoliday);
+
+function holidayCreator(Feriados) {
+  btnHoliday.id = "btn-holiday";
+  btnHoliday.innerText = Feriados;
+  btnContainer.appendChild(btnHoliday);
 }
-// holidayCreator ("Dia de Relax 01"); teste de validacao da funcao
+holidayCreator("Feriados"); //teste de validacao da funcao
+
+//  // Exercicio 3
+let arrayHolidays = document.getElementsByClassName("holiday");
+
+btnHoliday.addEventListener("click", function () {
+  for (let i = 0; i < arrayHolidays.length; i += 1) {
+    let a = arrayHolidays[i];
+    if (a.style.backgroundColor === "") {
+      a.style.backgroundColor = "red";
+    } else {
+      a.style.backgroundColor = "";
+    }
+  }
+});
