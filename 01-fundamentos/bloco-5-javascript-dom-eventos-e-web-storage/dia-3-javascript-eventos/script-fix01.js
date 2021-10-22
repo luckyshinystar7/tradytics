@@ -11,10 +11,21 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // R: A margem está com definicoes diferentes
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-// function addClassTech () {
-//   firstLi.classList.add("tech");
-// }
-// firstLi.addEventListener("click", addClassTech);
+function addTechFirst () {
+  firstLi.className ='tech';
+  }
+  firstLi.addEventListener('click', addTechFirst);
+
+function addTechSec () {
+  secondLi.className = 'tech';
+}
+secondLi.addEventListener('click', addTechSec);
+
+function addTechThird () {
+  thirdLi.className = 'tech';
+}
+thirdLi.addEventListener('click', addTechThird);
+
 
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
