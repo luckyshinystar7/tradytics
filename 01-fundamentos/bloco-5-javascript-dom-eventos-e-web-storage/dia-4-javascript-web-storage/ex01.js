@@ -1,3 +1,14 @@
+window.onload = 
+
+localStorage.setItem('input2', 'eita');
+let input1Storage = 'lightGreen';
+
+if (localStorage.getItem('input1') == 'null') {
+  localStorage.setItem('input1', input1Storage) 
+} else {
+  input1Storage = localStorage.getItem('input1');
+}
+
 
 const btnBackgroundColor = document.getElementById('btnBackgroundColor');
 const btnTextColor = document.getElementById('btnTextColor');
