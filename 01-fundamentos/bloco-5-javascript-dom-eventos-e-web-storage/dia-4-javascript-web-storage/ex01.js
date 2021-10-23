@@ -22,3 +22,15 @@ const main = document.querySelector('main');
 btnTextColor.addEventListener('click', function (){
   main.style.color = inputTextColor.value;
 })
+
+btnFontSize.addEventListener('click', function (){
+  main.style.fontSize = inputFontSize.value;
+})
+
+btnLineHeight.addEventListener('click', function (){
+  main.style.lineHeight = inputLineHeight.value;
+})
+
+btnFontFamily.addEventListener('click', function (){
+  main.style.fontFamily = inputFontFamily.value;
+})
