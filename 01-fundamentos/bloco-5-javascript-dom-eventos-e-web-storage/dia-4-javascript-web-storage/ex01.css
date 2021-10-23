@@ -1,0 +1,13 @@
+section {
+  margin: 10px;
+}
+h1 {
+  text-align: center;
+}
+p, div {
+  margin: 7px;
+  margin-left: 10px;
+}
+h2 {
+  margin: 30px 10px 20px 15px;
+}
