@@ -136,5 +136,18 @@ taskSubtitle ('green');
     } else {
       obj.target.className = 'task';
     }
-        
   })
+
+  // Exercicio 10
+  
+  daysContainer.addEventListener("click", function (event){
+    let colorTaskSelected = document.querySelector(".selected").style.backgroundColor;
+    let actualColor = event.target.style.backgroundColor;
+    if (actualColor !== colorTaskSelected) {
+      event.target.style.backgroundColor = colorTaskSelected;
+    } else {
+      event.target.style.backgroundColor = "";
+    }
+    
+  })
+
