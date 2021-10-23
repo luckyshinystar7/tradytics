@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="ex01.css"> 
-  <title id="title">Reader</title>
-</head>
-<body>
-  <header id="header">
-    <h1>Lorem Ipsum</h1>
-  </header>
-  <main>
-    <section>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et viverra leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu mi egestas, fermentum velit et, mollis ipsum. Vestibulum vel commodo leo. Nullam accumsan iaculis efficitur. Donec dapibus ultricies augue commodo tincidunt. Donec sed lectus nunc. Donec ullamcorper, urna vel lacinia commodo, dolor ipsum consequat mi, ut gravida est justo eget ipsum. Aenean a laoreet erat. Sed id nibh nisi. Nullam interdum rutrum vestibulum. Donec blandit ultrices tortor, nec elementum mi condimentum ut. Aenean lacinia sapien pulvinar turpis convallis consequat. Ut sed enim nisi.
-    </section>
-    <section>
-      Praesent egestas a sem vel posuere. Etiam in molestie arcu, id ultricies urna. Aenean maximus purus purus. Nulla fringilla molestie eleifend. Proin vel nunc iaculis, molestie nibh ut, iaculis metus. Donec aliquet pulvinar congue. Etiam ac bibendum dui, at facilisis massa. Donec metus arcu, congue nec ante nec, tincidunt tincidunt nunc. In hac habitasse platea dictumst. Integer commodo arcu nec erat mollis pharetra. Nullam lacinia tristique nulla, quis imperdiet dui ornare sit amet.
-    </section>
-  </main>
-  <div id="div preferences">
-    <h2>Altere suas preferências aqui:</h2>
-    <div>
-      <p>Cor de fundo da tela</p>
-      <input>
-      <button>Alterar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ex01.css" />
+    <title id="title">Reader</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Lorem Ipsum</h1>
+    </header>
+    <main>
+      <section>
+        <article>
+          <p>ipsum dolor sit amet, consectetur adipiscing elit. Morbi et viverra
+          leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+          eu mi egestas, fermentum velit et, mollis ipsum. Vestibulum vel
+          commodo leo.</p><p>Nullam accumsan iaculis efficitur. Donec dapibus
+          ultricies augue commodo tincidunt. Donec sed lectus nunc. Donec
+          ullamcorper, urna vel lacinia commodo, dolor ipsum consequat mi, ut
+          gravida est justo eget ipsum. Aenean a laoreet erat. Sed id nibh nisi.
+          Nullam interdum rutrum vestibulum. Donec blandit ultrices tortor, nec
+          elementum mi condimentum ut. Aenean lacinia sapien pulvinar turpis
+          convallis consequat. Ut sed enim nisi.</p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <p>Egestas a sem vel posuere. Etiam in molestie arcu, id
+          ultricies urna. Aenean maximus purus purus. Nulla fringilla molestie
+          eleifend. Proin vel nunc iaculis, molestie nibh ut, iaculis metus.
+          Donec aliquet pulvinar congue.</p><p> Etiam ac bibendum dui, at facilisis
+          massa. Donec metus arcu, congue nec ante nec, tincidunt tincidunt
+          nunc. In hac habitasse platea dictumst. Integer commodo arcu nec erat
+          mollis pharetra.</p><p>Nullam lacinia tristique nulla, quis imperdiet dui
+          ornare sit amet.</p>
+        </article>
+      </section>
+    </main>
+    <div id="div preferences">
+      <h2>Altere suas preferências aqui:</h2>
+      <div>
+        <p>Cor de fundo da tela</p>
+        <input class="input"/>
+        <button id="btnBackgroundColor">Alterar</button>
+      </div>
+      <div>
+        <p>Cor do texto</p>
+        <input class="input"/>
+        <button id="btnTextColor">Alterar</button>
+      </div>
+      <div>
+        <p>Tamanho da fonte</p>
+        <input class="input"/>
+        <button id="btnFontSize">Alterar</button>
+      </div>
+      <div>
+        <p>Espaçamento entre as linhas do texto</p>
+        <input class="input"/>
+        <button id="btnLineHeight">Alterar</button>
+      </div>
+      <div>
+        <p>Tipo da fonte</p>
+        <input class="input"/>
+        <button id="btnFontFamily">Alterar</button>
+      </div>
     </div>
-    <div>
-      <p>Cor do texto</p>
-      <input>
-      <button>Alterar</button>
-    </div>
-    <div>
-      <p>Tamanho da fonte</p>
-      <input>
-      <button>Alterar</button>
-    </div>
-    <div>
-      <p>Espaçamento entre as linhas do texto</p>
-      <input>
-      <button>Alterar</button>
-    </div>
-    <div>
-      <p>Tipo da fonte</p>
-      <input>
-      <button>Alterar</button>
-    </div>
-
-
-  </div>
-</body>
+    <script src="ex01.js"></script>
+  </body>
 </html>
