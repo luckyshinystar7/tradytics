@@ -11,26 +11,36 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // R: A margem está com definicoes diferentes
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-function addTechFirst () {
-  firstLi.className ='tech';
-  secondLi.className = '';
-  thirdLi.className = '';
-  }
-  firstLi.addEventListener('click', addTechFirst);
-
-function addTechSec () {
-  secondLi.className = 'tech';
-  firstLi.className = '';
-  thirdLi.className = '';
-}
-secondLi.addEventListener('click', addTechSec);
-
-function addTechThird () {
-  thirdLi.className = 'tech';
-  secondLi.className = '';
+function addTech (event) {
   firstLi.className ='';
-}
-thirdLi.addEventListener('click', addTechThird);
+  secondLi.className = '';
+  thirdLi.className = '';
+  event.target.className = 'tech';
+  };
+  firstLi.addEventListener('click', addTech);
+  secondLi.addEventListener('click', addTech);
+  thirdLi.addEventListener('click', addTech);
+
+// function addTechFirst () {
+//   firstLi.className ='tech';
+//   secondLi.className = '';
+//   thirdLi.className = '';
+//   }
+//   firstLi.addEventListener('click', addTechFirst);
+
+// function addTechSec () {
+//   secondLi.className = 'tech';
+//   firstLi.className = '';
+//   thirdLi.className = '';
+// }
+// secondLi.addEventListener('click', addTechSec);
+
+// function addTechThird () {
+//   thirdLi.className = 'tech';
+//   secondLi.className = '';
+//   firstLi.className ='';
+// }
+// thirdLi.addEventListener('click', addTechThird);
 
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 // Implementa uma função que remove a classe dos outros ao adicionar no selecionado.
@@ -46,13 +56,17 @@ input.addEventListener('keyup', function() {
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
+// comando 'window.open' consultado no site https://pt.stackoverflow.com/questions/39620/como-for%C3%A7ar-a-abertura-de-um-link-em-outra-aba-e-n%C3%A3o-janela
 myWebpage.addEventListener('click', function() {
   window.open("https://www.betrybe.com","_blank");
 } );
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+myWebpage.addEventListener('mouseover', function(event){
+  event.target.style.color = 'green';
 
+})
 // Segue abaixo um exemplo do uso de event.target:
 
 
