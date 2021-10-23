@@ -120,10 +120,21 @@ function taskCreator (taskDescription) {
 taskCreator ('Estudar muuuuuito');
 
 // Exercicio 8
+let mySub = document.createElement('div');
 function taskSubtitle (cor) {
-  let mySub = document.createElement('div');
+  //let mySub = document.createElement('div');
   mySub.className = 'task';
   mySub.style.backgroundColor = cor;
   myTaskMenu.appendChild(mySub);
 }
 taskSubtitle ('green');
+
+// Exercicio 9 
+  mySub.addEventListener("click", function(obj) {
+    if (mySub.className !== 'task selected'){
+      obj.target.className = 'task selected';
+    } else {
+      obj.target.className = 'task';
+    }
+        
+  })
