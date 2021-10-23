@@ -109,3 +109,12 @@ daysContainer.addEventListener("mouseover", function (dente) {
 daysContainer.addEventListener("mouseout", function (dente) {
   dente.target.style.fontSize = "";
 });
+
+// Exercicio 7
+const myTaskMenu = document.querySelector("div.my-tasks");
+function taskCreator (taskDescription) {
+  let myTask = document.createElement('span');
+  myTask.innerText = taskDescription;
+  myTaskMenu.appendChild(myTask);
+}
+taskCreator ('Estudar muuuuuito');
