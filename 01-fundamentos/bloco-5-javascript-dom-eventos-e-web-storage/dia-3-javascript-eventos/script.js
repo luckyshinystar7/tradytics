@@ -118,3 +118,12 @@ function taskCreator (taskDescription) {
   myTaskMenu.appendChild(myTask);
 }
 taskCreator ('Estudar muuuuuito');
+
+// Exercicio 8
+function taskSubtitle (cor) {
+  let mySub = document.createElement('div');
+  mySub.className = 'task';
+  mySub.style.backgroundColor = cor;
+  myTaskMenu.appendChild(mySub);
+}
+taskSubtitle ('green');
