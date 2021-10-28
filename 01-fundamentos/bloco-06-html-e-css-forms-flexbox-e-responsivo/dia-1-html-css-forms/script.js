@@ -28,3 +28,9 @@ const brStates = [
   "TO",
 ];
 const stateSelect = document.querySelector('#state');
+
+for (let i = 0 ; i < brStates.length ; i += 1) {
+  let opt = document.createElement('option');
+  opt.text = brStates[i];
+  stateSelect.appendChild(opt);
+}
