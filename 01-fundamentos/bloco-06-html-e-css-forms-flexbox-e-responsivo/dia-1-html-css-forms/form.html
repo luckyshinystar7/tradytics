@@ -10,6 +10,7 @@
   <h1>Currículo</h1>
 </header>
 <body>
+  <main>
   <fieldset>
     <label for="name"><input id="name" name="name" type="text" placeholder="Nome" required maxlength="40" ></label><br><br>
     <label for="email"><input id="email" name="email" type="email" placeholder="Email" required maxlength="40" ></label><br><br>
@@ -17,10 +18,24 @@
     <label for="endereco"><input id="endereco" name="endereco" type="text" placeholder="Endereço" required maxlength="200" ></label><br><br>
     <label for="cidade"><input id="cidade" name="cidade" type="text" placeholder="Cidade" required maxlength="28" ></label><br><br>   
     <label for="state" > Estado <select id="state" name="state" required></select></label><br><br>
-    <label for="tipo"><input id="tipo" name="tipo-resid" type="radio" required >Casa</label>
-    <label for="tipo2"><input id="tipo2" name="tipo-resid" type="radio" required >Apartamento</label> 
+    <input id="tipo" name="tipo-resid" type="radio" required >
+    <label for="tipo">Casa</label>
+    <input id="tipo2" name="tipo-resid" type="radio" required>
+    <label for="tipo2">Apartamento</label> 
   </fieldset>
-  
+  <fieldset>
+    <label for="resumo">Sobre seu último emprego</label><br>
+    <textarea id="resumo" name="resumo" required rows="5" cols="40" maxlength="1000" placeholder="Máximo 1000 caractéres."></textarea><br>
+    <label for="cargo">Cargo</label><br>
+    <input id="cargo" name="cargo" type="text"><br>
+    <label for="description">Descrição do cargo</label><br>
+    <textarea id="description" name='description' required rows="5" cols="40" maxlength="500" placeholder="Máximo 500 caractéres."></textarea><br>
+    <label for="date">Data de início</label><br>
+    <input type="date" id="date" name="date" required>
+
+    
+  </fieldset>
+</main>
   <script src="script.js"></script>
 </body>
 </html>
