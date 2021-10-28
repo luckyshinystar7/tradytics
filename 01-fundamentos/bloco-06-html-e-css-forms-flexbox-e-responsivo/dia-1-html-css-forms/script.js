@@ -34,11 +34,17 @@ for (let i = 0; i < brStates.length; i += 1) {
   opt.text = brStates[i];
   stateSelect.appendChild(opt);
 }
-const btn = document.querySelector("#button");
+
+// Logo abaixo do formulário, crie um botão que:
+// Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit
+// Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
+// Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+// Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
+const btnSubmit = document.querySelector("#button");
 const printElement = document.querySelector('#print');
 const inputList = document.querySelectorAll(".required");
 
-btn.addEventListener("click", function (e) {
+btnSubmit.addEventListener("click", function (e) {
   e.preventDefault();
   let content = "";
   let print;
@@ -53,3 +59,15 @@ btn.addEventListener("click", function (e) {
   }
   printElement.innerText = print;
 });
+
+// Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
+
+const btnClear = document.querySelector("#clear");
+
+btnClear.addEventListener('click', function (e){
+  e.preventDefault();
+  for (let i = 0; i < inputList.length; i += 1) {
+    inputList[i].value = '';
+  }
+  printElement.innerText = '';
+})
