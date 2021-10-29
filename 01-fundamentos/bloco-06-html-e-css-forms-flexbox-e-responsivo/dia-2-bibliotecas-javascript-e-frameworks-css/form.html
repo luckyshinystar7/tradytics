@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Forms 6.1</title>
+</head>
+<header>
+  <h1>Currículo</h1>
+</header>
+
+<body>
+  <main>
+    <form method="GET">
+      <fieldset>
+        <label for="name">Nome: <input class="required" id="name" name="name" type="text" placeholder="Nome" required
+            maxlength="40" /></label><br /><br />
+        <label for="email">Email: <input class="required" id="email" name="email" type="email" placeholder="Email"
+            required maxlength="40" /></label><br /><br />
+        <label for="cpf"> CPF: <input class="required" id="cpf" name="cpf" type="text" placeholder="cpf" required
+            maxlength="11" /></label><br /><br />
+        <label for="endereco">Endereço: <input class="required" id="endereco" name="endereco" type="text"
+            placeholder="Endereço" required maxlength="200" /></label><br /><br />
+        <label for="cidade">Cidade: <input class="required" id="cidade" name="cidade" type="text" placeholder="Cidade"
+            required maxlength="28" /></label><br /><br />
+        <label for="state">
+          Estado
+          <select id="state" class="required" name="state" required></select></label><br /><br />
+        <input id="tipo" class="required" name="tipo-resid" type="radio" required />
+        <label for="tipo">Casa</label>
+        <input id="tipo2" name="tipo-resid" type="radio" required />
+        <label for="tipo2">Apartamento</label>
+      </fieldset>
+      <fieldset>
+        <label for="resumo">Sobre seu último emprego</label><br />
+        <textarea id="resumo" class="required" name="resumo" required rows="5" cols="40" maxlength="1000"
+          placeholder="Máximo 1000 caractéres."></textarea><br />
+        <label for="cargo">Cargo</label><br />
+        <input id="cargo" class="required" name="cargo" type="text" /><br />
+        <label for="description">Descrição do cargo</label><br />
+        <textarea id="description" class="required" name="description" required rows="5" cols="40" maxlength="500"
+          placeholder="Máximo 500 caractéres."></textarea><br />
+        <label for="date">Data de início</label><br />
+        <input type="date" id="date" class="required" name="date" required />
+      </fieldset>
+      <button id="button" type="submit">Submeter</button>
+      <button id="clear">Limpar</button>
+    </form>
+    <div id="print"><br></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
