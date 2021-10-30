@@ -41,7 +41,7 @@ for (let i = 0; i < brStates.length; i += 1) {
 // Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
 // Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
 const btnSubmit = document.querySelector("#button");
-const printElement = document.querySelector('#print');
+const printElement = document.querySelector("#print");
 const inputList = document.querySelectorAll(".required");
 
 btnSubmit.addEventListener("click", function (e) {
@@ -64,10 +64,10 @@ btnSubmit.addEventListener("click", function (e) {
 
 const btnClear = document.querySelector("#clear");
 
-btnClear.addEventListener('click', function (e){
+btnClear.addEventListener("click", function (e) {
   e.preventDefault();
   for (let i = 0; i < inputList.length; i += 1) {
-    inputList[i].value = '';
+    inputList[i].value = "";
   }
-  printElement.innerText = '';
-})
+  printElement.innerText = "";
+});
