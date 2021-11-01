@@ -45,7 +45,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-017-project-todo-list/pull/118)_
 - [ ] 5-7: _[Projeto Bonus - Meme Generator]()_
 - [ ] 5-7: _[Projeto Bonus - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto Bonus - Carta Misteriosa]()_
+- [x] 5-7: _[Projeto Bonus - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
