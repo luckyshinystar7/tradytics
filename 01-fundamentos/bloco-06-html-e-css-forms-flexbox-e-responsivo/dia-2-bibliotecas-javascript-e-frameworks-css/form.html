@@ -16,38 +16,42 @@
   <main>
     <form action="" method="GET" enctype="multipart/form-data">
       <fieldset class="form-control ">
-        <div class="form-group "><label for="name">Nome: </label><input class="form-control required" id="name" name="name" type="text" placeholder="Nome" required
-        maxlength="40" /></div>
-        <div class="form-control"><label for="email">Email: </label><input class="form-control required" id="email" name="email" type="email" placeholder="Email"
-        required maxlength="40" /></div>
-        <div class="form-control"><label for="cpf"> CPF: </label><input class="form-control required" id="cpf" name="cpf" type="text" placeholder="cpf" required
-        maxlength="11" /></div>
-      <div class="form-control"><label for="endereco">Endereço: </label><input class="form-control required" id="endereco" name="endereco" type="text"
-        placeholder="Endereço" required maxlength="200" /></div>
-      <div class="form-control"><label for="cidade">Cidade: </label><input class="form-control required" id="cidade" name="cidade" type="text" placeholder="Cidade"
-        required maxlength="28" /></div>
-        <div class="form-control "><label for="state">Estado<select class="form-control required" id="state" name="state" required></select></label><br /><br />
-        </div><div class="form-control"><input class="required" id="tipo" name="tipo-resid" type="radio" required />
-        <label for="tipo">Casa</label>
-        <input id="tipo2" name="tipo-resid" type="radio" required />
-        <label for="tipo2">Apartamento</label></div>
+        <div class="form-group "><label for="nome">Nome: </label><input class="form-control required" id="nome"
+            name="name" type="text" placeholder="Nome" required maxlength="40" /></div>
+        <div class="form-control"><label for="email">Email: </label><input class="form-control required" id="email"
+            name="email" type="email" placeholder="Email" required maxlength="40" /></div>
+        <div class="form-control"><label for="cpf"> CPF: </label><input class="form-control required" id="cpf"
+            name="cpf" type="text" placeholder="cpf" required maxlength="11" /></div>
+        <div class="form-control"><label for="endereco">Endereço: </label><input class="form-control required"
+            id="endereco" name="endereco" type="text" placeholder="Endereço" required maxlength="200" /></div>
+        <div class="form-control"><label for="cidade">Cidade: </label><input class="form-control required" id="cidade"
+            name="cidade" type="text" placeholder="Cidade" required maxlength="28" /></div>
+        <div class="form-control "><label for="state">Estado<select class="form-control required" id="state"
+              name="state" required></select></label><br /><br />
+        </div>
+        <div class="form-control"><input class="required" id="tipo" name="tipo-resid" type="radio" required />
+          <label for="tipo">Casa</label>
+          <input id="tipo2" name="tipo-resid" type="radio" required />
+          <label for="tipo2">Apartamento</label>
+        </div>
       </fieldset>
       <fieldset class="form-control ">
         <label for="resumo">Sobre seu último emprego</label><br />
         <textarea id="resumo" class="form-control required" name="resumo" required rows="5" cols="40" maxlength="1000"
           placeholder="Máximo 1000 caractéres."></textarea><br />
         <div class="form-control"><label for="cargo">Cargo</label><br />
-        <input id="cargo" class="form-control required" name="cargo" type="text" /></div>
+          <input id="cargo" class="form-control required" name="cargo" type="text" />
+        </div>
         <label for="description">Descrição do cargo</label><br />
-        <textarea id="description" class="form-control required" name="description" required rows="5" cols="40" maxlength="500"
-          placeholder="Máximo 500 caractéres."></textarea><br />
+        <textarea id="description" class="form-control required" name="description" required rows="5" cols="40"
+          maxlength="500" placeholder="Máximo 500 caractéres."></textarea><br />
         <label for="date">Data de início</label><br />
         <input type="date" id="date" class="required" name="date" required />
       </fieldset>
       <div class="form-control">
-      <button id="button" class="btn btn-success" type="submit">Submeter</button>
-      <button id="clear" class="btn btn-success">Limpar</button>
-    </div>
+        <button id="button" class="btn btn-success" type="submit">Submeter</button>
+        <button id="clear" class="btn btn-warning">Limpar</button>
+      </div>
     </form>
     <div id="print"><br></div>
   </main>
