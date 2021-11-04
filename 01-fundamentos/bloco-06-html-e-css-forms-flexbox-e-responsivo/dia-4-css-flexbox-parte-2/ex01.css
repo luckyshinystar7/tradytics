@@ -12,19 +12,20 @@ body {
 .header-container {
   background-color: #5C687C;
   display: flex;
-  flex-flow: row-reverse;
-  justify-content: flex-end;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   flex-basis: 268px;
+  order:1;
 }
 
 .menu-container {
   display: flex;
   flex-basis: 500px;
+  order: 2;
+  flex-grow: 1;
 }
 
 .menu-container ul {
@@ -43,4 +44,6 @@ body {
 
 /* 1 - Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px .
 
-2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. */
+2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. 
+
+3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível.  */
