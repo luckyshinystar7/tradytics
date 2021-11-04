@@ -26,6 +26,7 @@ body {
   flex-basis: 500px;
   order: 2;
   flex-grow: 1;
+  align-self: center;
 }
 
 .menu-container ul {
@@ -46,4 +47,6 @@ body {
 
 2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. 
 
-3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível.  */
+3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível.  
+
+4 - Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento: (imagem que mostra o menu centralizado)*/
