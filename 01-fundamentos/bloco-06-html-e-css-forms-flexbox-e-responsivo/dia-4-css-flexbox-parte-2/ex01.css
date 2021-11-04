@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
 }
 
 body {
@@ -10,21 +10,23 @@ body {
 }
 
 .header-container {
-  background-color: #5C687C;
+  background-color: #5c687c;
   display: flex;
-  flex-flow: row-reverse;
-  justify-content: flex-end;
 }
 
 .logo-container {
   display: flex;
   justify-content: center;
   flex-basis: 268px;
+  order: 1;
 }
 
 .menu-container {
   display: flex;
   flex-basis: 500px;
+  order: 2;
+  flex-grow: 1;
+  align-self: center;
 }
 
 .menu-container ul {
@@ -41,6 +43,79 @@ body {
   margin-right: 10px;
 }
 
-/* 1 - Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px .
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. */
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 700px;
+  flex-grow: 10;
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5c687c;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  flex-basis: 16%;
+  flex-grow: 1;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex-basis: 350px;
+  flex-grow: 1;
+  align-self: center;
+}
+
+.aside-container h3,
+h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* 
+                      Parte 1
+1 - Adicione uma propriedade que defina o tamanho Flexbox base para o container da imagem 268px e para o container do menu 500px .
+
+2 - Adicione uma propriedade Flexbox que modifique a ordem em que a logomarca e os itens do menu aparecem na tela. 
+
+3 - Adicione uma propriedade Flexbox que faça o container do menu crescer, quando houver espaço disponível.  
+
+4 - Utilize a propriedade align-self no elemento correto para que o header da página tenha o seguinte comportamento: (imagem que mostra o menu centralizado)
+
+                     Parte 2
+1 - Aplique uma base de 350px para seu container aside . 
+
+2 - Aplique um alinhamento para centralizar e outro para expandir. 
+
+3 - Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card. 
+
+4 - Aplique uma propriedade com o valor 10 que expanda o container de filmes. Deve ficar similar a imagem abaixo:
+
+5 - Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco.
+*/
