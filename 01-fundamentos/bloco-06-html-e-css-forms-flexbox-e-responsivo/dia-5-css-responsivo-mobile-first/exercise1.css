@@ -1,15 +1,18 @@
 body {
  font-size: 1.7rem;
+ margin: 5px
 }
+
 h1 {
  font-size: 2rem;
 }
+
 h2 {
 
 }
 
 img {
-    max-width: 100%;
+    max-width: 97%;
     margin: 35px 5px 2px 5px;
 }
 
