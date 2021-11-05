@@ -10,8 +10,9 @@ h2 {
 
 img {
     max-width: 100%;
+    margin: 35px 5px 2px 5px;
 }
 
 figure {
-    margin: 0;
+    margin: 0px;
 }
