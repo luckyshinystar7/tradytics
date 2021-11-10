@@ -1,21 +1,23 @@
 body {
- font-size: 1.7rem;
- margin: 5px
+  /* font-size: 1.5rem;
+  max-width: 95%;
+  margin: 0px; */
 }
 
 h1 {
- font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 h2 {
-
 }
 
 img {
-    max-width: 97%;
-    margin: 35px 5px 2px 5px;
+  max-width: 100%;
+  /* margin-top: 35px; */
 }
 
 figure {
-    margin: 0px;
+  margin: 0;
 }
+
+/* Primeiro breakpoint = width:460 */
