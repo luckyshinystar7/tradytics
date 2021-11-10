@@ -16,7 +16,7 @@
 
 // console.log(b);
 
-function testingScope(escopo) {
+const b = (escopo) => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
@@ -27,4 +27,4 @@ function testingScope(escopo) {
   }
 }
 
-testingScope(true);
+b(true);
