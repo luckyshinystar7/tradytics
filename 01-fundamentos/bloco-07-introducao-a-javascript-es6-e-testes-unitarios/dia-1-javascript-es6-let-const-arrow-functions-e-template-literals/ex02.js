@@ -6,9 +6,6 @@
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
 // Seu código aqui.
-const sortedArray = (array) => {
-  const stringArray = array.map(String);
-  console.log(stringArray);
-}
-sortedArray(oddsAndEvens);
-console.log(oddsAndEvens); // será necessário alterar essa linha 😉
+const compararNumeros = (a, b) => a - b ;
+
+console.log(oddsAndEvens.sort(compararNumeros)); // será necessário alterar essa linha 😉
