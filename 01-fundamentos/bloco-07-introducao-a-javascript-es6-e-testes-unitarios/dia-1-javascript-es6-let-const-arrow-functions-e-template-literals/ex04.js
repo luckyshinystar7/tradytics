@@ -12,4 +12,4 @@ const maiorPalavra = (x) => {
   return palavra;
 }
 
-console.log(maiorPalavra(arrayFrase));
+console.log(`A maior palavra da sua frase é "${maiorPalavra(arrayFrase)}".`);
