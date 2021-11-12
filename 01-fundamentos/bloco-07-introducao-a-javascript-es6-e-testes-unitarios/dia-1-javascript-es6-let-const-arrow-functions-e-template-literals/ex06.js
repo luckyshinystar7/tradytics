@@ -10,6 +10,7 @@
 // Exemplo: "Tryber x aqui! Minhas cinco principais habilidades são:
 // JavaScript;
 // HTML; ... #goTrybe".
+const skills = ['html', 'css', 'js','git', 'eat'];
 
 const replace = (palavra) => 'Tryber x aqui!'.replace('x', palavra);
 
