@@ -11,4 +11,6 @@
 // JavaScript;
 // HTML; ... #goTrybe".
 
+const replace = (palavra) => 'Tryber x aqui!'.replace('x', palavra);
 
+console.log(replace('Bebeto'));
