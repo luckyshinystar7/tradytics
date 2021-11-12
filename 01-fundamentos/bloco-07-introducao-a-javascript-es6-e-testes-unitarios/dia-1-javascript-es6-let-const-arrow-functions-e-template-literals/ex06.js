@@ -10,8 +10,18 @@
 // Exemplo: "Tryber x aqui! Minhas cinco principais habilidades são:
 // JavaScript;
 // HTML; ... #goTrybe".
-const skills = ['html', 'css', 'js','git', 'eat'];
+const skills = ['html', 'css', 'js', 'git', 'eat'];
 
 const replace = (palavra) => 'Tryber x aqui!'.replace('x', palavra);
 
-console.log(replace('Bebeto'));
+const displaySkills = (nome) => {
+  console.log(`${replace(nome)} Minhas cinco principais habilidades são:`);
+  const sortedSkills = skills.sort();
+
+  for (let i = 0; i < sortedSkills.length; i += 1) {
+    console.log(`- ${sortedSkills[i]};`);
+  }
+  console.log('#goTrybe');
+}
+
+displaySkills('Elthon');
