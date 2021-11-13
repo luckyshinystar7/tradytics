@@ -95,3 +95,17 @@ const verifyPair = (obj, key, value) => {
 console.log('Resposta Ex08 expected: /n true /n false');
 console.log(verifyPair(lesson3, 'turno', 'noite'));
 console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+// Bonus 1 - Crie uma função para contar quantos estudantes assistiram às aulas de Matemática. Use o objeto criado no exercício 5.
+const totalSubjectStudents = (obj, sub) => {
+  let somaSubjectStudents = 0;
+  for (i in obj) {
+    if (obj[i].materia === sub) {
+      somaSubjectStudents += obj[i].numeroEstudantes;
+    }
+  }
+  return somaSubjectStudents;
+}
+
+console.log('Resposta ExBonus1 expected: /n 30');
+console.log(totalSubjectStudents(allLessons, 'Matemática'));
