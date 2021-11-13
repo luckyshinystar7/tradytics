@@ -109,3 +109,30 @@ const totalSubjectStudents = (obj, sub) => {
 
 console.log('Resposta ExBonus1 expected: /n 30');
 console.log(totalSubjectStudents(allLessons, 'Matemática'));
+
+// Bonus 2 - Crie uma função que deverá retornar um objeto que representa o relatório do professor ou professora, as aulas que ele ou ela ministrou e o número total de estudantes. Use o objeto criado no exercício 5.
+const createReport = (obj, teacher) => {
+  const lessonTaughtArray = [];
+  for (i in obj) {
+    if (obj[i].professor === teacher) {
+      lessonTaughtArray.push(obj[i].materia);
+    }
+  }
+
+  let somaTeacherStudents = 0;
+  for (i in obj) {
+    if (obj[i].professor === teacher) {
+      somaTeacherStudents += obj[i].numeroEstudantes;
+    }
+  }
+
+  const display = {};
+  display.professor = teacher;
+  display.aulas = lessonTaughtArray;
+  display.estudantes = somaTeacherStudents;
+
+  return display;
+}
+
+console.log('Resposta ExBonus2');
+console.log(createReport(allLessons, 'Maria Clara'));
