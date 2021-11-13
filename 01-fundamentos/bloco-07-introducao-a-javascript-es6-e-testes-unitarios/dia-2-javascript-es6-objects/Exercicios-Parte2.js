@@ -45,14 +45,22 @@ const objLength = (obj) => console.log(Object.keys(obj).length);
 objLength(lesson2);
 
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
-console.log('Resposta Ex04:');
-
 const objValues = (obj) => {
   for (i in obj) {
     console.log(obj[i]);
   }
 }
 
+console.log('Resposta Ex04:');
 objValues(lesson1);
 
 // 5 - Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 .
+const bLesson1 = {'lesson1': lesson1};
+const bLesson2 = {'lesson2': lesson2};
+const bLesson3 = {'lesson3': lesson3};
+const allLessons = Object.assign({},bLesson1,bLesson2,bLesson3);
+
+console.log('Resposta Ex05');
+console.log(allLessons);
+
+// 6 - Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
