@@ -43,7 +43,16 @@ customerInfo(order);
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias.
-
+const order2 = Object.assign({},order);
+order2['name'] = 'Luiz Silva';
+order2.order.pizza = {
+  salgada: ['marguerita', 'pepperoni'],
+};
+order2.order.drinks = {
+  semAlcool: ['Coca-Cola Zero'],
+}
+order2.payment.total = 50;
+console.log(`Olá ${order2.name}, o total do seu pedido de ${order2.order.pizza.salgada[0]}, ${order2.order.pizza.salgada[1]} e ${order2.order.drinks.semAlcool[0]} é de R$ ${order2.payment.total}.`);
 }
 
 orderModifier(order);
