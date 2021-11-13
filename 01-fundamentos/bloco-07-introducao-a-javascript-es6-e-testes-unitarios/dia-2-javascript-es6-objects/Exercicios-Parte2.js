@@ -74,3 +74,14 @@ const totalStudents = (obj) => {
 
 console.log('Resposta Ex06');
 console.log(totalStudents(allLessons));
+
+// 7 - Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+const getValueByNumber = (obj, n) => {
+  const arrayKeysObj = Object.keys(obj);
+  return obj[arrayKeysObj[n]];
+}
+
+console.log('Resposta Ex07');
+console.log(getValueByNumber(lesson1, 0));
+
+// 8 - Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave. 
