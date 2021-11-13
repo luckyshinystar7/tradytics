@@ -39,4 +39,9 @@ const objKeys = (obj) => {
 objKeys(lesson2);
 
 // 3 - Crie uma função para mostrar o tamanho de um objeto.
+console.log('Resposta Ex03:');
+
+const objLength = (obj) => console.log(Object.keys(obj).length);
+objLength(lesson2);
+
 // 4 - Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
