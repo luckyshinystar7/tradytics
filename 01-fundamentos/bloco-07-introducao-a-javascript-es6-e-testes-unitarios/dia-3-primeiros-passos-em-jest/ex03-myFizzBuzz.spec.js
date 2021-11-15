@@ -18,3 +18,20 @@ function myFizzBuzz(num) {
 it('3.1 - Faça uma chamada com um número divisível por 3 e 5 e verifique se o retorno é o esperado', () => {
   expect(myFizzBuzz(15)).toBe('fizzbuzz');
 })
+
+it('3.2 - Faça uma chamada com um número divisível por 3 e verifique se o retorno é o esperado', () => {
+  expect(myFizzBuzz(6)).toBe('fizz');
+})
+
+it('3.3 - Faça uma chamada com um número divisível por 5 e verifique se o retorno é o esperado', () => {
+  expect(myFizzBuzz(10)).toBe('buzz');
+})
+
+it('3.4 - Faça uma chamada com um número que não é divisível por 3 ou 5 e verifique se o retorno é o esperado', () => {
+  expect(myFizzBuzz(7)).toBe(7);
+})
+
+it('3.5 - Faça uma chamada com um parâmetro que não é um número e verifique se o retorno é o esperado', () => {
+  expect(myFizzBuzz('8')).toBe(false);
+})
+
