@@ -37,3 +37,8 @@ describe('4.1 - Teste se encode e decode são funções', () => {
     expect(typeof (decode)).toBe('function');
   })
 });
+
+it('4.2 - Para a função encode teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente', () => {
+  expect(encode('aeiou')).toBe('12345');
+})
+
