@@ -29,3 +29,11 @@ function decode(word) {
 
 // implemente seus testes aqui
 
+describe('4.1 - Teste se encode e decode são funções', () => {
+  it('encode é uma função', () => {
+    expect(typeof (encode)).toBe('function');
+  })
+  it('decode é uma função', () => {
+    expect(typeof (decode)).toBe('function');
+  })
+});
