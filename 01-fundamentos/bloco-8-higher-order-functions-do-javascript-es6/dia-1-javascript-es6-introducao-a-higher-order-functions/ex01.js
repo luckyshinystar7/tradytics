@@ -8,3 +8,13 @@ const newEmployees = () => {
   }
   return employees;
 };
+
+const assignEmail = (empName) => {
+  const nameLowerCase = empName.toLowerCase();
+  const nameArray = nameLowerCase.split(' ');
+  const email = `nameArray[0]_nameArray[1]@trybe.com`;
+  return {
+    nome: empName,
+    email: email
+  }
+}
