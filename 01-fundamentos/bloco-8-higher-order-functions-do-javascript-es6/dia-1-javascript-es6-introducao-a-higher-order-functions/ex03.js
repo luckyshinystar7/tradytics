@@ -4,13 +4,11 @@
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-//const notaFinal = (RIGHT_ANSWERS, STUDENT_ANSWERS, verifyanswers)
-
 const verifyAnswers = (array1, array2) => {
   let nota = 0;
-  for (i=0 ; i < array1.length ; i+=1) {
-    if (array2[i] === 'N.A') {}
-    else if (array1[i] === array2[i] ) {
+  for (i = 0; i < array1.length; i += 1) {
+    if (array2[i] === 'N.A') { }
+    else if (array1[i] === array2[i]) {
       nota += 1;
     } else {
       nota -= 0.5;
@@ -18,4 +16,8 @@ const verifyAnswers = (array1, array2) => {
   }
   return nota;
 }
-console.log (verifyAnswers(RIGHT_ANSWERS,STUDENT_ANSWERS));
+//console.log (verifyAnswers(RIGHT_ANSWERS,STUDENT_ANSWERS));
+
+const hofNotaFinal = (arr1, arr2, func) => func(arr1, arr2);
+
+console.log(hofNotaFinal(RIGHT_ANSWERS, STUDENT_ANSWERS, verifyAnswers));
