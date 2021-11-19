@@ -10,9 +10,20 @@ const prices = [2.99, 3.99, 1.5, 2];
 // );
 // };
 
-const union = [];
-for (let i = 0; i < products.length; i += 1) {
-  let obj = { product: products[i], price: prices[i] };
-  union.push(obj);
+// const union = [];
+// for (let i = 0; i < products.length; i += 1) {
+//   let obj = { product: products[i], price: prices[i] };
+//   union.push(obj);
+// }
+// console.log(union);
+
+const callback = (value, index) => {
+  const x = { product: value, price: prices[index] };
+  return x;
+};
+
+const union2 = (arr1, arr2) => {
+  return products.map(callback);
 }
-console.log(union);
+
+console.log(union2(products, prices));
