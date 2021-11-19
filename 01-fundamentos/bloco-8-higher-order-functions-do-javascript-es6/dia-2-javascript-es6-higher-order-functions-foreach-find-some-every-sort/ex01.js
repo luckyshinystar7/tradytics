@@ -108,4 +108,12 @@ function everyoneWasBornOnSecXX() {
   // escreva seu código aqui
   return books.every((value) => value.author.birthYear >= 1900 && value.author.birthYear < 2000);
 }
-console.log(everyoneWasBornOnSecXX());
+// console.log(everyoneWasBornOnSecXX());
+
+// 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  return books.some((value) => value.releaseYear >= 1990 && value.releaseYear < 2000);
+}
+// console.log(someBookWasReleaseOnThe80s());
