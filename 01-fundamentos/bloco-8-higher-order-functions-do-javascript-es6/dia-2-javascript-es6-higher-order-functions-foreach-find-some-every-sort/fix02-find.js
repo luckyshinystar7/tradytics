@@ -2,8 +2,6 @@
 
 const names = ['João', 'Irene', 'Fernando', 'Maria'];
 
-const findNameWithFiveLetters = (string) => string.length === 5;
+const findNameWithFiveLetters = () => names.find((p) => p.length === 5);
 
-f = names.find(findNameWithFiveLetters);
-
-console.log(f);
+console.log(findNameWithFiveLetters());
