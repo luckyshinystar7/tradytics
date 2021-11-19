@@ -64,11 +64,25 @@ const books = [
 // Adicione o código do exercício aqui:
 
 // 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
-// Dica: use a função find .
+// Dica: use a função find.
 
 function authorBornIn1947() {
   const element = books.find((value) => value.author.birthYear === 1947);
   return element.author.name;
 };
-
 // console.log(authorBornIn1947());
+
+// 2 - Retorne o nome do livro de menor nome.
+// Dica: use a função forEach.
+
+function smallerName() {
+  let nameBook = 'Itaquaquecetuba de pinhal mirim sempre foi uma cidade muito interessante por ter muitos paralelepipedos.';
+  // escreva aqui o seu código
+  books.forEach((value) => {
+    nameBook = (value.name.length <= nameBook.length) ?
+      value.name : nameBook;
+  })
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+// console.log(smallerName());
