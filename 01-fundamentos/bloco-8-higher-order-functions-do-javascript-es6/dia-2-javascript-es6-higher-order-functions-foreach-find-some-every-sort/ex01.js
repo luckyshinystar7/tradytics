@@ -101,3 +101,11 @@ function booksOrderedByReleaseYearDesc() {
   return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 // console.log(booksOrderedByReleaseYearDesc());
+
+// 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+
+function everyoneWasBornOnSecXX() {
+  // escreva seu código aqui
+  return books.every((value) => value.author.birthYear >= 1900 && value.author.birthYear < 2000);
+}
+console.log(everyoneWasBornOnSecXX());
