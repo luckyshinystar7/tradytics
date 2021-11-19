@@ -117,3 +117,14 @@ function someBookWasReleaseOnThe80s() {
   return books.some((value) => value.releaseYear >= 1990 && value.releaseYear < 2000);
 }
 // console.log(someBookWasReleaseOnThe80s());
+
+// 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+
+function authorUnique() {
+  // escreva seu código aqui
+  const anoNasc = [];
+  books.forEach((value) => anoNasc.push(value.author.birthYear));
+  anoNasc.sort((a, b) => a - b);
+  return anoNasc.some((value, index) => value === anoNasc[index + 1]);
+}
+// console.log(authorUnique());
