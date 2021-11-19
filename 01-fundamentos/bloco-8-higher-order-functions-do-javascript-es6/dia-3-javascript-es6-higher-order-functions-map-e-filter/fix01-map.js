@@ -5,3 +5,14 @@ const prices = [2.99, 3.99, 1.5, 2];
 // Deseja-se juntá-las em apenas uma lista de objetos que fique dessa forma:
 // const listProducts = [{ Arroz: 2.99 },...]
 // Tente criar uma função que resolva esse problema. Lembre-se, também, que as funções passadas para as HOFs podem receber vários parâmetros, não só o elemento sobre o qual ela está sendo iterada! Use isso em seu favor.
+
+// const unionProductsPrices = (arrayProducs, arrayPrices) => arrayProducs.map((produto, index) => ({ product: produto, price: arrayPrices[index] })
+// );
+// };
+
+const union = [];
+for (let i = 0; i < products.length; i += 1) {
+  let obj = { product: products[i], price: prices[i] };
+  union.push(obj);
+}
+console.log(union);
