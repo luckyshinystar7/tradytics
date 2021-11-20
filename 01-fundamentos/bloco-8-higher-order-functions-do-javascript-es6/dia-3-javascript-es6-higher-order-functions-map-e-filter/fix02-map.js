@@ -89,3 +89,39 @@ const allNameStudents = estudantes.filter((estudante) => (
   estudante.turno === 'Manhã')).map((estudante) => `${estudante.nome} ${estudante.sobrenome}`);
 
 console.log(allNameStudents);
+
+const findStudent = (name, students) => {
+  for (let index = 0; index < students.length; index += 1) {
+    if (students[index].nome === name) {
+      return students[index];
+    }
+  }
+};
+
+// Buscando um estudante pelo nome e retornar a situação dele em cada matéria:
+
+// FOR
+// const reportStatus = (name, students) => {
+//   const getStudent = findStudent(name, students);
+//   const report = [];
+//   for (let index = 0; index < getStudent.materias.length; index += 1) {
+//     if (getStudent.materias[index].nota >= 60) {
+//       report.push(`${getStudent.materias[index].name} Aprovado`);
+//     } else {
+//       report.push(`${getStudent.materias[index].name} Reprovado`);
+//     }
+//   }
+//   return report;
+// };
+
+// console.log(reportStatus('Natalia', estudantes));
+
+// FIND / MAP
+const reportStatus = (name, students) => {
+  const studentInfo = students.find((student) => student.nome === name);
+  return studentInfo.materias.map((materia) => (
+    `${materia.name} ${(materia.nota >= 60) ? 'Aprovado' : 'Reprovado'}`
+  ));
+};
+
+console.log(reportStatus('Natalia', estudantes));
