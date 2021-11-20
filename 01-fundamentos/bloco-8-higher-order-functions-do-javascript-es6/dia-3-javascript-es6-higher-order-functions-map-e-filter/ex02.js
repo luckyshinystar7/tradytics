@@ -71,4 +71,6 @@ const booksArray = books.map((livro) => {
   return x;
 })
 
+booksArray.sort((a, b) => a.age - b.age);
+
 console.log(booksArray);
