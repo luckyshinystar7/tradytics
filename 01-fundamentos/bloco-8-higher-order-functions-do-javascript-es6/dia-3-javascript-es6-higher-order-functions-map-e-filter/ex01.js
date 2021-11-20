@@ -65,11 +65,15 @@ const books = [
 // 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
 // Dica: Use a função map
 
-const callbackBooks = (value) => {
-  const x = `${value.name} - ${value.genre} - ${value.author.name}`;
-  return x;
-};
+// const callbackBooks = (value) => {
+//   const x = `${value.name} - ${value.genre} - ${value.author.name}`;
+//   return x;
+// };
 
-const listaLivros = books.map(callbackBooks);
+// const listaLivros = books.map(callbackBooks);
+
+// console.log(listaLivros);
+
+const listaLivros = books.map((livro) => `${livro.name} - ${livro.genre} - ${livro.author.name}`);
 
 console.log(listaLivros);
