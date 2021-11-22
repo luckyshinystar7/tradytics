@@ -5,7 +5,14 @@ const arrays = [
   [true],
   [4, 5, 6],
 ];
-
-function flatten() {
-  // escreva seu código aqui
+// For
+let arrayFinal = [];
+const reduz = (elemento) => {
+  for (let i = 0; i < elemento.length; i += 1) {
+    for (let j = 0; j < elemento[i].length; j += 1) {
+      arrayFinal.push(elemento[i][j]);
+    }
+  }
 }
+reduz(arrays);
+console.log(arrayFinal);
