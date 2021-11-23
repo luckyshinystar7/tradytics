@@ -17,9 +17,15 @@ const arrays = [
 // reduz(arrays);
 // console.log(arrayFinal);
 
-const reduce = arrays.reduce((acc, elemento) => {
-  acc.push(elemento);
-  return acc;
-}, [])
+// const reduce = arrays.reduce((acc, elemento) => {
+//   acc.reduce((acumulador, innerElement) => {
+//     acumulador.push[innerElement];
+//     return acumulador;
+//   }, []);
+//   return acc;
+// })
 
-console.log(reduce);
+// console.log(reduce);
+
+const listaFinal = arrays[0].concat(arrays[1], arrays[2]);
+console.log(listaFinal);
