@@ -5,7 +5,7 @@ const arrays = [
   [true],
   [4, 5, 6],
 ];
-// For
+// RESOLVIDO USANDO FOR
 // let arrayFinal = [];
 // const reduz = (elemento) => {
 //   for (let i = 0; i < elemento.length; i += 1) {
@@ -17,15 +17,11 @@ const arrays = [
 // reduz(arrays);
 // console.log(arrayFinal);
 
-// const reduce = arrays.reduce((acc, elemento) => {
-//   acc.reduce((acumulador, innerElement) => {
-//     acumulador.push[innerElement];
-//     return acumulador;
-//   }, []);
-//   return acc;
-// })
+// RESOLVIDO USANDO CONCAT
+// const listaFinal = arrays[0].concat(arrays[1], arrays[2]);
+// console.log(listaFinal);
 
-// console.log(reduce);
+//Resolvendo usando REDUCE
+const arrayFinal = arrays.reduce((acc, elemento) => acc.concat(elemento));
 
-const listaFinal = arrays[0].concat(arrays[1], arrays[2]);
-console.log(listaFinal);
+console.log(arrayFinal);
