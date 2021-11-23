@@ -22,6 +22,17 @@ const names = [
 // console.log(containsA(names));
 
 // RESOLUCAO COM JOIN SPLIT E REDUCE
-const containsA = names.join().split('').reduce((acc, curr) => (curr === 'a' || curr === 'A') ? acc + 1 : acc, 0)
+// const containsA = names.join().split('').reduce((acc, curr) => (curr === 'a' || curr === 'A') ? acc + 1 : acc, 0)
+
+// console.log(containsA);
+
+const containsA = names.reduce((acc, nome) => {
+  const x = nome.split('').reduce((cont, letra) => {
+    if (letra === 'A' || letra === 'a') return cont += 1;
+    return cont
+  }, 0)
+  acc += x;
+  return acc;
+}, 0)
 
 console.log(containsA);
