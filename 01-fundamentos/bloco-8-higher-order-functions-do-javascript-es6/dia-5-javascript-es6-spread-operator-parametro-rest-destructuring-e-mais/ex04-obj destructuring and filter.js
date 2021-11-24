@@ -30,5 +30,5 @@ const people = [
 ];
 
 // escreva filterPeople abaixo
-const filterPeople = (lista) => lista.filter(({ nationality } = value) => nationality === 'Australian');
+const filterPeople = (lista) => lista.filter(({ nationality, bornIn }) => nationality === 'Australian' && bornIn < 2000);
 console.log(filterPeople(people));
