@@ -6,5 +6,6 @@ const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
 const chiron = ['Chiron', 'Bugatti', 2016];
 
 // escreva toObject abaixo
-const funcCreator = ([car, brand, model]) => Object.assign({ car, brand, model });
+// const funcCreator = ([car, brand, model]) => Object.assign({ car, brand, model });
+const funcCreator = ([car, brand, model]) => ({ car, brand, model });
 console.log(funcCreator(palio));
