@@ -1,6 +1,16 @@
-test('Não deveria passar!', () => {
+const { doesNotMatch } = require("assert");
+
+// test('Não deveria passar!', () => { // passa pois o teste roda antes de a function terminar
+//   setTimeout(() => {
+//     expect(10).toBe(5);
+//     console.log('Deveria falhar!');
+//   }, 500);
+// });
+
+test('Não deveria passar!', (done) => { // nao passa pois a function demora mais do que o esperado pelo teste
   setTimeout(() => {
     expect(10).toBe(5);
     console.log('Deveria falhar!');
+    done();
   }, 500);
 });
