@@ -8,8 +8,13 @@ const uppercase = (str, callback) => {
   }, 500);
 };
 
-test('Verifica se funcao converte string para maiuscula', () => {
-  expect(uppercase('eita', console.log)).toBe(console.log('EITA'));
+test('Verifica se funcao converte string para maiuscula', (done) => {
+  uppercase('eita', (str) => {
+    try {
+      expect(str).toBe('EITA');
+      done();
+    } catch (error) {
+      done(error);
+    }
+  });
 });
-
-uppercase('eita', console.log);
