@@ -22,9 +22,10 @@ const handleError = (errorReason) =>
 
 const sendMarsTemperature = (onSuccess, onError) => {
   const successOrNot = () =>
-    Math.floor(Math.random()) >= .6 ? true : false;
-  if (successOrNot()) return onSuccess;
-  return onError;
+    Math.random() >= .6 ? true : false;
+  const firstAttempt = successOrNot();
+  if (firstAttempt) return onSuccess(getMarsTemperature());
+  return onError('Robot is busy');
 };
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
