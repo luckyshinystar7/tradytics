@@ -7,6 +7,8 @@ const getMarsTemperature = () => {
   return Math.floor(Math.random() * maxTemperature);
 };
 
+const currentTemperature = getMarsTemperature();
+
 const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9 / 5) + 32;
 
 const temperatureInFahrenheit = (temperature) =>
@@ -18,7 +20,6 @@ const greet = (temperature) =>
 // definição da função sendMarsTemperature...
 
 const sendMarsTemperature = (callback) => {
-  const currentTemperature = getMarsTemperature();
   setTimeout(() => callback(currentTemperature), messageDelay());
 };
 
