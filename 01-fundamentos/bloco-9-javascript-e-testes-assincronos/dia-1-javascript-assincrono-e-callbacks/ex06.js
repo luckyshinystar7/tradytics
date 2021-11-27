@@ -18,14 +18,20 @@ const greet = (temperature) =>
 const handleError = (errorReason) =>
   console.log(`Error getting temperature: ${errorReason}`);
 
+const getMessageWithDelay = (callback, parameter) => {
+  setTimeout(() => callback(parameter), messageDelay());
+};
+
 // definição da função sendMarsTemperature...
 
 const sendMarsTemperature = (onSuccess, onError) => {
   const successOrNot = () =>
     Math.random() >= .6 ? true : false;
   const firstAttempt = successOrNot();
-  if (firstAttempt) return onSuccess(getMarsTemperature());
-  return onError('Robot is busy');
+  // if (firstAttempt) return onSuccess(getMarsTemperature());
+  if (firstAttempt) return getMessageWithDelay(onSuccess, getMarsTemperature());
+  // return onError('Robot is busy');
+  return getMessageWithDelay(onError, 'Robot is busy');
 };
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
