@@ -9,7 +9,7 @@ const uppercase = (str, callback) => {
 };
 
 test('Verifica se funcao converte string para maiuscula', () => {
-  expect(uppercase('eita')).toBe('EITA');
+  expect(uppercase('eita', console.log)).toBe(console.log('EITA'));
 });
 
-console.log(uppercase('eita'));
+uppercase('eita', console.log);
