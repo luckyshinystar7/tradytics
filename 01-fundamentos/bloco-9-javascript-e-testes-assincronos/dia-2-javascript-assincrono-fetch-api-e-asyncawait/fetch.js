@@ -6,8 +6,8 @@ const fetchJoke = () => {
 
   fetch(url)
     .then((response) => response.json())
-    .then((data) => console.log(data.value));
-
+    .then((data) => console.log(data.value))
+    .catch((error) => console.log(`Algo deu errado :( \n${error}`));
 }
 
 fetchJoke();
