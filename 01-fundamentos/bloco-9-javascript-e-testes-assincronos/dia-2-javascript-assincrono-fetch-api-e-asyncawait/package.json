@@ -1,7 +1,6 @@
 {
   "name": "dia-2-javascript-assincrono-fetch-api-e-asyncawait",
   "version": "1.0.0",
-  "description": "",
   "main": "fix01.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.6"
-  }
+  },
+  "description": ""
 }
