@@ -15,10 +15,11 @@ const fetchCoins = async () => {
 
   const result = await fetch(API_URL)
     .then((response) => response.json())
-    .then((data) => console.log((data.data)))
+    .then((data) => (data.data))
+    .forEach((element) => console.log(`${element.name} ${element.symbol}: ${element.priceUsd}`))
     .catch((error) => console.log(`Algo deu errado :( \n${error}`));
 
-    return result;
+  return result;
 };
 
 fetchCoins();
