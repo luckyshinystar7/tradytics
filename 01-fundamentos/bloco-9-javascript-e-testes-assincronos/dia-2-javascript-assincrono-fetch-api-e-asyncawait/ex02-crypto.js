@@ -12,14 +12,17 @@ const fetchCoins = async () => {
   //   method: 'GET',
   //   headers: { 'Accept': 'application/json' }
   // };
+  try {
+    const response = await fetch(API_URL)
+    const data = await response.json();
+    const element = data.data;
+    element.forEach((element) => console.log(`${element.name} (${element.symbol}): ${element.priceUsd}`));
 
-  const result = await fetch(API_URL)
-    .then((response) => response.json())
-    .then((data) => (data.data))
-    .forEach((element) => console.log(`${element.name} ${element.symbol}: ${element.priceUsd}`))
-    .catch((error) => console.log(`Algo deu errado :( \n${error}`));
+  } catch (error) {
+    console.log(`Algo deu errado :( \n${error}`);
+  }
 
-  return result;
+  // return result;
 };
 
 fetchCoins();

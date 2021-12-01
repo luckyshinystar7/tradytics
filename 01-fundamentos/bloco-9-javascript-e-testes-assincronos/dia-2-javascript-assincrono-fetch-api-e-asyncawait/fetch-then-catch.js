@@ -5,7 +5,7 @@ const fetchJoke = async () => {
 
 
   fetch(url)
-    .then((response) => response.json())
+    await ((response) => response.json())
     .then((data) => console.log(data.value))
     .catch((error) => console.log(`Algo deu errado :( \n${error}`))
 }
