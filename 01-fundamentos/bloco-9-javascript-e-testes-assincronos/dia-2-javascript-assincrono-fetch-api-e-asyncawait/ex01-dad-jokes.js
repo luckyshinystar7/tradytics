@@ -1,4 +1,5 @@
 // apiScript.js
+const fetch = require('node-fetch');
 const API_URL = 'https://icanhazdadjoke.com/';
 
 const append = (text) => {
