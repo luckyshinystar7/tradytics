@@ -18,8 +18,8 @@ const fetchCoins = async () => {
     const data = await response.json();
     const element = data.data;
     // element.forEach((element) => console.log(`${element.name} (${element.symbol}): ${element.priceUsd}`));
-    element.forEach((element,i) => {
-      if (i < 10) return append(`${element.name} (${element.symbol}): ${element.priceUsd}`);
+    element.forEach((element, i) => {
+      if (i < 10) return append(`${element.name} (${element.symbol}): ${parseFloat(element.priceUsd).toFixed(2)}`);
     });
 
   } catch (error) {
@@ -27,7 +27,6 @@ const fetchCoins = async () => {
     // console.log(`Algo deu errado :( \n${error}`);
   }
 
-  // return result;
 };
 
 fetchCoins();
