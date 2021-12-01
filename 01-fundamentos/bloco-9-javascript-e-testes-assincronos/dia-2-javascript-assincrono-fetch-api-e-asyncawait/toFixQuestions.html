@@ -7,12 +7,12 @@ R- De modo assíncrono, um bloco de código seguinte começa a ser executado ant
 R- Callback Hell, deixando o código terrível de se entender e fazer manutenção.
 
 3- Por que as Promises são uma forma de resolver esse problema?
-R- Pois ao invés de enfileirar várias callbacks para ordenar um código se torna possível fazê-lo utilizando as promises.
+R- Pois ao invés de enfileirar várias callbacks para ordenar um código se torna possível fazê-lo utilizando as promises. Resumindo, através delas é possível entender o estado atual da execução de uma função assíncrona facilitando o tratamento desses dados sem precisar enfiar todo o processo dentro de uma função causando o callback hell.
 
 4- Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
-R- Assíncrona não bloqueante, enquanto aguardo a resposta da API o restante da página que não tem relação com essa resposta pode seguir carregando.
+R- Assíncrona não bloqueante, enquanto aguardo a resposta da API o restante da página que não tem relação com essa resposta pode seguir carregando. Apesar de a comunicação ser assíncrona, o fluxo de dados desse bloco de código deve ser síncrono para que a resposta desejada não seja carregada antes da informação requisitada chegar e ser devidamente tratada.
 
 5- Dada a resposta anterior, o que é fetch e para que ele serve? 
-R- Fetch é recurso utilizado em JS que trata requisições http. Através do fetch é possível solicitar requisições a APIs, tratar erros, tratar dados recebidos e desenvolver os mesmos.
+R- Fetch é recurso utilizado em JS que trata requisições http. Através do fetch é possível solicitar requisições a APIs, tratar erros, tratar dados recebidos e desenvolver os mesmos. Através do Fetch é possível ordenar o fluxo de dados de um bloco de código de forma síncrona.
 
 -->
