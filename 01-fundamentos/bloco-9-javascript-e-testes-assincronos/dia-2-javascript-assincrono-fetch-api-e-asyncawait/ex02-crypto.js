@@ -1,21 +1,24 @@
 const fetch = require('node-fetch');
 const API_URL = 'https://api.coincap.io/v2/assets';
-let log = [];
+// let log = [];
 
 // const append = (text) => {
 //   const h2 = document.querySelector('h2');
 //   h2.innerText = text;
 // }
 
-const fetchCoins = () => {
-  const myObject = {
-    method: 'GET',
-    //headers: { 'Accept': 'application/json' }
-  };
+const fetchCoins = async () => {
+  // const myObject = {
+  //   method: 'GET',
+  //   headers: { 'Accept': 'application/json' }
+  // };
 
-  fetch(API_URL, myObject)
+  const result = await fetch(API_URL)
     .then((response) => response.json())
-    .then((data) => console.log(data.data));
+    .then((data) => console.log((data.data)))
+    .catch((error) => console.log(`Algo deu errado :( \n${error}`));
+
+    return result;
 };
 
 fetchCoins();
