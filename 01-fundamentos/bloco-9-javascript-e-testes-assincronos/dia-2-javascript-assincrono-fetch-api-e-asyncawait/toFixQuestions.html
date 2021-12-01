@@ -10,7 +10,7 @@ R- Callback Hell, deixando o código terrível de se entender e fazer manutenç�
 R- Pois ao invés de enfileirar várias callbacks para ordenar um código se torna possível fazê-lo utilizando as promises.
 
 4- Quando você vai se comunicar com uma API , tal comunicação deve ser síncrona ou assíncrona? Lembre-se de que o serviço ao qual você está se conectando pode demorar muito ou pouco para dar retorno, pode estar fora do ar etc.
-R- Assíncrona não bloqueante, enquanto aguardo a resposta da API o restante da página que não tem relação com essa resposta pode seguir carregando.
+R- Assíncrona não bloqueante, enquanto aguardo a resposta da API o restante da página que não tem relação com essa resposta pode seguir carregando. Apesar de a comunicação ser assíncrona, o fluxo de dados desse bloco de código deve ser síncrono para que a resposta desejada não seja carregada antes da informação requisitada chegar e ser devidamente tratada.
 
 5- Dada a resposta anterior, o que é fetch e para que ele serve? 
 R- Fetch é recurso utilizado em JS que trata requisições http. Através do fetch é possível solicitar requisições a APIs, tratar erros, tratar dados recebidos e desenvolver os mesmos.
