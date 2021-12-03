@@ -43,8 +43,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-017-project-pixels-art/pull/137)_
 - [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-017-project-todo-list/pull/118)_
-- [ ] 5-7: _[Projeto Bonus - Meme Generator]()_
-- [ ] 5-7: _[Projeto Bonus - Adivinhe a Cor]()_
 - [x] 5-7: _[Projeto Bonus - Carta Misteriosa](https://github.com/tryber/sd-017-project-mistery-letter/pull/34)_
 
 ##### Bloco 6: HTML & CSS avançado
