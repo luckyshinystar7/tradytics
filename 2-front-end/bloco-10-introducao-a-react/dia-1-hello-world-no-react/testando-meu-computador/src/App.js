@@ -2,13 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const nome = 'Jorge Maravilha';
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
+        <h1>Hello, {nome}</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to reload
         </p>
+
         <a
           className="App-link"
           href="https://reactjs.org"
