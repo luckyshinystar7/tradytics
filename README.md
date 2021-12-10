@@ -123,9 +123,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 15-6: _[Projeto - Trybe Wallet]()_
 - [ ] 15-6: _[Projeto - Tabela com filtros de dados]()_
 
-##### Bloco 17: Projeto React
+##### Bloco 16: Projeto React
 
-- [ ] 17-1: _[Projeto - Jogo de Trivia]()_
+- [ ] 16-1: _[Projeto - Jogo de Trivia]()_
 
 ##### Bloco 18: React & Context API
 
