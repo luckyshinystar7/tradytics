@@ -83,11 +83,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 10-1: _'Hello, world!' no React!_
 - [ ] 10-2: _Componentes React_
+- [ ] 10-3: _[Projeto - Solar System]()_
 - [ ] 10-3: _[Projeto - Movie Cards Library]()_
 
 ##### Bloco 11: React
 
-- [ ] 11-1: _Components com estado_
+- [ ] 11-1: _Components com estado e eventos_
 - [ ] 11-2: _Eventos e formulários no React_
 - [ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_
 
