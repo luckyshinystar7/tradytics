@@ -3,22 +3,23 @@ import './App.css';
 
 function App() {
   
+  // function helloWorld (nome, sobrenome) {
+  //   return <h1>Hello, {`${nome} ${sobrenome}`}</h1>;
+  // }
   
+  // const element = helloWorld("Jorge", "Maravilha");
+  // const container = <div>{element}</div>;
 
-  function helloWorld (nome, sobrenome) {
-    return <h1>Hello, {`${nome} ${sobrenome}`}</h1>;
-  }
-  
-  const element = helloWorld("Jorge", "Maravilha");
-  const container = <div>{element}</div>;
+  const nome = 'Jorge Maravilha';
+const classe = 'hello-class';
+const element = <h1 className={classe}>Hello, {nome}</h1>;
 
 return (
 
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-
-      <h1>Hello, {container}</h1>
+      {element}
       <p>
         Edit <code>src/App.js</code> and save to reload
       </p>
