@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactClass from './FirstComponent';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <ReactClass />
         </a>
       </header>
     </div>
