@@ -1,21 +1,15 @@
 import './App.css';
 
+const Task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          REACT
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {Task('GoTrybe')}
     </div>
   );
 }
