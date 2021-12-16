@@ -1,9 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return ();
+  return (
+    <>
+      <h1>Eu</h1>
+      <p>To apanhando bastante pro React, mas logo seremos bons amigos.</p>
+    </>
+  );
 }
 
 export default App;
