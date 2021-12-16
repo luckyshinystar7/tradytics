@@ -5,11 +5,12 @@ function App() {
   
   
 
-  function nomeCompleto (nome, sobrenome) {
-    return `${nome} ${sobrenome}`;
+  function helloWorld (nome, sobrenome) {
+    return <h1>Hello, {`${nome} ${sobrenome}`}</h1>;
   }
   
-  const element = <h1>Hello, {nomeCompleto("Jorge", "Maravilha")}</h1>;
+  const element = helloWorld("Jorge", "Maravilha");
+  const container = <div>{element}</div>;
 
 return (
 
@@ -17,7 +18,7 @@ return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
 
-      <h1>Hello, {element}</h1>
+      <h1>Hello, {container}</h1>
       <p>
         Edit <code>src/App.js</code> and save to reload
       </p>
