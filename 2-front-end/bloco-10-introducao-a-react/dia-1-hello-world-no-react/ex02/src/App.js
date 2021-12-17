@@ -5,7 +5,7 @@ import Content from './Content';
 function App() {
   return (
 
-    < div className="App" >
+    < div >
       < Header />
       <header className="App-header">
         < Content />

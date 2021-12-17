@@ -23,9 +23,22 @@ const conteudos = [
   },
 ];
 
+const createLi = (element, index) => {
+  return (
+    <li key={index}>
+      O conteúdo é: {element.conteudo}<br></br>
+
+      Status: {element.status}<br></br>
+
+      Bloco: {element.bloco} <br></br><br></br>
+
+    </li>
+  );
+};
+
 class Content extends React.Component {
   render() {
-    return <h1>Content</h1>;
+    return <ul>{conteudos.map((value, index) => createLi(value, index))}</ul>;
   }
 }
 
