@@ -1,5 +1,4 @@
 import './App.css';
-import Header from './Header';
 
 const ToDoList = ['lavar o gato', 'alimentar o gato', 'limpar o banheiro do gato', 'comprar comida para o gato', 'dar atenção ao gato'];
 const Task = (value) => {
