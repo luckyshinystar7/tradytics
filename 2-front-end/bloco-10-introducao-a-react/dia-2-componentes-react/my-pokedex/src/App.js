@@ -5,8 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <Pokedex />
+       <h1>Pokedex</h1>
       </header>
+      <Pokedex />
     </div>
   );
 }
