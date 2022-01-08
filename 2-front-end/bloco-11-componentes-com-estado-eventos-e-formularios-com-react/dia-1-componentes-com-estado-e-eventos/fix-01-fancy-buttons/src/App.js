@@ -1,14 +1,12 @@
 import './App.css';
 
+function handleClick() {
+  console.log('Qualquer texto quando clicar no botão!')
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>        
-      </header>
-    </div>
+    <button onClick={handleClick} >Oi</button>
   );
 }
 
