@@ -1,8 +1,15 @@
 import React from 'react';
+// Declare dentro da classe do seu componente do exercício de fixação Fix01 a função que lida com o evento que antes era lidado por uma função do lado de fora da classe!
+class Fix04 extends React.Component {
 
-class Fix01 extends React.Component {
+  constructor() {
+    super()
+
+    this.handleClick = this.handleClick.bind(this)
+  }
+
   handleClick() {
-    console.log('Oi!')
+    console.log("Oi")
   }
 
   render() {
@@ -17,4 +24,4 @@ class Fix01 extends React.Component {
   }
 }
 
-export default Fix01;
+export default Fix04;
