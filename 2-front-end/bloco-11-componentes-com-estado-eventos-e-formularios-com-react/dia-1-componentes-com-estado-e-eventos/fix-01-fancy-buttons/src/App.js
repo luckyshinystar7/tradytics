@@ -1,12 +1,16 @@
 import './App.css';
 
 function handleClick() {
-  console.log('Qualquer texto quando clicar no botão!')
+  console.log("Oi")
 }
 
 function App() {
   return (
-    <button onClick={handleClick} >Oi</button>
+    <>
+      <button onClick={handleClick} >Oi</button>
+      <button onClick={() => console.log("Olá")} >Ola</button>
+      <button onClick={() => console.log("Tchau")} >Tchau</button>
+    </>
   );
 }
 
