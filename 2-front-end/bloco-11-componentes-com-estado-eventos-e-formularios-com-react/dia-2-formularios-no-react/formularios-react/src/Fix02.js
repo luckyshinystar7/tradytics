@@ -9,14 +9,19 @@ class Fix02 extends Component { // Transformando partes do Formulario em subcomp
     super();
 
     this.handleChange = this.handleChange.bind(this);
+    this.changeErrorStatus = this.changeErrorStatus.bind(this);
 
     this.state = {
       estadoFavorito: '',
       idade: 0,
       vaiComparecer: false,
+      formularioComErros: false,
     };
   }
 
+  changeErrorStatus = () => {
+    this.setState({ formularioComErros: true })
+  }
 
   handleChange({ target }) {
     const { name } = target;
@@ -33,10 +38,15 @@ class Fix02 extends Component { // Transformando partes do Formulario em subcomp
         <h1>Partiu aprender</h1>
         <form>
           <fieldset>
-            <EstadoFavorito value={this.state.estadoFavorito} handleChange={this.handleChange} />
+            <EstadoFavorito
+              value={this.state.estadoFavorito}
+              handleChange={this.handleChange}
+              changeErrorStatus={this.changeErrorStatus} />
           </fieldset>
           <fieldset>
-            <Idade value={this.state.idade} handleChange={this.handleChange} />
+            <Idade
+              value={this.state.idade}
+              handleChange={this.handleChange} />
           </fieldset>
           <input
             type="checkbox"
