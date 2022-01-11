@@ -30,22 +30,24 @@ class Fix01 extends Component {
       <>
         <h1>Partiu testar</h1>
         <form>
-          <label>
-            Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-            <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-          </label>
-          <input
-            type="number"
-            name="idade"
-            value={this.state.idade}
-            onChange={this.handleChange}
-          />
+          <fieldset>
+            <label>
+              Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
+              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+            </label></fieldset>
+          <fieldset>
+            <input
+              type="number"
+              name="idade"
+              value={this.state.idade}
+              onChange={this.handleChange}
+            /> Idade</fieldset>
           <input
             type="checkbox"
             name="vaiComparecer"
             value={this.state.vaiComparecer}
             onChange={this.handleChange}
-          />
+          /> Confirmar presença
         </form>
       </>
 
