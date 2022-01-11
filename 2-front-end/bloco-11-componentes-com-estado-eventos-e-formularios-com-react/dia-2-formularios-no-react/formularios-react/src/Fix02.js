@@ -1,6 +1,7 @@
 import React from "react";
 import { Component } from 'react';
 import Idade from './Idade';
+import EstadoFavorito from "./EstadoFavorito";
 
 class Fix02 extends Component { // Transformando partes do Formulario em subcomponentes, mantendo o state e a function handleChange no pai
 
@@ -32,10 +33,8 @@ class Fix02 extends Component { // Transformando partes do Formulario em subcomp
         <h1>Partiu aprender</h1>
         <form>
           <fieldset>
-            <label>
-              Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-            </label></fieldset>
+            <EstadoFavorito value={this.state.estadoFavorito} handleChange={this.handleChange} />
+          </fieldset>
           <fieldset>
             <Idade value={this.state.idade} handleChange={this.handleChange} />
           </fieldset>
