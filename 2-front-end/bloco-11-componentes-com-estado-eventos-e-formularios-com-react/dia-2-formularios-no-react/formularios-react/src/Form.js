@@ -5,23 +5,16 @@ class Form extends Component {
     super();
 
     this.handleChange = this.handleChange.bind(this);
-    this.changeErrorStatus = this.changeErrorStatus.bind(this);
 
     this.state = {
       estadoFavorito: '',
-      formularioComErros: false,
     };
   }
-
 
   handleChange(event) {
     this.setState({
       estadoFavorito: event.target.value,
     });
-  }
-
-  changeErrorStatus = () => {
-    this.setState({formularioComErros: true})
   }
 
   render() {
@@ -31,7 +24,7 @@ class Form extends Component {
         <form className="form">
           <label>
             Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-              <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+            <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
           </label>
           <input
             type="number"
