@@ -35,7 +35,7 @@ class Fix02 extends Component { // Transformando partes do Formulario em subcomp
   render() {
     return (
       <>
-        <h1>Partiu aprender</h1>
+        <h1>Partiu aprender React Forms e manipulação do state</h1>
         <form>
           <fieldset>
             <EstadoFavorito
@@ -56,10 +56,6 @@ class Fix02 extends Component { // Transformando partes do Formulario em subcomp
           /> Confirmar presença
         </form>
       </>
-
-
-
-
     )
   }
 
