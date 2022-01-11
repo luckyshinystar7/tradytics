@@ -5,9 +5,11 @@ class Form extends Component {
     super();
 
     this.handleChange = this.handleChange.bind(this);
+    this.changeErrorStatus = this.changeErrorStatus.bind(this);
 
     this.state = {
       estadoFavorito: '',
+      formularioComErros: false,
     };
   }
 
@@ -16,6 +18,10 @@ class Form extends Component {
     this.setState({
       estadoFavorito: event.target.value,
     });
+  }
+
+  changeErrorStatus = () => {
+    this.setState({formularioComErros: true})
   }
 
   render() {
