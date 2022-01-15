@@ -1,23 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
 import DadJoke from './components/DadJoke';
+import RickAndMorty from './rickAndMorty/RickAndMorty';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <DadJoke />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <DadJoke />
+    <RickAndMorty />
   );
 }
 
