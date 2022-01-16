@@ -84,22 +84,22 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _'Hello, world!' no React!_
 - [x] 10-2: _Componentes React_
 - [x] 10-3: _[Projeto - Solar System]()_
-- [ ] 10-3: _[Projeto - Movie Cards Library]()_
+- ~[ ] 10-3: _[Projeto - Movie Cards Library]()_~
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
 - [x] 11-1: _Components com estado e eventos_
 - [x] 11-2: _Eventos e formulários no React_
 - [x] 11-3: _[Projeto - Tryunfo]()_
-- [ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_
+- ~[ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_~
 
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
 - ~[] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_~
-- [ ] 12-2: _Ciclo de vida de componentes em React_
-- [ ] 12-3: _React Router_
-- [ ] 12-4: _[Projeto - TrybeTunes]()_
-- [ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_
+- [x] 12-1: _Ciclo de vida de componentes em React_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _[Projeto - TrybeTunes]()_
+- ~[ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_~
 
 ##### Bloco 13: Metodologias Ágeis
 
