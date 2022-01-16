@@ -1,29 +1,45 @@
 // App.js
-import React, { Component }from 'react';
+import React, { Component } from 'react';
 import './RickAndMorty.css';
 
 class RickAndMorty extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
+
     this.state = {
-        characters: [],
+      characters: [],
     };
   }
 
   fetchCharacters = () => {
     fetch('https://rickandmortyapi.com/api/character')
-    .then(response => response.json())
-    .then(data => {
-      this.setState({characters: data.results})
-    })
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ characters: data.results })
+      })
+  }
+
+  componentDidMount() {
+    this.fetchCharacters();
   }
 
   render() {
+    const { characters } = this.state;
     return (
-      <div className="App">
+      <div className="RickAndMorty">
         <h1>
           Ricky and Morty Characters:
         </h1>
+        <div className="body">
+          {characters.map(({ name, image }) => {
+            return (
+              <div className="container" key={name}>
+                <h3>{name}</h3>
+                <img src={image} alt={name} />
+              </div>
+            )
+          })}
+        </div>
       </div>
     );
   }
