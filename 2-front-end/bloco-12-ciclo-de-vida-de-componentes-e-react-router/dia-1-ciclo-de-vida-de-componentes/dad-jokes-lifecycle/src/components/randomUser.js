@@ -18,7 +18,7 @@ class RandomUser extends React.Component {
         // const requestHeaders = { headers: { dataType: 'json' } }
         const requestReturn = await fetch('https://api.randomuser.me/')
         const requestObject = await requestReturn.json();
-        this.setState({ randomProfile: requestObject });
+        this.setState({ randomProfile: requestObject.results });
       });
   }
 
