@@ -8,7 +8,7 @@ class RickAndMorty extends Component {
 
     this.state = {
       characters: [],
-    };
+    }
   }
 
   fetchCharacters = () => {
