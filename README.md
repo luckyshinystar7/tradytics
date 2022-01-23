@@ -83,7 +83,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 10-1: _'Hello, world!' no React!_
 - [x] 10-2: _Componentes React_
-- [x] 10-3: _[Projeto - Solar System]()_
+- [x] 10-3: _[Projeto - Solar System](https://github.com/tryber/sd-017-project-solar-system/pull/132)_
 - ~[ ] 10-3: _[Projeto - Movie Cards Library]()_~
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
