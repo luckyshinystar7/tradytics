@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from './App';
+import ValidEmail from './components/Fix01ValidEmail';
 
 test('Verificando se existe o campo Email.', () => {
   render(<App />);
@@ -40,4 +41,18 @@ test('Verificando se o botão e o campo email estão funcionando.', () => {
 
   expect(inputEmail).toHaveValue('');
   expect(textEmail).toHaveTextContent(`Valor: ${ EMAIL_USER }`);
+});
+
+test('Testando um componente, caso o email seja válido.', () => {
+  const EMAIL_USER = 'email@email.com';
+  render(<ValidEmail email={ EMAIL_USER } />);
+  const isValid = screen.getByText('Email Válido');
+  expect(isValid).toBeInTheDocument();
+});
+
+test('Testando um componente, caso o email seja inválido.', () => {
+  const EMAIL_USER = 'emailerrado';
+  render(<ValidEmail email={ EMAIL_USER } />);
+  const isValid = screen.getByText('Email Inválido');
+  expect(isValid).toBeInTheDocument();
 });
