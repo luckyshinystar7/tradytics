@@ -8,7 +8,7 @@ export default class Fix01 extends Component {
             Email
             <input id="id-email" type="email" />
           </label>
-          <input id="btn-send" type="button" value="Enviar" />
+          <input id="btn-send" data-testid="btn-send" type="button" value="Enviar" />
           <input id="btn-back" type="button" value="Voltar" />
         </div>
       );
