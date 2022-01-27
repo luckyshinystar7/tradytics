@@ -64,3 +64,19 @@ test('Testando se o componente não aparece caso o campo email esteja vazio.', (
   const emailValidator = screen.queryByRole('heading', {level:3} )
   expect(emailValidator).not.toBeInTheDocument();
 });
+
+test('Testando se o validador aparece com a cor azul quando o email está em um formato correto', () => {
+  const EMAIL_USER = 'email@email.com';
+  render(<ValidEmail email={ EMAIL_USER } />);
+  const isValid = screen.getByText('Email Válido');
+  expect(isValid).toBeInTheDocument();
+  expect(isValid).toHaveClass('blue')
+});
+
+test('Testando se o validador aparece com a cor vermelha quando o email está em um formato incorreto', () => {
+  const EMAIL_USER = 'emailErrado';
+  render(<ValidEmail email={ EMAIL_USER } />);
+  const isValid = screen.getByText('Email Inválido');
+  expect(isValid).toBeInTheDocument();
+  expect(isValid).toHaveClass('red')
+});
