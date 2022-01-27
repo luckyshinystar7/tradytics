@@ -56,3 +56,11 @@ test('Testando um componente, caso o email seja inválido.', () => {
   const isValid = screen.getByText('Email Inválido');
   expect(isValid).toBeInTheDocument();
 });
+
+
+test('Testando se o componente não aparece caso o campo email esteja vazio.', () => {
+  const EMAIL_USER = '';
+  render(<ValidEmail email={ EMAIL_USER } />);
+  const emailValidator = screen.queryByRole('heading', {level:3} )
+  expect(emailValidator).not.toBeInTheDocument();
+});
