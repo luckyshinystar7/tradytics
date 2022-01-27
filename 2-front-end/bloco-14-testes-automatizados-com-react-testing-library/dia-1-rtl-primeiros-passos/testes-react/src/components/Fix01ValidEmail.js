@@ -1,5 +1,6 @@
 // ValidEmail.js
 // Fixação 01 - Não exibir a mensagem caso o email ainda não tenha sido enviado. Para isso foi adicionada a renderização condicional na linha 17.
+// Fixação 02 - Mude a cor do texto caso o email seja válido ou inválido.
 
 import React from 'react';
 import PropTypes from 'prop-types';
