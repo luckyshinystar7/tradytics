@@ -1,4 +1,6 @@
 // ValidEmail.js
+// Fixação 01 - Não exibir a mensagem caso o email ainda não tenha sido enviado. Para isso foi adicionada a renderização condicional na linha 17.
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -12,7 +14,7 @@ const ValidEmail = (props) => {
   return (
     <div>
       <h2 data-testid="id-email-user">{`Valor: ${email}`}</h2>
-      <h3>{(verifyEmail(email) ? 'Email Válido' : 'Email Inválido')}</h3>
+      { (email) && <h3>{(verifyEmail(email) ? 'Email Válido' : 'Email Inválido')}</h3> } 
     </div>
   );
 };
