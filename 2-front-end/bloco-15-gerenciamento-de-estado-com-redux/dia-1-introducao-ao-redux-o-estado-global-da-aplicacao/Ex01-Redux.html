@@ -72,6 +72,18 @@
 
       const store = Redux.reducerChangeColor(reducer);
 
+      // 4 - Crie eventListeners que escutam os cliques de cada botão, o Previous color e o Next color , e realizam um dispatch com o respectivo action.type de cada.
+      const previousColorBtn = document.getElementById('previous');
+      const nextColorBtn = document.querySelector('#next');
+
+      addEventListener.previousColorBtn('click', () => {
+        store.dispatch({ typr: "PREVIOUS_COLOR" });
+      });
+
+      addEventListener.nextColorBtn('click', () => {
+        store.dispatch({ typr: "NEXT_COLOR" });
+      });
+
     </script>
   </body>
 </html>
