@@ -75,6 +75,7 @@
       const store = Redux.reducerChangeColor(reducer);
 
       // 4 - Crie eventListeners que escutam os cliques de cada botão, o Previous color e o Next color , e realizam um dispatch com o respectivo action.type de cada.
+
       const previousColorBtn = document.getElementById("previous");
       const nextColorBtn = document.querySelector("#next");
 
@@ -93,6 +94,7 @@
         document.getElementById('container').style.backgroundColor = colors[index];
       });
       
+ 
     </script>
   </body>
 </html>
