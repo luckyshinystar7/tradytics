@@ -5,10 +5,10 @@ import RandomUser from './components/randomUser';
 
 function App() {
   return (
-    // <DadJoke />
+    <DadJoke />
     // <RickAndMorty />
     // <Counter />
-    <RandomUser />
+    // <RandomUser />
   );
 }
 
