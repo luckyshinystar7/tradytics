@@ -11,20 +11,24 @@ class Fix07 extends React.Component {
 
     this.state = {
       oi: 0,
-      buttonBackgroundColor: "green",
-      color: "verde"
+      buttonBackgroundColor: "blue",
+      color: "azul"
     }
 
     this.handleClick = this.handleClick.bind(this)
   }
 
+componentDidUpdate() { 
+  console.log(`Botão ficando ${this.state.color} no DidUpdate`)
+ }
+
   handleClick() {
+    if (this.state.oi % 2 !== 0) this.setState({ buttonBackgroundColor: "green", color: "verde" });
+    else this.setState({ buttonBackgroundColor: "blue", color: "azul" });    
     this.setState((prevState, _props) => ({
       oi: prevState.oi + 1
     }))
-    if (this.state.oi % 2 !== 0) this.setState(() => ({ buttonBackgroundColor: "green", color: "azul" }))
-    else this.setState(() => ({ buttonBackgroundColor: "blue", color: "verde" }))
-    console.log(`Botão ficando ${this.state.color}`)
+    console.log(`Botão ficando ${this.state.color} no Click`)
   }
 
   render() {
