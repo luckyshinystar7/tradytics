@@ -40,7 +40,7 @@ class PersonalForm extends Component {
         <label>Nome<input id="nome" onChange={handleChanger} value={currentState.nome} name="nome" type="text" required maxLength={40} /></label>
         <label>Email<input id='email' onChange={handleChanger} name='email' type="email" required maxLength={50} /></label>
         <label>CPF<input id='cpf' onChange={handleChanger} name='cpf' type="number" required maxLength={11} /></label>
-        <label>Endereço<input id='endereco' onChange={handleChanger} name='endereco' type="text" required maxLength={200} /></label>
+        <label>Endereço<input id='endereco' onChange={handleChanger} value={currentState.endereco} name='endereco' type="text" required maxLength={200} /></label>
         <label>Cidade<input id="cidade" onChange={handleChanger} name="cidade" type="text" required maxLength={28} /></label>
         <label>Estado<select onChange={handleChanger} name="estado">
           {estados.map((estado) => <option value={estado} key={estado}>{estado}</option>)}
