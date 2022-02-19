@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './App.css';
 import PersonalForm from './PersonalForm';
 import ProfissionalForm from './ProfissionalForm';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const INITIAL_STATE = {
   nome: '',
@@ -38,13 +40,13 @@ export default class App extends Component {
     return (
       <div>
         <fieldset>
-          Personal Form
           <PersonalForm handleChanger={this.handleChanger} currentState={this.state} />
         </fieldset>
         <fieldset>
           Profissional Form
           <ProfissionalForm handleChanger={this.handleChanger} currentState={this.state} />
         </fieldset>
+        <Button>Enviar</Button>
       </div>
     )
   }
