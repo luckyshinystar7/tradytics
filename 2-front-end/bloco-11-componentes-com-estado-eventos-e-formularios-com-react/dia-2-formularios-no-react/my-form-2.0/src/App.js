@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './App.css';
 import PersonalForm from './PersonalForm';
 import ProfissionalForm from './ProfissionalForm';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const INITIAL_STATE = {
   nome: '',
@@ -26,23 +28,25 @@ export default class App extends Component {
   }
 
   handleChanger({ target }) {
-    const { value, name } = target;
-    (name === 'nome') ?
-      this.setState({ [name]: value.toUpperCase() }) :
-      this.setState({ [name]: value })
+    let { value, name } = target;
+
+    if (name === 'nome') value = value.toUpperCase();
+    if (name === 'endereco') value = value.replace(/\s|[0-9_]|\W|[#$%^&*()]/g, "");
+
+    this.setState({ [name]: value })
   }
 
   render() {
     return (
       <div>
         <fieldset>
-          Personal Form
           <PersonalForm handleChanger={this.handleChanger} currentState={this.state} />
         </fieldset>
         <fieldset>
           Profissional Form
           <ProfissionalForm handleChanger={this.handleChanger} currentState={this.state} />
         </fieldset>
+        <Button>Enviar</Button>
       </div>
     )
   }
