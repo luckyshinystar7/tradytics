@@ -96,7 +96,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
 - ~[] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_~
-- [x] 12-1: _Ciclo de vida de componentes em React_([Ex01](https://github.com/elthonvilla/exercise-dog-image)_)
+- [x] 12-1: _Ciclo de vida de componentes em React_([Ex01](https://github.com/elthonvilla/exercise-dog-image))_
 - [x] 12-2: _React Router_
 - [x] 12-3: _[Projeto - TrybeTunes](https://github.com/tryber/sd-017-project-trybetunes/pull/3)_
 - ~[ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_~
