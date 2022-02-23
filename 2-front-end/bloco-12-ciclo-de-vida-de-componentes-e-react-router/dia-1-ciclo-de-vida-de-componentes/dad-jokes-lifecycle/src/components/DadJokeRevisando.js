@@ -14,9 +14,9 @@ class DadJokeRevisando extends React.Component {
     }
   }
 
-  // async fetchJoke() {
-  //   const requestHeaders = { headers: { Accept: 'application/json' } }
+  // async fetchJoke() { // funciona mas não daria certo em funções não síncronas
   //   this.setState({loading: true})
+  //   const requestHeaders = { headers: { Accept: 'application/json' } }
   //   const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders)
   //   const requestObject = await requestReturn.json();
   //   this.setState({
