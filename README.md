@@ -88,7 +88,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [x] 11-1: _Components com estado e eventos [Ex01](https://github.com/tryber/exercise-pokedex-state)_
+- [x] 11-1: _Components com estado e eventos [Ex01](https://github.com/elthonvilla/exercise-pokedex-state)_
 - [x] 11-2: _Eventos e formulários no React_
 - [x] 11-3: _[Projeto - Tryunfo](https://github.com/tryber/sd-017-project-tryunfo/pull/165)_
 - ~[ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_~
