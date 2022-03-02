@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import Trybe from './Trybe';
 
-const FamilyContext = React.createContext();
+export const FamilyContext = React.createContext();
 
 class GreatGrandfather extends Component {
   constructor(props) {
@@ -39,9 +40,10 @@ function Father(props) {
 
 function Daughter() {
   return (
-    <FamilyContext.Consumer>
+    <FamilyContext.Consumer>      
       {({ inheritance, spendInheritance }) => (
         <div>
+          <Trybe />
           <span>
             Tenho uma herança de R$ ${inheritance} que recebi do meu bisavô
           </span>
