@@ -50,11 +50,11 @@
       switch (action.type) {
         case NEXT_COLOR:
           return {
-            ...state, index: index.length === state.index ? 0 : state.index + 1,
+            ...state, index: state.index == state.colors.length ? 0 : state.index + 1,
           };
         case PREVIOUS_COLOR:
           return {
-            ...state, index: state.index === 0 ? index.length : state.index - 1,
+            ...state, index: state.index === 0 ? state.colors.length : state.index - 1,
           }
         default:
           return state;
@@ -66,13 +66,17 @@
     const prevBtn = document.getElementById('previous');
     const nextBtn = document.getElementById('next');
 
-    prevBtn.addEventListener('onClick',()=>{
+    prevBtn.addEventListener('click',()=>{
+      store.dispatch(actionPreviousColor());
+    });
+
+    nextBtn.addEventListener('click', ()=>{
       store.dispatch(actionNextColor());
     });
 
-    nextBtn.addEventListener('onClick', ()=>{
-      store.dispatch(actionPreviousColor());
-    });
+    store.subscribe(()=> {
+      console.log(store.getState());
+    })
 
   </script>
 </body>
