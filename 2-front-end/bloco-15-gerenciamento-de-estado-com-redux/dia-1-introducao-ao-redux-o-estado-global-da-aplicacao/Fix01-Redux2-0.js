@@ -1,7 +1,7 @@
 const Redux = require('redux');
 
 const fazLogin = (email) => ({
-  type: 'LOGIN',
+  type: LOGIN,
   email,
 })
 
@@ -10,9 +10,12 @@ const INITIAL_STATE = {
   email: '',
 }
 
+// ACTION TYPE - define as action types como consts a fim de evitar erro de digitação
+const LOGIN = "LOGIN";
+
 const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case 'LOGIN':
+    case LOGIN:
       return {
         ...state,
         login: !state.login,
