@@ -37,6 +37,20 @@
         colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
         index: 0,
       };
+
+      const store = Redux.createStore(reducer);
+
+      const reducer = (state = INITIAL_STATE, action) => {
+        switch (action.type) {
+          case ALGO:
+            return {
+              ...state, 
+            };      
+          default:
+            return state;
+        }
+      };
+
     </script>
   </body>
 </html>
