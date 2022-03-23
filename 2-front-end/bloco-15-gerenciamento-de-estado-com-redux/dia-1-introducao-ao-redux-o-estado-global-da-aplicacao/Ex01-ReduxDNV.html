@@ -62,7 +62,18 @@
     };
 
     const store = Redux.createStore(reducer);
-    
+
+    const prevBtn = document.getElementById('previous');
+    const nextBtn = document.getElementById('next');
+
+    prevBtn.addEventListener('onClick',()=>{
+      store.dispatch(actionNextColor());
+    });
+
+    nextBtn.addEventListener('onClick', ()=>{
+      store.dispatch(actionPreviousColor());
+    });
+
   </script>
 </body>
 
