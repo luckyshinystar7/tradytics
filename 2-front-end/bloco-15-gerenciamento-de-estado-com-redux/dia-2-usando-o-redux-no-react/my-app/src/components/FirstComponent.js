@@ -16,6 +16,6 @@ class FirstComponent extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  myFirstState: state.listReducer.state});
+  myFirstState: state.listReducer.value});
 
 export default connect(mapStateToProps, null)(FirstComponent);

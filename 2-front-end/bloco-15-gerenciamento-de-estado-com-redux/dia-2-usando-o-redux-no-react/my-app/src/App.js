@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+// import { connect } from 'react-redux';
 import './App.css';
 import FirstComponent from './components/FirstComponent';
 
@@ -23,5 +24,7 @@ function App() {
     </div>
   );
 }
+
+// export default connect(mapStateToProps,null)(App)
 
 export default App;
