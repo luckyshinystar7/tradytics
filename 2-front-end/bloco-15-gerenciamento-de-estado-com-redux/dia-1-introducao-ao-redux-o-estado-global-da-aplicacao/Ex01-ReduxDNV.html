@@ -33,13 +33,30 @@
     <p>Color: <span id="value">white</span></p>
     <button id="previous">Previous color</button>
     <button id="next">Next color</button>
+    <button id="create">Create color</button>
   </div>
   <script>
+
+    function criarCor() {
+      const oneChar = ['1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+      let cor = '#';
+      const aleatorio = () => Math.floor(Math.random() * oneChar.length);
+      for (let i = 0; i < 6; i += 1) {
+        cor += oneChar[aleatorio()];
+      }
+      return cor;
+    }
+
     const NEXT_COLOR = "NEXT_COLOR";
     const PREVIOUS_COLOR = "PREVIOUS_COLOR";
+    const CREATE_COLOR = "CREATE_COLOR";
 
     const actionNextColor = () => ({ type: NEXT_COLOR });
     const actionPreviousColor = () => ({ type: PREVIOUS_COLOR });
+    const actionCreateColor = () => ({
+      type: CREATE_COLOR,
+      color: criarCor(),
+    });
 
     const INITIAL_STATE = {
       colors: ['white', 'black', 'red', 'green', 'blue', 'yellow'],
@@ -56,6 +73,11 @@
           return {
             ...state, index: state.index === 0 ? state.colors.length - 1 : state.index - 1,
           }
+          case CREATE_COLOR:
+          return {            
+            ...state, colors: [...state.colors, action.color ],
+            index: state.colors.length -1,
+          }
         default:
           return state;
       }
@@ -66,18 +88,18 @@
     const prevBtn = document.getElementById('previous');
     const nextBtn = document.getElementById('next');
 
-    prevBtn.addEventListener('click',()=>{
+    prevBtn.addEventListener('click', () => {
       store.dispatch(actionPreviousColor());
     });
 
-    nextBtn.addEventListener('click', ()=>{
+    nextBtn.addEventListener('click', () => {
       store.dispatch(actionNextColor());
     });
 
     const screenColor = document.querySelector('#value');
     const container = document.querySelector('#container');
 
-    store.subscribe(()=> {      
+    store.subscribe(() => {
       console.log(store.getState());
       const colorFromReduxObj = store.getState();
       const colorFromRedux = colorFromReduxObj.colors[colorFromReduxObj.index];
