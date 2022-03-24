@@ -73,9 +73,9 @@
           return {
             ...state, index: state.index === 0 ? state.colors.length - 1 : state.index - 1,
           }
-          case CREATE_COLOR:
-          return {            
-            ...state, colors: [...state.colors, action.color ],
+        case CREATE_COLOR:
+          return {
+            ...state, colors: [...state.colors, action.color],
             index: state.colors.length,
           }
         default:
