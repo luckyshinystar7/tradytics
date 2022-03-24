@@ -76,7 +76,7 @@
           case CREATE_COLOR:
           return {            
             ...state, colors: [...state.colors, action.color ],
-            index: state.colors.length -1,
+            index: state.colors.length,
           }
         default:
           return state;
@@ -87,6 +87,7 @@
 
     const prevBtn = document.getElementById('previous');
     const nextBtn = document.getElementById('next');
+    const createBtn = document.getElementById('create');
 
     prevBtn.addEventListener('click', () => {
       store.dispatch(actionPreviousColor());
@@ -94,6 +95,10 @@
 
     nextBtn.addEventListener('click', () => {
       store.dispatch(actionNextColor());
+    });
+
+    createBtn.addEventListener('click', () => {
+      store.dispatch(actionCreateColor());
     });
 
     const screenColor = document.querySelector('#value');
