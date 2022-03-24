@@ -50,11 +50,11 @@
       switch (action.type) {
         case NEXT_COLOR:
           return {
-            ...state, index: state.index == state.colors.length ? 0 : state.index + 1,
+            ...state, index: state.index === state.colors.length - 1 ? 0 : state.index + 1,
           };
         case PREVIOUS_COLOR:
           return {
-            ...state, index: state.index === 0 ? state.colors.length : state.index - 1,
+            ...state, index: state.index === 0 ? state.colors.length - 1 : state.index - 1,
           }
         default:
           return state;
@@ -74,8 +74,16 @@
       store.dispatch(actionNextColor());
     });
 
-    store.subscribe(()=> {
+    const screenColor = document.querySelector('#value');
+    const container = document.querySelector('#container');
+
+    store.subscribe(()=> {      
       console.log(store.getState());
+      const colorFromReduxObj = store.getState();
+      const colorFromRedux = colorFromReduxObj.colors[colorFromReduxObj.index];
+      console.log(colorFromRedux);
+      screenColor.innerHTML = colorFromRedux;
+      container.style.backgroundColor = colorFromRedux;
     })
 
   </script>
