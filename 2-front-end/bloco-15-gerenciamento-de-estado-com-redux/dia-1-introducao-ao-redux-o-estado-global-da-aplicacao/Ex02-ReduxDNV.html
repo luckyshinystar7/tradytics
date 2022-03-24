@@ -95,8 +95,16 @@
       }, 1000);
     };
 
-    store.subscribe(() => {
-      console.log(store.getState());
+    const nome1 = document.getElementById('nome-1');
+    const sobrenome1 = document.getElementById('sobrenome-1');
+    const nome2 = document.getElementById('nome-2');
+    const sobrenome2 = document.getElementById('sobrenome-2');
+
+    store.subscribe(()=>{
+      nome1.innerText = store.getState().meuPrimeiroReducer.nome;
+      nome2.innerText = store.getState().meuSegundoReducer.nome;
+      sobrenome1.innerText = store.getState().meuPrimeiroReducer.sobrenome;
+      sobrenome2.innerText = store.getState().meuSegundoReducer.sobrenome;
     });
 
   </script>
