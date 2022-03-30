@@ -2,6 +2,8 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+
+// ACTIONs
 const GET_IMAGE = 'GET_IMAGE';
 const REQUEST_IMAGE = 'REQUEST_IMAGE';
 const FAILED_REQUEST = 'FAILED_REQUEST';
@@ -19,14 +21,19 @@ function failedRequest(error) {
 }
 
 export function fetchDog() {
-  return (dispatch) => {
+  return async (dispatch) => {
     dispatch(requestDog());
-    return fetch('https://dog.ceo/api/breeds/image/random')
-      .then(response => response.json())
-      .then(json => dispatch(getImage(json)))
-      .catch(error => dispatch(failedRequest(error)))
+    try {
+      const response = await fetch('https://dog.ceo/api/breeds/image/random');
+      const json = await response.json();
+      return dispatch(getImage(json));
+    } catch (error) {
+      return dispatch(failedRequest(error));
+    }
   };
 }
+
+// REDUCERs
 
 const initialState = {
   isFetching: false,
@@ -46,6 +53,8 @@ function reducer(state = initialState, action) {
       return state;
   }
 }
+
+// STORE
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
