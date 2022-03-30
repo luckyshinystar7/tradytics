@@ -19,12 +19,15 @@ function failedRequest(error) {
 }
 
 export function fetchDog() {
-  return (dispatch) => {
+  return async (dispatch) => {
     dispatch(requestDog());
-    return fetch('https://dog.ceo/api/breeds/image/random')
-      .then(response => response.json())
-      .then(json => dispatch(getImage(json)))
-      .catch(error => dispatch(failedRequest(error)))
+    try {
+      const response = await fetch('https://dog.ceo/api/breeds/image/random');
+      const json = await response.json();
+      return dispatch(getImage(json));
+    } catch (error) {
+      return dispatch(failedRequest(error));
+    }
   };
 }
 
