@@ -2,6 +2,8 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
+
+// ACTIONs
 const GET_IMAGE = 'GET_IMAGE';
 const REQUEST_IMAGE = 'REQUEST_IMAGE';
 const FAILED_REQUEST = 'FAILED_REQUEST';
@@ -31,6 +33,8 @@ export function fetchDog() {
   };
 }
 
+// REDUCERs
+
 const initialState = {
   isFetching: false,
   imagePath: '',
@@ -49,6 +53,8 @@ function reducer(state = initialState, action) {
       return state;
   }
 }
+
+// STORE
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)));
 
