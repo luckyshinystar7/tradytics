@@ -123,7 +123,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 15-6: _[Projeto - Trybe Wallet](https://github.com/tryber/sd-019-b-project-trybewallet/pull/21)_
 - ~[ ] 15-6: _[Projeto - Tabela com filtros de dados]()_~
 
-##### Bloco 16: Projeto React
+##### Bloco 16: Projeto React-Redux
 
 - [ ] 16-1: _[Projeto - Jogo de Trivia]()_
 
