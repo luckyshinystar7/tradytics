@@ -116,9 +116,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 15: Gerenciamento de estado com Redux
 
 - [x] 15-1: _Introdução ao Redux_
-- [x] 15-2: _React com Redux - Parte 1 ([Ex01](https://github.com/elthonvilla/exercises-redux-step-by-step)_)
-- [x] 15-3: _React com Redux - Prática ([Ex01](https://github.com/elthonvilla/exercise-forms-redux)_)
-- [x] 15-4: _React com Redux - Actions Assíncronas ([Ex01](https://github.com/elthonvilla/exercise-redux-thunk)_  [Ex02](https://github.com/elthonvilla/exercise-game-of-thrones-characters))
+- [x] 15-2: _React com Redux - Parte 1 [Ex01](https://github.com/elthonvilla/exercises-redux-step-by-step)_
+- [x] 15-3: _React com Redux - Prática [Ex01](https://github.com/elthonvilla/exercise-forms-redux)_
+- [x] 15-4: _React com Redux - Actions Assíncronas [Ex01](https://github.com/elthonvilla/exercise-redux-thunk)_  [Ex02](https://github.com/elthonvilla/exercise-game-of-thrones-characters)
 - [x] 15-5: _Testes síncronos com React-Redux_
 - [x] 15-6: _[Projeto - Trybe Wallet](https://github.com/tryber/sd-019-b-project-trybewallet/pull/21)_
 - ~[ ] 15-6: _[Projeto - Tabela com filtros de dados]()_~
@@ -130,7 +130,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 17: React Hooks & Context API
 
 - [x] 17-1: _Context API do React [Ex01](https://github.com/elthonvilla/exercise-contextAPI-refactoring)_
-- [ ] 17-2: _React Hooks - useState e useContext_
+- [x] 17-2: _React Hooks - useState e useContext [Ex01](https://github.com/elthonvilla/exercise-tryfood)_ 
 - [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
 - [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
