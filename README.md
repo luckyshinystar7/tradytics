@@ -131,8 +131,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 17-1: _Context API do React [Ex01](https://github.com/elthonvilla/exercise-contextAPI-refactoring)_
 - [x] 17-2: _React Hooks - useState e useContext [Ex01](https://github.com/elthonvilla/exercise-tryfood)_ 
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-019-b-project-starwars-planets-search/pull/1)_
 
 ##### Bloco 18: Projeto Final de Front-end
 
