@@ -84,14 +84,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-1: _'Hello, world!' no React!_
 - [x] 10-2: _Componentes React_
 - [x] 10-3: _[Projeto - Solar System](https://github.com/tryber/sd-017-project-solar-system/pull/132)_
-- ~[ ] 10-3: _[Projeto - Movie Cards Library]()_~
+<!-- - ~[ ] 10-3: _[Projeto - Movie Cards Library]()_~ -->
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
 - [x] 11-1: _Components com estado e eventos [Ex01](https://github.com/elthonvilla/exercise-pokedex-state)_
 - [x] 11-2: _Eventos e formulários no React_
 - [x] 11-3: _[Projeto - Tryunfo](https://github.com/tryber/sd-017-project-tryunfo/pull/165)_
-- ~[ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_~
+<!-- - ~[ ] 11-3: _[Projeto - Movie Cards Library Stateful]()_~ -->
 
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
@@ -99,7 +99,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 12-1: _Ciclo de vida de componentes em React [Ex01](https://github.com/elthonvilla/exercise-dog-image) [Ex02](https://github.com/elthonvilla/exercises-lifecycle-step-by-step)_
 - [x] 12-2: _React Router [Ex01](https://github.com/elthonvilla/comprehension-exercises-router) [Ex02](https://github.com/elthonvilla/exercise-pokedex-router)_
 - [x] 12-3: _[Projeto - TrybeTunes](https://github.com/tryber/sd-017-project-trybetunes/pull/3)_
-- ~[ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_~
+<!-- - ~[ ] 12-4: _[Projeto - Movie Cards Library CRUD]()_~ -->
 
 ##### Bloco 13: Metodologias Ágeis
 
@@ -121,7 +121,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 15-4: _React com Redux - Actions Assíncronas [Ex01](https://github.com/elthonvilla/exercise-redux-thunk)_  [Ex02](https://github.com/elthonvilla/exercise-game-of-thrones-characters)
 - [x] 15-5: _Testes síncronos com React-Redux_
 - [x] 15-6: _[Projeto - Trybe Wallet](https://github.com/tryber/sd-019-b-project-trybewallet/pull/21)_
-- ~[ ] 15-6: _[Projeto - Tabela com filtros de dados]()_~
+<!-- - ~[ ] 15-6: _[Projeto - Tabela com filtros de dados]()_~ -->
 
 ##### Bloco 16: Projeto React-Redux
 
