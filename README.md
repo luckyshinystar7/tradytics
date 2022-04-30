@@ -136,7 +136,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 18: Projeto Final de Front-end
 
-- [x] 18-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-019-b-project-recipes-app/tree/main-group-28)_
+- [] 18-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-019-b-project-recipes-app/tree/main-group-28)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
