@@ -51,7 +51,9 @@
   root@fa84c8a06cee:/# cat /etc/debian_version
   11.3
 
-🚀 Encerre o terminal.
+🚀 FEITO 11.Encerre o terminal.
+  root@fa84c8a06cee:/# exit
+  exit
 
 🚀 Remova somente o contêiner criado para esse exercício.
 
