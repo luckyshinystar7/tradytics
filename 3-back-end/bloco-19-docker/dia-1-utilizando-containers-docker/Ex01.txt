@@ -47,7 +47,9 @@
   docker container attach bold_payne 
   root@fa84c8a06cee:/# 
 
-🚀 Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+🚀 FEITO 10.Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+  root@fa84c8a06cee:/# cat /etc/debian_version
+  11.3
 
 🚀 Encerre o terminal.
 
