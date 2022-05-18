@@ -1,14 +1,66 @@
-🚀 No Docker Hub, utilizando a caixa de busca ("Search for great content"), busque pela imagem da Distribuição Linux Debian.
-🚀 Uma vez que encontrar a imagem oficial, acesse-a (clicando em seu card) e verifique na página de detalhes. Confira se existe algum comando para baixar a imagem localmente sem ter que criar um contêiner para isso.
-🚀 Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
-🚀 Após baixar a imagem para seu computador local, crie e execute um contêiner no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag.
-🚀 No terminal, você deve conseguir rodar o comando cat /etc/*-release, que vai retornar os dados da distribuição Debian que está sendo rodada dentro do contêiner.
-🚀 Encerre o terminal.
-🚀 Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
-🚀 Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
-🚀 Retome o contêiner que foi criado anteriormente neste exercício.
-🚀 Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
-🚀 Encerre o terminal.
-🚀 Remova somente o contêiner criado para esse exercício.
+🚀 FEITO 1.No Docker Hub, utilizando a caixa de busca ("Search for great content"), busque pela imagem da Distribuição Linux Debian.
+  https://hub.docker.com/_/debian
+
+🚀 FEITO 2.Uma vez que encontrar a imagem oficial, acesse-a (clicando em seu card) e verifique na página de detalhes. Confira se existe algum comando para baixar a imagem localmente sem ter que criar um contêiner para isso.
+  docker pull debian
+
+🚀 FEITO 3.Baixe a imagem utilizando a tag: stable-slim, que é uma versão reduzida da distribuição.
+  docker pull debian:stable-slim
+
+🚀 FEITO 4.Após baixar a imagem para seu computador local, crie e execute um contêiner no modo interativo utilizando essa imagem como referência — não esqueça referenciar a tag.
+  docker container run -it debian:stable-slim
+
+🚀 FEITO 5.No terminal, você deve conseguir rodar o comando cat /etc/*-release, que vai retornar os dados da distribuição Debian que está sendo rodada dentro do contêiner.
+  root@fa84c8a06cee:/# cat /etc/*-release
+
+  PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+  NAME="Debian GNU/Linux"
+  VERSION_ID="11"
+  VERSION="11 (bullseye)"
+  VERSION_CODENAME=bullseye
+  ID=debian
+  HOME_URL="https://www.debian.org/"
+  SUPPORT_URL="https://www.debian.org/support"
+  BUG_REPORT_URL="https://bugs.debian.org/"
+
+🚀 FEITO 6.Encerre o terminal.
+  root@fa84c8a06cee:/# exit
+
+🚀 FEITO 7.Verifique na sua lista de contêiners qual contêiner se refere ao exercício que acabou de praticar.
+  docker ps -a
+  CONTAINER ID   IMAGE                COMMAND   CREATED         STATUS                     PORTS     NAMES
+  fa84c8a06cee   debian:stable-slim   "bash"    7 minutes ago   Exited (0) 3 minutes ago             bold_payne
+
+  docker ps -l
+  CONTAINER ID   IMAGE                COMMAND   CREATED         STATUS                     PORTS     NAMES
+  fa84c8a06cee   debian:stable-slim   "bash"    7 minutes ago   Exited (0) 3 minutes ago             bold_payne
+
+🚀 FEITO 8.Inicie o mesmo contêiner novamente, sem criar outro. Valide se ele está ativo na lista de contêiners.
+  docker container start bold_payne
+  bold_payne
+
+  docker ps
+  CONTAINER ID   IMAGE                COMMAND   CREATED          STATUS          PORTS     NAMES
+  fa84c8a06cee   debian:stable-slim   "bash"    10 minutes ago   Up 14 seconds             bold_payne
+
+🚀 FEITO 9.Retome o contêiner que foi criado anteriormente neste exercício.
+  docker container attach bold_payne 
+  root@fa84c8a06cee:/# 
+
+🚀 FEITO 10.Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do contêiner.
+  root@fa84c8a06cee:/# cat /etc/debian_version
+  11.3
+
+🚀 FEITO 11.Encerre o terminal.
+  root@fa84c8a06cee:/# exit
+  exit
+
+🚀 FEITO 12.Remova somente o contêiner criado para esse exercício.
+  docker container rm bold_payne 
+  bold_payne
+
+  docker ps -a
+  CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
 [BÔNUS] Crie e rode de modo interativo em modo 'Cleanup', a imagem andrius/ascii-patrol.
 [BÔNUS] **Encerre o contêiner utilizando os botões [ctrl] + [c].
