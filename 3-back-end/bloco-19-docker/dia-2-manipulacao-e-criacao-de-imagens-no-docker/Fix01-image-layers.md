@@ -1,7 +1,7 @@
  # Exercício de fixação 1 
  ## Camadas de uma imagem
-
-1. Faça esse experimento! Rode no terminal o comando:
+ 
+1.  Faça esse experimento! Rode no terminal o comando:
 ~~~
 docker run --name meu_container -it ubuntu
 ~~~
