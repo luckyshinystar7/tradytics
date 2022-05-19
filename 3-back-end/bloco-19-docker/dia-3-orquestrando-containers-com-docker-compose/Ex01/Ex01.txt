@@ -33,9 +33,10 @@ Vamos aprimorar nossos conhecimentos sobre images e volumes, para isso:
             }
 
 7. Agora pare o container httpd:2.4;
+  docker container stop a5c2
 
 8. Exclua o seu container;
-
+  
 9. Verifique se a pasta onde você salvo o arquivo html permanece no mesmo lugar;
 
 10. Obtenha o IMAGE ID do servidor;
