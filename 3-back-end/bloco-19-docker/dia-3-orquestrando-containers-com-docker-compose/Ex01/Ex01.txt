@@ -42,5 +42,6 @@ Vamos aprimorar nossos conhecimentos sobre images e volumes, para isso:
   Sim, está lá!
 
 10. Obtenha o IMAGE ID do servidor;
+  httpd              2.4-alpine      5c2ee73209da
 
 11. Depois de obter o IMAGE ID, exclua a imagem.
