@@ -45,3 +45,4 @@ Vamos aprimorar nossos conhecimentos sobre images e volumes, para isso:
   httpd              2.4-alpine      5c2ee73209da
 
 11. Depois de obter o IMAGE ID, exclua a imagem.
+  FEITO
