@@ -18,6 +18,7 @@ Vamos aprimorar nossos conhecimentos sobre images e volumes, para isso:
   FEITO
 
 5. Obtenha o id do container httpd:2.4;
+  a5c2a42f1959
 
 6. Obtenha o Mounts através da propriedade Source que deve mostrar o volume desse container no Docker Host;
 
