@@ -8,6 +8,7 @@ Vamos aprimorar nossos conhecimentos sobre images e volumes, para isso:
     Salve o arquivo em qualquer lugar da sua máquina com a extensão html
 
 2. Crie um container para manter um servidor httpd:2.4 Apache e vincule sua porta interna com a porta 4545 da sua máquina local.
+  docker container run -d --name ex-01 -p 4545:4545 -v "/home/tom/trybe/github/trybe-exercicios/3-back-end/bloco-19-docker/dia-3-orquestrando-containers-com-docker-compose/Ex01/:/usr/local/apache2/htdocs/" httpd:2.4-alpine
 
 3. Após criar o container acesse a página HTML que está rodando no servidor em seu browser.
 
