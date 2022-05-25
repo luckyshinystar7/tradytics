@@ -10,13 +10,18 @@
 
 -- Para os exercícios a seguir, vamos usar a tabela sakila.actor:
 -- 4. Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
--- 5. Quantos sobrenomes únicos temos na tabela?
--- 6. Ordene os valores na tabela em ordem crescente de sobrenomes e em ordem decrescente de nome.
+	SELECT DISTINCT(last_name) FROM sakila.actor;
 
+-- 5. Quantos sobrenomes únicos temos na tabela?
+	SELECT COUNT(DISTINCT last_name) FROM sakila.actor; # 121 nomes únicos
+    
+-- 6. Ordene os valores na tabela em ordem crescente de sobrenomes e em ordem decrescente de nome.
+	SELECT * FROM sakila.actor
+    ORDER BY last_name ASC, first_name DESC; 
 
 -- Usando a tabela language:
 -- 7. Crie uma pesquisa que mostre os 5 idiomas cadastrados, mas não mostre o idioma english.
-
+	SELECT name FROM sakila.language LIMIT 10 OFFSET 1;
 
 -- Usando a tabela film:
 -- 8. Selecione todos os dados da tabela. Pronto, fez isso? Agora vamos tentar fazer o seguinte:
