@@ -3,8 +3,10 @@
 	SELECT * FROM sakila.film;
     
 -- 2. Escreva uma query que exiba apenas o nome dos filmes, seu ano de lançamento e sua classificação.
--- 3. Quantos filmes temos cadastrados?
+	SELECT title, release_year, rating FROM sakila.film;
 
+-- 3. Quantos filmes temos cadastrados?
+	SELECT COUNT(*) FROM sakila.film; # Temos 1000 filmes cadastrados
 
 -- Para os exercícios a seguir, vamos usar a tabela sakila.actor:
 -- 4. Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
