@@ -7,7 +7,8 @@ Exercício 1: Descubra como fazer uma pesquisa em qualquer tabela sem utilizar u
   sakila > Tables > right click at "actor" > "Select Rows"
 
 Exercício 2: Descubra como é possível criar uma tabela sem usar código SQL usando o MySql Workbench.
-
+  sakila > right click at "Tables" > "Create Table..."
+  
 Exercício 3: Feito isso, crie uma tabela com as seguintes restrições:
   Nome da tabela: Filme
   Colunas:
