@@ -26,5 +26,6 @@ Exercício 5: Após resolver o exercício anterior, responda: qual tipo de relac
   N:1 Pois cada país pode conter diversas cidades porém cada cidade só pode pertencer a 1 país.
 
 Exercício 6: Qual tipo de relacionamento a tabela country faz com a tabela city?
+  1:N Cada cidade está contida dentro de apenas 1 país porém 1 país pode possuir mais de 1 cidade.
 
 Exercício 7: Abra tabela por tabela do banco sakila e encontre no mínimo 3 exemplos de um relacionamentos 1:N ou N:1.
