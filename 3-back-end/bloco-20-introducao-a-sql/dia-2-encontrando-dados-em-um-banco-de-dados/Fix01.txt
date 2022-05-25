@@ -10,5 +10,6 @@
   SELECT 'Elthon' AS first_name, 'Villa' AS last_name, 'São Bernardo do Campo' AS city, '33' AS age;
 
 4. Qual é o resultado de 13 * 8 ? Descubra usando apenas o SELECT;
+  	SELECT 13 * 8;
 
 5. Monte uma query que exiba a data e hora atuais. Dê a essa coluna o nome "Data Atual".
