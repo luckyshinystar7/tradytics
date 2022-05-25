@@ -7,6 +7,7 @@
 
 3. Monte uma query que, além de exibir todas as informações já mencionadas,
   identifique cada coluna usando o AS, que é chamado de alias na linguagem SQL (alias é como um apelido no português);
+  SELECT 'Elthon' AS first_name, 'Villa' AS last_name, 'São Bernardo do Campo' AS city, '33' AS age;
 
 4. Qual é o resultado de 13 * 8 ? Descubra usando apenas o SELECT;
 
