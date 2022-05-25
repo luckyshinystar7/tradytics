@@ -10,7 +10,7 @@
 
 -- Para os exercícios a seguir, vamos usar a tabela sakila.actor:
 -- 4. Escreva uma query que exiba apenas os sobrenomes únicos cadastrados.
-	SELECT DISTINCT(last_name) FROM sakila.actor;
+	SELECT DISTINCT last_name FROM sakila.actor;
 
 -- 5. Quantos sobrenomes únicos temos na tabela?
 	SELECT COUNT(DISTINCT last_name) FROM sakila.actor; # 121 nomes únicos
@@ -21,10 +21,17 @@
 
 -- Usando a tabela language:
 -- 7. Crie uma pesquisa que mostre os 5 idiomas cadastrados, mas não mostre o idioma english.
-	SELECT name FROM sakila.language LIMIT 10 OFFSET 1;
+	SELECT name FROM sakila.language LIMIT 5 OFFSET 1;
 
 -- Usando a tabela film:
 -- 8. Selecione todos os dados da tabela. Pronto, fez isso? Agora vamos tentar fazer o seguinte:
+	SELECT * FROM sakila.film;
+    
 -- 9. Crie uma query para encontrar os 20 primeiros filmes, incluindo o título, o ano de lançamento, a duração, 
 -- a classificação indicativa e o custo de substituição.
+	SELECT title, release_year, length, rating, replacement_cost FROM sakila.film LIMIT 20;
+    
 -- 10. Ordene os resultados pelos filmes com a maior duração e depois pelo menor custo de substituição.
+	SELECT title, release_year, length, rating, replacement_cost FROM sakila.film
+    ORDER BY length DESC, replacement_cost ASC
+    LIMIT 20;
