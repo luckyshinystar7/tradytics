@@ -19,8 +19,11 @@ Exercício 3: Feito isso, crie uma tabela com as seguintes restrições:
 
 Exercício 4: Analise a tabela city e encontre a tabela à qual a coluna country_id faz referência.
   Faz referêcia a tabela country
+  sakila > Tables > right click at "city" > "Table Inspector" > "DDL" > row 8 :
+  CONSTRAINT `fk_city_country` FOREIGN KEY (`country_id`) REFERENCES `country` (`country_id`) ON DELETE RESTRICT ON UPDATE CASCADE
 
 Exercício 5: Após resolver o exercício anterior, responda: qual tipo de relacionamento a tabela city faz com a tabela country?
+  N:1 Pois cada país pode conter diversas cidades porém cada cidade só pode pertencer a 1 país.
 
 Exercício 6: Qual tipo de relacionamento a tabela country faz com a tabela city?
 
