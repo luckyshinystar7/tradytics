@@ -109,15 +109,52 @@
 	order by Name desc;    
 
 -- 9. Escreva uma query que exiba a string "O projeto Name precisou de Hours horas para ser concluído." para cada projeto.
-
+	select 
+        concat("O projeto: ", Name, ", precisou de ", Hours, " horas para ser concluído") as Resumo
+	from
+		Scientists.Projects;
+	
 -- 10. Escreva uma query para exibir o nome e as horas dos três projetos com a maior quantidade de horas.
+	select 
+        concat("O projeto: ", Name, ", precisou de ", Hours, " horas para ser concluído") as Resumo
+	from
+		Scientists.Projects
+	order by Hours desc
+    limit 3;
 
 -- 11. Escreva uma query para exibir o código de todos os projetos da tabela AssignedTo sem que haja repetições.
+	select distinct
+		Project
+	from
+		Scientists.AssignedTo;	
 
 -- 12. Escreva uma query para exibir o nome do projeto com maior quantidade de horas.
+	select
+		Name as "Projeto com maior quantidade de horas"
+	from
+		Scientists.Projects
+	order by Hours desc
+    limit 1;
 
 -- 13. Escreva uma query para exibir o nome do segundo projeto com menor quantidade de horas.
+	select
+		Name as "Segundo projeto com menor quantidade de horas"
+	from
+		Scientists.Projects
+	order by Hours asc
+    limit 1 offset 1;
 
 -- 14. Escreva uma query para exibir todas as informações dos cinco projetos com a menor quantidade de horas.
+	select
+		*
+	from 
+		Scientists.Projects
+	order by Hours asc
+    limit 5;
 
 -- 15. Escreva uma query que exiba a string "Existem Number cientistas na tabela Scientists.", em que Number se refira a quantidade de cientistas.
+	select
+		concat("Existem ", (count(distinct Name)), " cientistas na tabela Scientists.")
+        as "Soma de cientistas"
+	from
+		Scientists.Scientists;
