@@ -16,9 +16,20 @@
     and title like '%lord';
 
 -- 4. Mostre os dois casos em que, a partir do 4° caractere no título do filme, tem-se a palavra gon.
+	select * from film
+    where title like '___gon%';
 
 -- 5. Mostre o único caso em que, a partir do 4° caractere no título do filme, tem-se a palavra gon e a descrição contém a palavra Documentary.
-
+	select * from film
+    where title like '___gon%'
+    and description like '%documentary%';
+ 
 -- 6. Mostre os dois filmes cujos títulos ou finalizam com academy ou iniciam com mosquito.
-
+	select * from film
+    where title like '%academy'
+    or title like 'mosquito%';
+    
 -- 7. Mostre os seis filmes que contêm as palavras monkey e sumo em suas descrições.
+	select * from film
+    where description like '%monkey%'
+    and description like '%sumo%';
