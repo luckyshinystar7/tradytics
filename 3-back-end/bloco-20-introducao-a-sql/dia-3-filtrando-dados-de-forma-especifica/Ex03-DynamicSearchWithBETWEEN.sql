@@ -16,5 +16,12 @@
     where payment_date between "2005-05-01" and "2005-08-01";
 
 -- 4. Mostre o título, ano de lançamento e duração do empréstimo de todos os filmes com a duração de empréstimo de 3 a 6. Os resultados devem ser classificados em filmes com maior duração de empréstimo primeiro. Em caso de empate, ordene em ordem alfabética pelo título.
+	select title, release_year, rental_duration from film
+    where rental_duration between 3 and 6
+    order by rental_duration desc, title;
 
--- 5. Monte um relatório que exiba o título e classificação dos 500 primeiros filmes direcionados para as classificações indicativas G, PG e PG-13. Os resultados devem estar ordenados por título. 
+-- 5. Monte um relatório que exiba o título e classificação dos 500 primeiros filmes direcionados para as classificações indicativas G, PG e PG-13. Os resultados devem estar ordenados por título.
+	select title, rating from film
+    where rating in ('G', 'PG', 'PG-13')
+    order by title
+    limit 500;
