@@ -18,8 +18,13 @@
 -- 4. Selecione os cinco primeiros nomes e sobrenomes da tabela sakila.customer e cadastre essas pessoas como atores na tabela sakila.actor.
 	insert into sakila.actor (first_name, last_name)
     	select first_name, last_name from sakila.staff
-        limit 3;
+        limit 5;
 
 -- 5. Cadastre três categorias de uma vez só na tabela sakila.category.
-
+	insert into sakila.category (name)
+		values ('Anime'), ('Brazilian'), ('British');
+        
 -- 6. Cadastre uma nova loja na tabela sakila.store.
+	insert into sakila.store (address_id, manager_staff_id)
+		values (3, 14);
+		
