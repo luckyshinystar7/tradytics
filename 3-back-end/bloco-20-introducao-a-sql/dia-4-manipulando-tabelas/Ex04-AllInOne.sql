@@ -50,6 +50,18 @@
     
     delete from Pixar.Movies
     where director like '%Andrew Staton%';
+	
+-- Tarefas BONUS --
+-- Tarefa 8: Altere a classificação da tabela BoxOffice para 9.0 de todos os filmes que lucraram mais de 400 milhões no mercado interno.
+	update Pixar.BoxOffice
+    set rating = 9
+    where domestic_sales > 400000000;
+    
+-- Tarefa 9: Altere a classificação da tabela BoxOffice para 6.0 de todos os filmes que lucraram menos de 300 milhões no mercado internacional e mais de 200 milhões no mercado interno.
+	
+	
+-- Tarefa 10: Exclua da tabela Movies todos os filmes com menos de 100 minutos de duração.
+
 
 
 
