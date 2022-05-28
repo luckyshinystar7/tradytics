@@ -64,7 +64,14 @@
     international_sales < 300000000;
 
 -- Tarefa 10: Exclua da tabela Movies todos os filmes com menos de 100 minutos de duração.
-
+	select * from Pixar.Movies
+    where length_minutes < 100; -- id 1, 6, 7, 8
+    
+    delete from Pixar.BoxOffice -- deleta as dependências
+    where movie_id in (1, 6, 7, 8);
+    
+    delete from Pixar.Movies
+	where length_minutes < 100;
 
 
 
