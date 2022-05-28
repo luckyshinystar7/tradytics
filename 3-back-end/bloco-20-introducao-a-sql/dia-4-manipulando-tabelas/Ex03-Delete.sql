@@ -30,6 +30,8 @@
     where description like '%saga%';
 
 -- 4. Apague da maneira mais performática possível todos os registros das tabelas film_actor e film_category.
+	truncate film_actor;
+    truncate film_category;
 
 -- 5. Inspecione todas as tabelas do banco de dados sakila e analise quais restrições ON DELETE foram impostas em cada uma. Use o Table Inspector para fazer isso (aba DDL).
 
