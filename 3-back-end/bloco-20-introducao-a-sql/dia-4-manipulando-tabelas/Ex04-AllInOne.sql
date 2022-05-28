@@ -12,19 +12,66 @@
            ('WALL-E','Pete Docter', 2008, 104);
 
 -- Tarefa 2: O filme Procurando Nemo foi classificado em 6.8, fez 450 milhões no mercado interno e 370 milhões no mercado internacional. Insira as informações à tabela BoxOffice.
+	insert into Pixar.`BoxOffice`(`movie_id`, `rating`, `domestic_sales`, `international_sales`)
+	values (9, 6.8, 450000000, 370000000);
 
 -- Tarefa 3: O nome do diretor do filme "Procurando Nemo" está incorreto, ele foi dirigido por Andrew Staton. Corrija esse dado utilizando o comando UPDATE.
+	update Pixar.Movies
+    set director = 'Andrew Staton'
+    where title = 'Procurando Nemo';
 
 -- Tarefa 4: O título do filme "Ratatouille" está incorreto na tabela Movies. Além disso, o filme foi lançado em 2007 e não em 2010. Corrija esses dados utilizando o comando UPDATE.
-
+	update Pixar.Movies
+    set title = 'Ratatouille', `year` = 2007
+    where id = 3;
+    
 -- Tarefa 5: Insira as novas classificações abaixo na tabela BoxOffice, lembre-se que a coluna movie_id é uma foreign key referente a coluna id da tabela Movies:
 -- 	Monsters SA, classificado em 8.5, lucrou 300 milhões no mercado interno e 250 milhões no mercado internacional.
 -- 	Os Incríveis, classificado em 7.4, lucrou 460 milhões no mercado interno e 510 milhões no mercado internacional.
 -- 	WALL-E, classificado em 9.9, lucrou 290 milhões no mercado interno e 280 milhões no mercado internacional.
+	insert into Pixar.BoxOffice(movie_id, rating, domestic_sales, international_sales)
+    values (8, 8.5, 300000000, 250000000),
+		   (10, 7.4, 460000000, 510000000),
+           (11, 9.9, 290000000, 280000000);
 
 -- Tarefa 6: Exclua da tabela Movies o filme "WALL-E".
+	delete from Pixar.BoxOffice
+    where movie_id = 11;
+    
+    delete from Pixar.Movies
+    where id = 11;
 
 -- Tarefa 7: Exclua da tabela Movies todos os filmes dirigidos por "Andrew Staton".
+	select * from Pixar.Movies
+    where director like '%Andrew Staton%'; -- id 2, 9
+    
+    delete from Pixar.BoxOffice
+    where movie_id in (2, 9);
+    
+    delete from Pixar.Movies
+    where director like '%Andrew Staton%';
+	
+-- Tarefas BONUS --
+-- Tarefa 8: Altere a classificação da tabela BoxOffice para 9.0 de todos os filmes que lucraram mais de 400 milhões no mercado interno.
+	update Pixar.BoxOffice
+    set rating = 9
+    where domestic_sales > 400000000;
+    
+-- Tarefa 9: Altere a classificação da tabela BoxOffice para 6.0 de todos os filmes que lucraram menos de 300 milhões no mercado internacional e mais de 200 milhões no mercado interno.
+	update Pixar.BoxOffice
+    set rating = 6
+    where domestic_sales > 200000000 and
+    international_sales < 300000000;
+
+-- Tarefa 10: Exclua da tabela Movies todos os filmes com menos de 100 minutos de duração.
+	select * from Pixar.Movies
+    where length_minutes < 100; -- id 1, 6, 7, 8
+    
+    delete from Pixar.BoxOffice -- deleta as dependências
+    where movie_id in (1, 6, 7, 8);
+    
+    delete from Pixar.Movies
+	where length_minutes < 100;
 
 
 
