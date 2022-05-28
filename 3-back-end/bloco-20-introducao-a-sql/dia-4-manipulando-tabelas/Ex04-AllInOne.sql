@@ -21,7 +21,14 @@
     where title = 'Procurando Nemo';
 
 -- Tarefa 4: O título do filme "Ratatouille" está incorreto na tabela Movies. Além disso, o filme foi lançado em 2007 e não em 2010. Corrija esses dados utilizando o comando UPDATE.
-
+	update Pixar.Movies
+    set title = 'Ratatouille'
+    where id = 3;
+	
+    update Pixar.Movies
+    set `year` = 2007
+    where id = 3;
+    
 -- Tarefa 5: Insira as novas classificações abaixo na tabela BoxOffice, lembre-se que a coluna movie_id é uma foreign key referente a coluna id da tabela Movies:
 -- 	Monsters SA, classificado em 8.5, lucrou 300 milhões no mercado interno e 250 milhões no mercado internacional.
 -- 	Os Incríveis, classificado em 7.4, lucrou 460 milhões no mercado interno e 510 milhões no mercado internacional.
