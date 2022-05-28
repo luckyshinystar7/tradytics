@@ -12,6 +12,8 @@
            ('WALL-E','Pete Docter', 2008, 104);
 
 -- Tarefa 2: O filme Procurando Nemo foi classificado em 6.8, fez 450 milhões no mercado interno e 370 milhões no mercado internacional. Insira as informações à tabela BoxOffice.
+	insert into Pixar.`BoxOffice`(`movie_id`, `rating`, `domestic_sales`, `international_sales`)
+	values (9, 6.8, 450000000, 370000000);
 
 -- Tarefa 3: O nome do diretor do filme "Procurando Nemo" está incorreto, ele foi dirigido por Andrew Staton. Corrija esse dado utilizando o comando UPDATE.
 
