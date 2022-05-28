@@ -16,6 +16,9 @@
 	values (9, 6.8, 450000000, 370000000);
 
 -- Tarefa 3: O nome do diretor do filme "Procurando Nemo" está incorreto, ele foi dirigido por Andrew Staton. Corrija esse dado utilizando o comando UPDATE.
+	update Pixar.Movies
+    set director = 'Andrew Staton'
+    where title = 'Procurando Nemo';
 
 -- Tarefa 4: O título do filme "Ratatouille" está incorreto na tabela Movies. Além disso, o filme foi lançado em 2007 e não em 2010. Corrija esses dados utilizando o comando UPDATE.
 
