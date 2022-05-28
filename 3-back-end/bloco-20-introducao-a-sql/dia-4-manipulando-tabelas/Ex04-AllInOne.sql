@@ -42,6 +42,14 @@
     where id = 11;
 
 -- Tarefa 7: Exclua da tabela Movies todos os filmes dirigidos por "Andrew Staton".
+	select * from Pixar.Movies
+    where director like '%Andrew Staton%'; -- id 2, 9
+    
+    delete from Pixar.BoxOffice
+    where movie_id in (2, 9);
+    
+    delete from Pixar.Movies
+    where director like '%Andrew Staton%';
 
 
 
