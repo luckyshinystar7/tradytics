@@ -26,6 +26,8 @@
     where first_name = 'MATTHEW';
 
 -- 3. Exclua da tabela film_text todos os registros que possuem a palavra "saga" em suas descrições.
+	delete from film_text
+    where description like '%saga%';
 
 -- 4. Apague da maneira mais performática possível todos os registros das tabelas film_actor e film_category.
 
