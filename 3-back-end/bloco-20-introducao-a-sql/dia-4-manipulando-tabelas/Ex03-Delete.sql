@@ -1,18 +1,29 @@
 -- Exercicio 03 - DELETE
 -- 1. Exclua do banco de dados o ator com o nome de "KARL".
-	-- primeiro passo, descobrindo actor_id do KARL
+	-- primeira tarefa, descobrindo actor_id do KARL
 	select * from actor			-- 
     where first_name = 'KARL'; -- actor_id é 12
     
-    -- segundo passo, apagando as linhas onde o actor_id 12 é referenciado
+    -- segunda tarefa, apagando as linhas onde o actor_id 12 é referenciado
     delete from film_actor
     where actor_id = 12;
     
-    -- terceiro passo, apagando o actor
+    -- terceira tarefa, apagando o actor
 	delete from actor
     where first_name = 'KARL';
     
 -- 2. Exclua do banco de dados os atores com o nome de "MATTHEW".
+	-- primeira tarefa, descobrindo actor_id dos MATTHEW
+	select * from actor			-- 
+    where first_name = 'MATTHEW';
+    
+    -- segunda tarefa, apagando as linhas onde actor_id 8, 103 e 181 é referenciado
+    delete from film_actor
+    where actor_id in (8, 103, 181);
+    
+    -- terceira tarefa, apagando os actors
+	delete from actor
+    where first_name = 'MATTHEW';
 
 -- 3. Exclua da tabela film_text todos os registros que possuem a palavra "saga" em suas descrições.
 
