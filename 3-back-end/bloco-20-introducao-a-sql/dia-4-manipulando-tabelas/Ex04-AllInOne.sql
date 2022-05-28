@@ -35,6 +35,11 @@
            (11, 9.9, 290000000, 280000000);
 
 -- Tarefa 6: Exclua da tabela Movies o filme "WALL-E".
+	delete from Pixar.BoxOffice
+    where movie_id = 11;
+    
+    delete from Pixar.Movies
+    where id = 11;
 
 -- Tarefa 7: Exclua da tabela Movies todos os filmes dirigidos por "Andrew Staton".
 
