@@ -20,12 +20,33 @@
     );
     
     CREATE TABLE funcionario_setor(
-	id_funcionario INT NOT NULL,
-    id_setor INT NOT NULL,
-    FOREIGN KEY (id_funcionario) REFERENCES funcionario(id),
-    FOREIGN KEY (id_setor) REFERENCES setor(id)
+    id INT PRIMARY KEY AUTO_INCREMENT,
+	funcionario_id INT NOT NULL,
+    setor_id INT NOT NULL,
+    FOREIGN KEY (funcionario_id) REFERENCES funcionario(id),
+    FOREIGN KEY (setor_id) REFERENCES setor(id)
     );
 
 -- 	3. Popule todas as tabelas com os dados fornecidos nos exercícios.
 
+	INSERT INTO funcionario(nome, sobrenome, email, telefone)
+	VALUES 	('Joseph', 'Rodrigues', 'jo@gmail.com','35998552144'),
+			('André', 'Freeman', 'andre1990@gmail.com','47995224996'),
+            ('Cíntia', 'Duval', 'cindy@outlook.com','33998554669'),
+            ('Fernanda', 'Mendes', 'fernandamendes@yahoo.com','33992001556');
+            
+	INSERT INTO setor(setor)
+	VALUES 	('Administração'),
+			('Operacional'),
+            ('Estrategico'),
+            ('Marketing'),
+            ('Vendas');
+            
+	INSERT INTO funcionario_setor(funcionario_id, setor_id)
+	VALUES 	(1,1),
+			(1,5),
+            (2,2),
+            (3,3),
+            (4,5),
+            (4,4);
     
