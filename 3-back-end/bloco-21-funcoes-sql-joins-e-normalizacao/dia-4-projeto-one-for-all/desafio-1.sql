@@ -1,3 +1,15 @@
+-- Você receberá uma tabela não normalizada semelhante ao que poderia ser uma versão simplificada do banco de dados do Spotify. O trabalho consistirá de duas partes:
+-- Normalizar essa tabela, criar o schema no seu banco de dados local e populá-lo;
+-- Realizar os desafios no seu banco normalizado e populado.
+-- Aviso: Todos os dados da tabela abaixo são fictícios e foram gerados aleatoriamente através de ferramentas com o intuito de deixar o projeto mais real para vocês wink. Quaisquer similaridades com informações reais são meras coincidências.
+-- Observação: O banco de dados real do Spotify é muito mais completo e complexo que o mostrado abaixo. No entanto, use APENAS as informações passadas e solicitadas aqui. Não crie dados que não foram solicitados.
+	
+		-- Desafio 1
+-- Crie um banco com o nome de SpotifyClone.
+-- Providencie as queries necessárias para criar tabelas normalizadas que atendam aos requisitos descritos na seção anterior;
+-- Providencie as queries necessárias para popular as tabelas de acordo com os dados listados na seção anterior;
+-- Crie um arquivo de configurações desafio1.json, que mapeará em qual tabela e coluna se encontram as informações necessárias para a avaliação automatizada deste desafio.
+
 DROP DATABASE IF EXISTS SpotifyClone;
 
 CREATE DATABASE SpotifyClone;
