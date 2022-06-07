@@ -20,3 +20,8 @@ const imc = console.log(`Seu IMC é: ${peso / (altura * altura)}`);
 // Ex - 3 Chegou a hora de tornar nosso script mais interativo! Vamos adicionar input de quem usa.
 //      Edite o código para que os valores de peso e altura sejam informados pela pessoa ao responder as perguntas "Qual seu peso?" e "Qual sua altura?" no terminal utilizando a lib readline-sync.
 // FEITO
+
+// Ex - 4 Agora temos um problema: peso não é um número inteiro! Isso quer dizer que precisamos mudar um pouco a forma como solicitamos o input desse dado.
+// O pacote readline-sync possui uma função específica para tratar esses casos. Consulte a documentação do pacote e encontre o método adequado para realizar input de floats.
+// Encontrou a função? Show! Agora utilize-a para solicitar o input de peso.
+// Já havia sido feito junto com o 3 xD
