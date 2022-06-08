@@ -1,3 +1,5 @@
+const imc = () => {
+
 const rs = require('readline-sync');
 
 console.log("Olá!! Bem vindo ao calculador de IMC Nimbus 2000");
@@ -55,6 +57,10 @@ const checkStatus = (imc) => {
 }
 const myClassification = checkStatus(imc);
 console.log(`Sua classificação é: ${myClassification}`);
+};
+imc();
+
+module.exports = imc;
 
 // Ex - 1 Crie um script para calcular o Índice de Massa Corporal (IMC) de uma pessoa.
 //       A fórmula para calcular o IMC é peso / altura ^ 2. Obs: Lembre-se que a altura é em metros, caso deseje usar em centímetros a conversão para metros será necessária.
