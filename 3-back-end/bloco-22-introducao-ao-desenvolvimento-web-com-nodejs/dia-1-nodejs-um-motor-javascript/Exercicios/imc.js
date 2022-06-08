@@ -2,8 +2,8 @@ const rs = require('readline-sync');
 
 console.log("Olá!! Bem vindo ao calculador de IMC Nimbus 2000");
 
-peso = rs.questionFloat('Informe seu peso? (kg): ');
-altura = rs.questionFloat('Informe sua altura? (m): ');
+peso = rs.questionFloat('Informe seu peso (kg): ');
+altura = rs.questionFloat('Informe sua altura (m): ');
 
 const imc = peso / (altura * altura);
 console.log(`Seu IMC é: ${imc}`);
