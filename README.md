@@ -175,6 +175,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 22-1: _Node.js - Um motor JavaScript_
 - [ ] 22.2: _Node.js - Fluxo Assíncrono_ 
+
 ##### Bloco 23: Introdução - NoSQL
 
 - [ ] 23-1: _MongoDB - Introdução_
