@@ -8,12 +8,15 @@ altura = rs.questionFloat('Informe sua altura? (m): ');
 const imc = peso / (altura * altura);
 console.log(`Seu IMC é: ${imc}`);
 
-if (imc < 18.5) console.log('Sua classificação é: Abaixo do peso (magreza)');    
-if (imc < 25) console.log('Sua classificação é: Peso normal');
-if (imc < 30) console.log('Sua classificação é: Acima do peso (sobrepeso)');
-if (imc < 35) console.log('Sua classificação é: Obesidade grau I');
-if (imc < 40) console.log('Sua classificação é: Obesidade grau II');
-if (imc >= 40) console.log('Sua classificação é: Obesidade grau III e IV');
+const myStatus = (imc) => {
+    if (imc < 18.5) console.log('Abaixo do peso (magreza)');    
+    if (imc >= 18.5 && imc < 25) console.log('Sua classificação é: Peso normal');
+    if (imc >= 25 && imc < 30) console.log('Sua classificação é: Acima do peso (sobrepeso)');
+    if (imc >= 30 && imc < 35) console.log('Sua classificação é: Obesidade grau I');
+    if (imc >= 35 && imc < 40) console.log('Sua classificação é: Obesidade grau II');
+    if (imc >= 40) console.log('Sua classificação é: Obesidade grau III e IV');
+}
+myStatus(imc);
 
 // Ex - 1 Crie um script para calcular o Índice de Massa Corporal (IMC) de uma pessoa.
 //       A fórmula para calcular o IMC é peso / altura ^ 2. Obs: Lembre-se que a altura é em metros, caso deseje usar em centímetros a conversão para metros será necessária.
