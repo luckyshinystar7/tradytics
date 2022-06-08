@@ -2,10 +2,13 @@
   "name": "my-scripts",
   "version": "1.0.0",
   "description": "",
-  "main": "imc.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "imc": "node imc.js"
+    "imc": "node imc.js",
+    "velocidade": "node velocidade.js",
+    "sorteio": "node sorteio.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

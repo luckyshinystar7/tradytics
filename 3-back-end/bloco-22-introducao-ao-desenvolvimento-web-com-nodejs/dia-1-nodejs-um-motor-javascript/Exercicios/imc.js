@@ -1,19 +1,66 @@
+const imc = () => {
+
 const rs = require('readline-sync');
 
 console.log("Olá!! Bem vindo ao calculador de IMC Nimbus 2000");
 
-peso = rs.questionFloat('Informe seu peso? (kg): ');
-altura = rs.questionFloat('Informe sua altura? (m): ');
+peso = rs.questionFloat('Informe seu peso (kg): ');
+altura = rs.questionFloat('Informe sua altura (m): ');
 
 const imc = peso / (altura * altura);
 console.log(`Seu IMC é: ${imc}`);
 
-if (imc < 18.5) console.log('Sua classificação é: Abaixo do peso (magreza)');    
-if (imc < 25) console.log('Sua classificação é: Peso normal');
-if (imc < 30) console.log('Sua classificação é: Acima do peso (sobrepeso)');
-if (imc < 35) console.log('Sua classificação é: Obesidade grau I');
-if (imc < 40) console.log('Sua classificação é: Obesidade grau II');
-if (imc >= 40) console.log('Sua classificação é: Obesidade grau III e IV');
+// const myStatus = (imc) => {
+//     if (imc < 18.5) console.log('Abaixo do peso (magreza)');    
+//     if (imc >= 18.5 && imc < 25) console.log('Sua classificação é: Peso normal');
+//     if (imc >= 25 && imc < 30) console.log('Sua classificação é: Acima do peso (sobrepeso)');
+//     if (imc >= 30 && imc < 35) console.log('Sua classificação é: Obesidade grau I');
+//     if (imc >= 35 && imc < 40) console.log('Sua classificação é: Obesidade grau II');
+//     if (imc >= 40) console.log('Sua classificação é: Obesidade grau III e IV');
+// }
+// myStatus(imc);
+
+// Implementando solução de Ex05 sugerida no gabarito:
+
+const myStatus = {
+    'Abaixo do peso (magreza)':{
+        imcMin: 0,
+        imcMax: 18.5
+    },
+    'Peso Normal': {
+        imcMin: 18.5,
+        imcMax: 25
+    },
+    'Acima do peso (sobrepeso)':{
+        imcMin: 25,
+        imcMax: 30
+    },
+    'Obesidade grau I':{
+        imcMin: 30,
+        imcMax: 35
+    },
+    'Obesidade grau II':{
+        imcMin: 35,
+        imcMax: 40
+    },
+    'Obesidade Grau III e IV':{
+        imcMin: 40,
+        imcMax: 100
+    },
+}
+
+const checkStatus = (imc) => {
+    let currentStatus = 'Situação não encontrada';
+
+    currentStatus = Object.keys(myStatus).find((status) =>  myStatus[status].imcMin <= imc && imc < myStatus[status].imcMax);
+    return currentStatus;
+}
+const myClassification = checkStatus(imc);
+console.log(`Sua classificação é: ${myClassification}`);
+};
+imc();
+
+module.exports = imc;
 
 // Ex - 1 Crie um script para calcular o Índice de Massa Corporal (IMC) de uma pessoa.
 //       A fórmula para calcular o IMC é peso / altura ^ 2. Obs: Lembre-se que a altura é em metros, caso deseje usar em centímetros a conversão para metros será necessária.
