@@ -159,8 +159,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 21-1: _Funções mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs e UNIONs_
-- [x] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+<!-- - [x] 21-3: _Stored Routines & Subqueries_ -->
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _[Projeto - One For All](https://github.com/tryber/sd-019-b-mysql-one-for-all/pull/113)_
+<!-- - [ ] 21-4: _[Projeto - Vocabulary Booster]()_ -->
 
 ##### Bloco 22: Bancos de dados relacionais
 
