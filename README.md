@@ -164,13 +164,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 21-4: _[Projeto - One For All](https://github.com/tryber/sd-019-b-mysql-one-for-all/pull/113)_
 <!-- - [ ] 21-4: _[Projeto - Vocabulary Booster]()_ -->
 
-##### Bloco 22: Bancos de dados relacionais
+<!-- ##### Bloco 22: Bancos de dados relacionais
 
 - [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [ ] 22-2: _Normalização, Formas Normais e Dumps_
 - [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [ ] 22-3: _[Projeto - One For All]()_ -->
 
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
+
+- [x] 22-1: _Node.js - Um motor JavaScript_
+- [ ] 22.2: _Node.js - Fluxo Assíncrono_ 
 ##### Bloco 23: Introdução - NoSQL
 
 - [ ] 23-1: _MongoDB - Introdução_
