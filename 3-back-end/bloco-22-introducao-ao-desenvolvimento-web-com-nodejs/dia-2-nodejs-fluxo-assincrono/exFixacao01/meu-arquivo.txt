@@ -1,0 +1,1 @@
+Meu textão com async/await
