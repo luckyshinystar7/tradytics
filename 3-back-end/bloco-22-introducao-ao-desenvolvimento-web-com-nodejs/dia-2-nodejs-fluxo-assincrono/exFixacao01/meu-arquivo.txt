@@ -1,1 +1,1 @@
-Meu textão
+Meu textão com async/await

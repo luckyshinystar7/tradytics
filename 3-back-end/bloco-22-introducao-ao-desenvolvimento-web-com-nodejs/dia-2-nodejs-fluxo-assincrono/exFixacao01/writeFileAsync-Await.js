@@ -1,9 +1,12 @@
 const fs = require('fs').promises;
 
-fs.writeFile('./meu-arquivo.txt', 'Meu textão escrito com promises o/')
-  .then(() => {
+async function main() {
+  try {
+    await fs.writeFile('./meu-arquivo.txt', 'Meu textão com async/await');
     console.log('Arquivo escrito com sucesso!');
-  })
-  .catch((err) => {
+  } catch (err) {
     console.error(`Erro ao escrever o arquivo: ${err.message}`);
-  });
+  }
+}
+
+main()
