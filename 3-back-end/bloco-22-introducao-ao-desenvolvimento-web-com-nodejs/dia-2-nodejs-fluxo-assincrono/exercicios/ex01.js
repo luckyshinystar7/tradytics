@@ -15,6 +15,9 @@ function ex1(a, b, c) {
   return promise;
 }
 
-ex1(5, 5, 7)
-  .then(result => console.log(`sucesso: ${result}`))
-  .catch(err => console.log(`erro: ${err.message}`));
+// TESTANDO EXERCÍCIO
+// ex1(5, 5, 7)
+//   .then(result => console.log(`sucesso: ${result}`))
+//   .catch(err => console.log(`erro: ${err.message}`));
+
+  module.exports = ex1;
