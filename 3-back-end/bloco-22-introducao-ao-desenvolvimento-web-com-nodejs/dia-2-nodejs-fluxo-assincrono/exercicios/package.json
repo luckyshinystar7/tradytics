@@ -1,0 +1,13 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".",
+  "scripts": {
+    "start": "node index.js",
+    "ex01": "node ex01.js",
+    "ex02": "node ex02.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
