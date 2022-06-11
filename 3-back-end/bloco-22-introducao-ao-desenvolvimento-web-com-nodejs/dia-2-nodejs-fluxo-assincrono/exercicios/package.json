@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "ex01": "node ex01.js",
-    "ex02": "node ex02.js"
+    "ex02": "node ex02.js",
+    "ex03": "node ex03.js"
   },
   "author": "",
   "license": "ISC"
