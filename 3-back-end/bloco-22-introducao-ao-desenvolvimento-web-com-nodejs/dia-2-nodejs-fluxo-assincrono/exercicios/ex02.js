@@ -7,9 +7,12 @@
 
 const ex01 = require('./ex01');
 
-const randomNumber = () => Math.floor(Math.random() * 100 + 1)
+const randomNumber = () => Math.floor(Math.random() * 20 + 1)
+const a = randomNumber();
+const b = randomNumber();
+const c = randomNumber();
+console.log(`Números gerados, a:${a}, b:${b}, c:${c} `)
 
-console.log(randomNumber());
-ex01(randomNumber(), randomNumber(), randomNumber())
+ex01(a, b, c)
   .then(result => console.log(`sucesso: ${result}`))
   .catch(err => console.log(`erro: ${err.message}`));
