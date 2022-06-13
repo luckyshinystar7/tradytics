@@ -11,5 +11,8 @@
     "ex04": "node ex04.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
