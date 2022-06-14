@@ -17,14 +17,19 @@ async function fileReader(file) {
   try {
     const content = await fs.readFile(file, 'utf8');
     if (!content) throw new Error('Arquivo inexistente');
-    console.log(content);
+    return content;
 
   } catch (error) {
     console.log(`Não foi possível ler o arquivo desejado. ${error}`);
   }
 };
 
-async function wordChanger() {
+async function wordChanger(file) {
+  const myContent = await fileReader(file);
   const toRemove = readline.question('Digite a palavra a ser removida ');
   const toAdd = readline.question('Digite a palavra a ser inserida ');
+
+  console.log(myContent.replace(toRemove, toAdd));
   };
+
+wordChanger(file);
