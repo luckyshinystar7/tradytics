@@ -84,7 +84,25 @@ const newSimpFile = async () => {
   }
 };
 
-newSimpFile();
+// newSimpFile();
 
 //     4.5 - Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
+async function addToFamily() {
+  try {
+    const familyListRaw = await fs.readFile('simpsonFamily.json', 'utf8')
+    const familyList = JSON.parse(familyListRaw);
+    const simpListRaw = await fs.readFile(simpsonsFile, 'utf8');
+    const simpList = JSON.parse(simpListRaw);
+
+    const nelson = simpList.find(simp => simp.name === 'Nelson Muntz');
+    const newFamilyList = [...familyList, nelson];
+
+    await fs.writeFile('simpsonFamily.json', JSON.stringify(newFamilyList));
+    console.log('Arquivo simpsonFamily.json atualizado com sucesso');
+  } catch (error) {
+    console.log(`Erro ao atualizar o arquivo: ${error}`);
+  }
+};
+addToFamily();
+
 //     4.6 - Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
