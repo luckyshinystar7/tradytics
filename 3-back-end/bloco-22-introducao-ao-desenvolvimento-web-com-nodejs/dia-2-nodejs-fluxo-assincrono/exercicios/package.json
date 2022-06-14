@@ -10,7 +10,9 @@
     "ex03": "node ex03.js",
     "ex04": "node ex04.js",
     "ex05": "node ex05.js",
-    "ex06": "node ex06.js"
+    "ex06": "node ex06.js",
+    "ex07": "node ex07.js",
+    "ex08": "node ex08.js"
   },
   "author": "",
   "license": "ISC",
