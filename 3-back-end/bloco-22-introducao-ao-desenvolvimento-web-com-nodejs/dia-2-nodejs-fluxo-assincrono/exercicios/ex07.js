@@ -29,7 +29,11 @@ async function wordChanger(file) {
   const toRemove = readline.question('Digite a palavra a ser removida ');
   const toAdd = readline.question('Digite a palavra a ser inserida ');
 
-  console.log(myContent.replace(toRemove, toAdd));
+  const myNewContent = myContent.replace(toRemove, toAdd);
+  console.log(myNewContent);
+
+  const newFileName = readline.question('Qual nome deseja dar ao seu novo arquivo? ');
+
   };
 
 wordChanger(file);
