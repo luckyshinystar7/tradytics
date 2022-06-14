@@ -103,6 +103,21 @@ async function addToFamily() {
     console.log(`Erro ao atualizar o arquivo: ${error}`);
   }
 };
-addToFamily();
+// addToFamily();
 
 //     4.6 - Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
+const replaceSimp = async () => {
+try {
+  const familyListRaw = await fs.readFile('simpsonFamily.json', 'utf8');
+  const familyList = JSON.parse(familyListRaw);
+  const maggie = {"id":"5","name":"Maggie Simpson"};
+  
+  const newFamilyList = familyList.filter(simp => simp.name !== 'Nelson Muntz');
+  const listWithMaggie = [...newFamilyList, maggie];
+  await fs.writeFile('simpsonFamily.json', JSON.stringify(listWithMaggie));
+  console.log('Arquivo alterado com sucesso');
+} catch (error) {
+  console.log('Falha ao realizar a requisição', error);
+}
+};
+replaceSimp();
