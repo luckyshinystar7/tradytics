@@ -6,8 +6,13 @@
   "scripts": {
     "start": "node index.js",
     "ex01": "node ex01.js",
-    "ex02": "node ex02.js"
+    "ex02": "node ex02.js",
+    "ex03": "node ex03.js",
+    "ex04": "node ex04.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
