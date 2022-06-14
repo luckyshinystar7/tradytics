@@ -33,33 +33,33 @@ const simpsonsFile = 'simpsons.json';
 //     process.exit(1); // Encerra a execução do script e informa ao sistema operacional que houve um erro com código
 //   });
 
-  //  ASYNC / AWAIT SOLUTION
+//  ASYNC / AWAIT SOLUTION
 
-  // const inputId = rs.questionInt('Digite o ID do Simpson desejado ');
+// const inputId = rs.questionInt('Digite o ID do Simpson desejado ');
 
-  async function getSimpsonById(id) {
-    const simpListRaw = await fs.readFile(simpsonsFile,'utf8');
-    const simpList = JSON.parse(simpListRaw);
-    const mySimp = simpList.find(simp => Number(simp.id) === id);
-    if (!mySimp) throw new Error('Id não encontrado');
-    return mySimp.name;
-  };
+async function getSimpsonById(id) {
+  const simpListRaw = await fs.readFile(simpsonsFile, 'utf8');
+  const simpList = JSON.parse(simpListRaw);
+  const mySimp = simpList.find(simp => Number(simp.id) === id);
+  if (!mySimp) throw new Error('Id não encontrado');
+  return mySimp.name;
+};
 
-  async function showSimp() {
-    try {      
+async function showSimp() {
+  try {
     const simp = await getSimpsonById(inputId);
     console.log(simp);
-    } catch (error) {
-      console.log(error);
-    }
+  } catch (error) {
+    console.log(error);
   }
+}
 
-  // showSimp();
+// showSimp();
 
 //     4.3 - Crie uma função que altere o arquivo simpsons.json retirando os personagens com id 10 e 6.
 const removeSimp = async () => {
   try {
-    const simpListRaw = await fs.readFile(simpsonsFile,'utf8');
+    const simpListRaw = await fs.readFile(simpsonsFile, 'utf8');
     const simpList = JSON.parse(simpListRaw);
     const newList = simpList.filter(simp => ((Number(simp.id) != 10) && (Number(simp.id) != 6)));
     await fs.writeFile(simpsonsFile, JSON.stringify(newList));
@@ -69,8 +69,22 @@ const removeSimp = async () => {
   }
 };
 
-removeSimp();
+// removeSimp();
 
 //     4.4 - Crie uma função que leia o arquivo simpsons.json e crie um novo arquivo, chamado simpsonFamily.json, contendo as personagens com id de 1 a 4.
+const newSimpFile = async () => {
+  try {
+    const simpListRaw = await fs.readFile(simpsonsFile, 'utf8');
+    const simpList = JSON.parse(simpListRaw);
+    const newSimpList = simpList.filter(simp => Number(simp.id) <= 4);
+    await fs.writeFile('simpsonFamily.json', JSON.stringify(newSimpList));
+    console.log('Arquivo simpsonFamily.json criado com sucesso');
+  } catch (error) {
+    console.log(`Erro ao criar o arquivo: ${error}`);
+  }
+};
+
+newSimpFile();
+
 //     4.5 - Crie uma função que adicione ao arquivo simpsonFamily.json o personagem Nelson Muntz.
 //     4.6 - Crie uma função que substitua o personagem Nelson Muntz pela personagem Maggie Simpson no arquivo simpsonFamily.json.
