@@ -34,6 +34,7 @@ async function wordChanger(file) {
 
   const newFileName = readline.question('Qual nome deseja dar ao seu novo arquivo? ');
 
+  await fs.writeFile(newFileName, myNewContent);
   };
 
 wordChanger(file);
