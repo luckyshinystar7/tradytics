@@ -175,7 +175,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 22-1: _Node.js - Introdução ao Node.js, um motor JavaScript_
 - [x] 22.2: _Node.js - Fluxo Assíncrono_
-- [ ] 22.3: _Mocha, CHai e Sinon - Testes de Back-end com Node.js_
+- [x] 22.3: _Mocha, CHai e Sinon - Testes de Back-end com Node.js_
 - [ ] 22.4: _Express - HTTP com Node.js_
 - [ ] 22.5: _Express - Middlewares_
 
