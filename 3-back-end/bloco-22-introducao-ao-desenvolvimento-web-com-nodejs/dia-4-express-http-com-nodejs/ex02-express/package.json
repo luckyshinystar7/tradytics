@@ -1,0 +1,27 @@
+{
+  "name": "ex02-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ex01": "nodemon ex01.js",
+    "ex02": "nodemon ex02.js",
+    "ex03": "nodemon ex03.js",
+    "ex04": "nodemon ex04.js",
+    "ex05": "nodemon ex05.js",
+    "ex06": "nodemon ex06.js",
+    "ex07": "nodemon ex07.js",
+    "ex08": "nodemon ex08.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
