@@ -21,13 +21,30 @@ const getSimpsons = () => {
 // 6. Crie um endpoint GET /simpsons 🚀
 // O endpoint deve retornar um array com todos os simpsons.
 
-app.get('/', async function (_req, res) {
+app.get('/simpsons', async function (_req, res) {
   try {
     const simpsons = await getSimpsons();
     res.status(200).json(JSON.parse(simpsons))
 
   } catch (error) {
     res.status(500).json({ message: "Internal Server Error" })
+  }
+});
+
+// 7. Crie um endpoint GET /simpsons/:id 🚀
+// O endpoint deve retornar o personagem com o id informado na URL da requisição.
+// Caso não exista nenhum personagem com o id especificado, retorne o JSON { message: 'simpson not found' } com o status 404 - Not Found.
+
+app.get('/simpsons/:id', async function (req, res) {
+  try {
+    const id = req.params.id;
+    const simpsons = await getSimpsons();
+    const parsedSimpsons = await JSON.parse(simpsons);
+    const mySimpson = parsedSimpsons.find((simp) => simp.id === id);
+    res.status(200).json(mySimpson);
+
+  } catch (error) {
+    res.status(500).json({message: 'simpson not found' })
   }
 });
 
