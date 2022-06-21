@@ -18,6 +18,8 @@ const getSimpsons = () => {
   return simpList
 };
 
+// 6. Crie um endpoint GET /simpsons 🚀
+// O endpoint deve retornar um array com todos os simpsons.
 
 app.get('/', async function (_req, res) {
   try {
@@ -28,7 +30,6 @@ app.get('/', async function (_req, res) {
     res.status(500).json({ message: "Internal Server Error" })
   }
 });
-
 
 app.listen(3001, () => {
   console.log('Ativo na porta 3001');
