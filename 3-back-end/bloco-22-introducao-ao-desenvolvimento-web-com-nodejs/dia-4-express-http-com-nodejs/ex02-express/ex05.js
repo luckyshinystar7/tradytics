@@ -36,17 +36,38 @@ app.get('/simpsons', async function (_req, res) {
 // Caso não exista nenhum personagem com o id especificado, retorne o JSON { message: 'simpson not found' } com o status 404 - Not Found.
 
 app.get('/simpsons/:id', async function (req, res) {
-  try {
-    const id = req.params.id;
-    const simpsons = await getSimpsons();
-    const parsedSimpsons = await JSON.parse(simpsons);
-    const mySimpson = parsedSimpsons.find((simp) => simp.id === id);
-    res.status(200).json(mySimpson);
+  const id = req.params.id;
+  const simpsons = await getSimpsons();
+  const parsedSimpsons = await JSON.parse(simpsons);
+  const mySimpson = parsedSimpsons.find((simp) => simp.id === id);
 
-  } catch (error) {
-    res.status(500).json({message: 'simpson not found' })
-  }
+  if (mySimpson) return res.status(200).json(mySimpson);
+  return res.status(500).json({ message: 'simpson not found' })
 });
+
+// 8.  Crie um endpoint POST /simpsons. 🚀
+// Este endpoint deve cadastrar novos personagens.
+// O corpo da requisição deve receber o seguinte JSON: { id: <id-da-personagem>, name: '<nome-da-personagem>' }.
+// Caso já exista uma personagem com o id informado, devolva o JSON { message: 'id already exists' } com o status 409 - Conflict.
+// Caso a personagem ainda não exista, adicione-a ao arquivo simpsons.json e devolva um body vazio com o status 204 - No Content. Para encerrar a request sem enviar nenhum dado, você pode utilizar res.status(204).end();.
+
+const setSimpsons = (simpsons) => {
+  return fs.writeFile(filePath, JSON.stringify(simpsons));
+};
+
+app.post('/simpsons', async (req, res) => {
+  const { id } = req.body;
+  const simpsons = await getSimpsons();
+  const parsedSimpsons = await JSON.parse(simpsons);
+  const mySimpson = parsedSimpsons.find((simp) => simp.id === id);
+
+  if (mySimpson) return res.status(409).json({ message: 'id already exists' });
+  else {
+    const newSimpsons = [...parsedSimpsons, req.body];
+    await setSimpsons(newSimpsons);
+    return res.status(204).end();
+  }
+})
 
 app.listen(3001, () => {
   console.log('Ativo na porta 3001');
