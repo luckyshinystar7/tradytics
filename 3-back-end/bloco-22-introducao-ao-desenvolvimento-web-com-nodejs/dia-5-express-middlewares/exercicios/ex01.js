@@ -40,6 +40,12 @@ const productNameValidation = (req, res, next) => {
   next();
 };
 
+const infosValidation = (req, res, next) => {
+  const { infos } = req.body;
+  if (!infos) return res.status(400).json({ "message": "O campo infos é obrigatório" });
+  next();
+};
+
 app.post('/sales', (req, res) => {
 const { productName, infos } = req.body;
 });
