@@ -40,13 +40,21 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const x = {
-  "productName": "SmarTV",
-  "infos": {
-    "saleDate": "19/02/2022",
-    "warrantyPeriod": 3
+// Ex 3
+
+const auth = (req, res, next) => {
+  try {
+    const { authorization } = req.headers;
+    if (!authorization || authorization.length !== 16) {
+      return res.status(401).json({ message: 'Token inválido!' });
+    }
+    return next();
+  } catch (error) {
+    return res.status(500).end();
   }
-}
+};
+
+
 const productNameValidation = (req, res, next) => {
   const { productName } = req.body;
   if (!productName) return res.status(400).json({ "message": "O campo productName é obrigatório" });
@@ -69,7 +77,7 @@ const infosValidation = (req, res, next) => {
   next();
 };
 
-app.post('/sales', productNameValidation, infosValidation, (req, res) => {
+app.post('/sales', auth,  productNameValidation, infosValidation, (req, res) => {
   res.status(201).json({ "message": "Venda cadastrada com sucesso" })
 });
 
