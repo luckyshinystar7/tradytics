@@ -74,9 +74,14 @@ app.post('/sales', productNameValidation, infosValidation, (req, res) => {
 });
 
 // Ex 2
+const crypto = require('crypto');
+
+generateToken = () => crypto.randomBytes(8).toString('hex');
+
 app.post('/signup', (req, res) => {
   const { email, password, firstName, phone } = req.body;
   if (!email || !password || !firstName || !phone) return res.status(401).json({ message: 'missing fields' })
+  res.status(200).json({ token: generateToken() });
 });
 
 app.listen(3001, () => {
