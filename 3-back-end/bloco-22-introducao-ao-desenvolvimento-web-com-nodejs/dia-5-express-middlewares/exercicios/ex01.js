@@ -25,13 +25,13 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const x = {
-  "productName": "SmarTV",
-  "infos": {
-    "saleDate": "19/02/2022",
-    "warrantyPeriod": 3
-  }
-}
+// const x = {
+//   "productName": "SmarTV",
+//   "infos": {
+//     "saleDate": "19/02/2022",
+//     "warrantyPeriod": 3
+//   }
+// }
 
 const productNameValidation = (req, res, next) => {
   const { productName } = req.body;
@@ -43,11 +43,15 @@ const productNameValidation = (req, res, next) => {
 const infosValidation = (req, res, next) => {
   const { infos } = req.body;
   if (!infos) return res.status(400).json({ "message": "O campo infos é obrigatório" });
+  const { saleDate } = infos;
+  const dateFormat = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i;
+  if (!saleDate) return res.status(400).json({ "message": "O campo saleDate é obrigatório" })
+  if (!dateFormat.test(saleDate)) res.status(400).json({ "message": "O campo saleDate não é uma data válida" });
   next();
 };
 
-app.post('/sales', (req, res) => {
-const { productName, infos } = req.body;
+app.post('/sales', productNameValidation, infosValidation, (req, res) => {
+  res.status(200).json({...req.body})
 });
 
 app.listen(3001, () => {
