@@ -25,6 +25,23 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
+const x = {
+  "productName": "SmarTV",
+  "infos": {
+    "saleDate": "19/02/2022",
+    "warrantyPeriod": 3
+  }
+}
+
+const productNameValidation = (req, res, next) => {
+  const { productName } = req.body;
+  if (!productName) return res.status(400).json({ "message": "O campo productName é obrigatório" });
+  next();
+};
+
+app.post('/sales', (req, res) => {
+const { productName, infos } = req.body;
+});
 
 app.listen(3001, () => {
   console.log('ativo na porta 3001');
