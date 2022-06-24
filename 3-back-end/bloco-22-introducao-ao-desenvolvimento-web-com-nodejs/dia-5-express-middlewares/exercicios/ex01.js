@@ -51,7 +51,7 @@ const infosValidation = (req, res, next) => {
 };
 
 app.post('/sales', productNameValidation, infosValidation, (req, res) => {
-  res.status(200).json({...req.body})
+  res.status(201).json({ "message": "Venda cadastrada com sucesso" })
 });
 
 app.listen(3001, () => {
