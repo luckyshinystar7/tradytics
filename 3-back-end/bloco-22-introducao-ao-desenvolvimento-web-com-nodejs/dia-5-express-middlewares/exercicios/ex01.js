@@ -50,6 +50,7 @@ const infosValidation = (req, res, next) => {
 
   const { warrantyPeriod } = infos;
   if (!warrantyPeriod) return res.status(400).json({ "message": "O campo warrantyPeriod é obrigatório" });
+  if (warrantyPeriod < 0 || warrantyPeriod > 3) return 
   next();
 };
 
