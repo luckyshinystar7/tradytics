@@ -76,6 +76,7 @@ app.post('/sales', productNameValidation, infosValidation, (req, res) => {
 // Ex 2
 app.post('/signup', (req, res) => {
   const { email, password, firstName, phone } = req.body;
+  if (!email || !password || !firstName || !phone) return res.status(401).json({ message: 'missing fields' })
 });
 
 app.listen(3001, () => {
