@@ -48,7 +48,7 @@ const findById = async (id) => {
 	// Utilizamos [0] para buscar a primeira linha, que deve ser a única no array de resultados, pois estamos buscando por ID.
 	const { firstName, middleName, lastName } = authorData.map(serialize)[0];
 
-	return getNewAuthor({
+  	return getNewAuthor({
 		id,
 		firstName,
 		middleName,
@@ -56,7 +56,22 @@ const findById = async (id) => {
 	});
 };
 
+const isValid = (firstName, middleName, lastName) => {
+	if (!firstName || typeof firstName !== 'string') return false;
+	if (!lastName || typeof lastName !== 'string') return false;
+	if (middleName && typeof middleName !== 'string') return false;
+
+	return true;
+};
+
+const create = async (firstName, middleName, lastName) => connection.execute(
+	'INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?,?,?)',
+	[firstName, middleName, lastName],
+);
+
 module.exports = {
   getAll,
-  findById
+  findById,
+  isValid,
+  create,
 };
