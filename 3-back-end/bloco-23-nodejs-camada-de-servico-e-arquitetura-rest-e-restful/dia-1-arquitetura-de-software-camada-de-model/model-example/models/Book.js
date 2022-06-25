@@ -27,8 +27,27 @@ const getBookById = async (bookId) => {
   return book;
 };
 
+const validateTitle = (title) => {
+  if (!title || title === '') return false;
+  if (title.length < 4) return false;
+  return true;
+} 
+
+const validateAuthorId = async (author_id) => {
+  if (!author_id || author_id === '') return false;
+  const id = Number(author_id);
+  const [author] = await connection.execute(
+    'SELECT * FROM model_example.authors where id = ?;',
+    [id]
+  );
+  if (!author) return false;
+  return true;
+}
+
 module.exports = {
   getAll,
   getByAuthorId,
   getBookById,
+  validateTitle,
+  validateAuthorId,
 };
