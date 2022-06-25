@@ -31,7 +31,7 @@ const validateTitle = (title) => {
   if (!title || title === '') return false;
   if (title.length < 4) return false;
   return true;
-} 
+}
 
 const validateAuthorId = async (author_id) => {
   if (!author_id || author_id === '') return false;
@@ -44,10 +44,18 @@ const validateAuthorId = async (author_id) => {
   return true;
 }
 
+const create = async (title, author_id) => {
+  await connection.execute(
+    'INSERT INTO model_example.books (title, author_id) VALUES (?,?)',
+    [title, author_id]
+  )
+};
+
 module.exports = {
   getAll,
   getByAuthorId,
   getBookById,
   validateTitle,
   validateAuthorId,
+  create,
 };
