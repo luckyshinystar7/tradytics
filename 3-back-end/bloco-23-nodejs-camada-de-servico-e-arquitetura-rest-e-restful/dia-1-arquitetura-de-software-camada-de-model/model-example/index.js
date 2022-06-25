@@ -21,6 +21,7 @@ app.get('/authors', async (_req, res) => {
 // });
 
 // 1.3 Crie um método getByAuthorId no modelo Book, para retornar apenas livros associados com um determinado author_id. Altere o middleware da rota books criado no passo 2 para receber uma query string com a chave author_id, e retornar apenas os livros associados.
+
 app.get('/books', async (req, res) => {
   const id = req.query.author_id;
   if (!id) {
@@ -39,7 +40,20 @@ app.get('/authors/:id', async (req, res) => {
   if (!author) return res.status(404).json({ message: 'Not found' });
 
   res.status(200).json(author);
+  return
 });
+
+// 2.1 - Crie uma rota /books/:id e retorne o livro de acordo com o id passado por parâmetro. Se não existir, retorne um json no seguinte formato { message: 'Not found' }.
+app.get('/book/:id', async (req, res) => {
+  const {id} = req.params;
+
+  const book = await Book.getBookById(id);
+
+  if (!book) return res.status(404).json({message: "Not Found"});
+
+  res.status(200).json(book);
+  return
+})
 
 const PORT = process.env.PORT || 3000;
 

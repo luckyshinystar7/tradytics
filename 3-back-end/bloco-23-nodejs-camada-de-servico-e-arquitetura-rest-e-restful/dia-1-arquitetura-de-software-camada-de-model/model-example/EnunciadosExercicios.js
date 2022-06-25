@@ -7,4 +7,8 @@ Depois de criar a tabela Books no banco de dados model_example, faça as seguint
 1.2 - Crie uma rota /books para trazer a lista de todos os livros;
 1.3 - Crie um método getByAuthorId no modelo Book, para retornar apenas livros associados com um determinado author_id. Altere o middleware da rota books criado no passo  para receber uma query string com a chave author_id, e retornar apenas os livros associados.
 
+Ex 02
+
+2.1 - Crie uma rota /books/:id e retorne o livro de acordo com o id passado por parâmetro. Se não existir, retorne um json no seguinte formato { message: 'Not found' }.
+
 */
