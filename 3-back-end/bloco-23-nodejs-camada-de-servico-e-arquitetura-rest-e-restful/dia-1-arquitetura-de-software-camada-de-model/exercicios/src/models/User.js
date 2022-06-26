@@ -7,14 +7,61 @@ const x = {
   password: 'd496d5ea2442',
 };
 
-const validateFields = async ({firstName, lastName, email, password}) => {
+const validateFirstName = (firstName) => {
+  if (!firstName) {
+    return {
+      error: true,
+      message: 'O campo firstName é obrigatório',
+    };
+  }
+  return { error: false };
+};
+
+const validateLastName = (lastName) => {
+  if (!lastName) {
+    return {
+      error: true,
+      message: 'O campo lastName é obrigatório',
+    };
+  }
+  return { error: false };
+};
+
+const validateEmail = (email) => {
+  if (!email) {
+    return {
+      error: true,
+      message: 'O campo "email" é obrigatório e deve possuir o seguinte formato: "email@email.com',
+    };
+  }
+  return { error: false };
+};
+
+const validatePassword = (password) => {
+  if (typeof password !== 'string' || password.length < 6) {
+    return {
+      error: true,
+      message: 'O campo "password" deve ter pelo menos 6 caracteres',
+    };
+  }
+  return { error: false };
+};
+
+const validate = async ({ firstName, lastName, email, password }) => {
   // fazer validações (retornar um objeto com 2 chaves
   // {
   //   "error": true,
   //   "message": "O campo 'password' deve ter pelo menos 6 caracteres"
   // })
+  if (validateFirstName(firstName).error) return validateFirstName(firstName);  
+
+  if (validateLastName(lastName).error) return validateLastName(lastName);
+
+  if (validateEmail(email).error) return validateEmail(email);
+
+  if (validatePassword(password).error) return validatePassword(password);  
 };
 
 module.exports = {
-  validateFields,
+  validate,
 };
