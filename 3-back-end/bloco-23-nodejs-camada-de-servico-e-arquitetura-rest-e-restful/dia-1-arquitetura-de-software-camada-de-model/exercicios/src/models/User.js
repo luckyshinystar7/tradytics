@@ -70,7 +70,14 @@ async function insert({ firstName, lastName, email, password }) {
   return { id: result.id, firstName, lastName, email };
 }
 
+const get = async () => {
+  const query = 'SELECT * FROM users_crud.users;';
+  const [result] = await connection.query(query);
+  return result;
+};
+
 module.exports = {
   validate,
   insert,
+  get,
 };

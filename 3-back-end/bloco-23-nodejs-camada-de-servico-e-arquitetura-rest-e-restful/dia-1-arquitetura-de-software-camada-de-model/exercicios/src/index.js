@@ -18,6 +18,15 @@ app.post('/user', async (req, res) => {
   }
 });
 
+app.get('/user', async (_req, res) => {
+  try {
+    const result = await User.get();
+    res.status(200).json(result);
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
+
 app.listen(3000, () => {
   console.log('Rodando na porta 3000');
 });
