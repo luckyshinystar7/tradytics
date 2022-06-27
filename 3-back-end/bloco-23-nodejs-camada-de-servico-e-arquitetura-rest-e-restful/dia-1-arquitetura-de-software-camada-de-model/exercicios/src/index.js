@@ -5,8 +5,16 @@ const app = express();
 app.use(express.json());
 
 app.post('/user', async (req, res) => {
-  if (!User.validateFields(req.body)) {
-    res.status(400).json({ error: true, message: 'Preencha todos os campos' });
+  try {
+    const validation = await User.validate(req.body);
+    if (validation.error) {
+      res.status(400).json(validation);
+      return;
+    }
+    const insert = await User.insert(req.body);
+    return res.status(201).json(insert);
+  } catch (error) {
+    return res.status(500).json(error.message);
   }
 });
 

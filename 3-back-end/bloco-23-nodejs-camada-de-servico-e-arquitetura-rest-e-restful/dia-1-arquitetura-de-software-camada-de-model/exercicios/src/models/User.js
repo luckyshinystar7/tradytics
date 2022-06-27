@@ -1,12 +1,5 @@
 const connection = require('./connection');
 
-const x = {
-  firstName: 'Calebe',
-  lastName: 'Junior',
-  email: 'calebe.junior@gmail.com',
-  password: 'd496d5ea2442',
-};
-
 const validateFirstName = (firstName) => {
   if (!firstName) {
     return {
@@ -53,15 +46,31 @@ const validate = async ({ firstName, lastName, email, password }) => {
   //   "error": true,
   //   "message": "O campo 'password' deve ter pelo menos 6 caracteres"
   // })
-  if (validateFirstName(firstName).error) return validateFirstName(firstName);  
+  if (validateFirstName(firstName).error) return validateFirstName(firstName);
 
   if (validateLastName(lastName).error) return validateLastName(lastName);
 
   if (validateEmail(email).error) return validateEmail(email);
 
-  if (validatePassword(password).error) return validatePassword(password);  
+  if (validatePassword(password).error) return validatePassword(password);
+
+  return {
+    error: false,
+    message: null,
+  };
 };
+
+async function insert({ firstName, lastName, email, password }) {
+  const insertQuery = 'INSERT INTO users_crud.users '
+    + '(`first_name`, `last_name`, `email`, `password`) VALUES (?,?,?,?);';
+  await connection.query(insertQuery, [firstName, lastName, email, password]);
+
+  const getQuery = 'SELECT `id` FROM users_crud.users order by id desc limit 1;';
+  const [[result]] = await connection.query(getQuery);
+  return { id: result.id, firstName, lastName, email };
+}
 
 module.exports = {
   validate,
+  insert,
 };
