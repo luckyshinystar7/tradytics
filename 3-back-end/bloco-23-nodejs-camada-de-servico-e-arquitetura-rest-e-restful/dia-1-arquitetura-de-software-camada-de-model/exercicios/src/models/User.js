@@ -76,8 +76,15 @@ const get = async () => {
   return result;
 };
 
+const getById = async (id) => {
+  const query = 'SELECT * FROM users_crud.users WHERE id = ?';
+  const [[result]] = await connection.query(query, [id]);
+  return result;
+};
+
 module.exports = {
   validate,
   insert,
   get,
+  getById,
 };

@@ -27,6 +27,18 @@ app.get('/user', async (_req, res) => {
   }
 });
 
+app.get('/user/:id', async (req, res) => {
+  try {
+    const id = Number(req.params.id);
+    const result = await User.getById(id);
+    if (!result || result === []) return res.status(404).json({ message: 'Not Found' });
+    res.status(200).json(result);
+    return;
+  } catch (error) {
+    res.status(500).json(error.message);
+  }
+});
+
 app.listen(3000, () => {
   console.log('Rodando na porta 3000');
 });
