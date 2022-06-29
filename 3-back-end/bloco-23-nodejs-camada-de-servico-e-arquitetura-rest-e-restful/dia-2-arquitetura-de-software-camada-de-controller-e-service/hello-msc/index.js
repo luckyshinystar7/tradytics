@@ -1,4 +1,6 @@
 // index.js
+require('dotenv').config();
+
 const express = require('express');
 
 const rescue = require('express-rescue');
@@ -19,7 +21,7 @@ app.post('/authors', rescue(Author.createAuthor));
 
 app.use(errorMiddleware);
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 // console.log(process.env) // localhost
 
