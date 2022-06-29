@@ -147,7 +147,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 19-3: _Orquestrando Containers com Docker Compose_
 - [x] 19-4: _[Projeto - Docker Todo-List](https://github.com/tryber/sd-019-b-project-docker-todo-list/pull/133)_
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+<!-- ##### Bloco 20: Introdução - Bancos de dados relacionais -->
+##### Bloco 20: Introdução a SQL
 
 - [x] 20-1: _Banco de dados SQL_
 - [x] 20-2: _Encontrando dados em um banco de dados_
@@ -155,7 +156,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-4: _Manipulando tabelas_
 - [x] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-019-b-mysql-all-for-one/pull/121)_
 
-##### Bloco 21: Bancos de dados relacionais
+<!-- ##### Bloco 21: Bancos de dados relacionais -->
+##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [x] 21-1: _Funções mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs e UNIONs_
@@ -179,6 +181,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22.4: _Express - HTTP com Node.js_
 - [x] 22.5: _Express - Middlewares_
 - [x] 22.6: _[Projeto - Talker Manager](https://github.com/tryber/sd-019-b-project-talker-manager/pull/113)_
+
+##### Bloco 23: Introdução - NoSQL
+
+- [ ] 23-1: _MongoDB - Introdução_
+- [ ] 23-2: _Filter Operators_
+- [ ] 23-3: _[Projeto - Data Flights]()_
 
 ##### Bloco 23: Introdução - NoSQL
 
