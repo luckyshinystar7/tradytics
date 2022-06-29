@@ -2,6 +2,8 @@
 
 const express = require('express');
 
+const rescue = require('express-rescue');
+
 const Author = require('./controllers/Authors');
 
 const app = express();
