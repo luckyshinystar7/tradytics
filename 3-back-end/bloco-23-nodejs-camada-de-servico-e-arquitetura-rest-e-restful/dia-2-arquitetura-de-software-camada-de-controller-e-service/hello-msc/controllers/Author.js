@@ -1,6 +1,6 @@
 // controllers/Authors.js
 
-const Author = require('../services/Authors');
+const Author = require('../services/Author');
 const Joi = require('joi');
 
 const getAll = async (_req, res) => {
