@@ -10,11 +10,11 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/authors', Author.getAll);
+app.get('/authors', rescue(Author.getAll));
 
-app.get('/authors/:id', Author.findById);
+app.get('/authors/:id', rescue(Author.findById));
 
-app.post('/authors', Author.createAuthor);
+app.post('/authors', rescue(Author.createAuthor));
 
 const PORT = 3000;
 
