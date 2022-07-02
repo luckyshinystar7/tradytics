@@ -211,11 +211,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 24-4: _Testando APIs com Testes de Integração_
 - [ ] 24-5: _[Projeto - API de Blogs]()_ 
 
-##### Bloco 25: Aggregation Framework
+<!-- ##### Bloco 25: Aggregation Framework
 
 - [ ] 25-1: _Aggregation Framework - Part 1_
 - [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [ ] 25-3: _[Projeto - Aggregations]()_ -->
+
+##### Bloco 25: Deployment
+
+- [ ] 25-1: _Infraestrutura - Deploy com Heroku_
+- [ ] 25-2: _Deploy Docker & Heroku_
+- [ ] 25-3: _[Projeto - Stranger Things]()_
 
 ##### Bloco 26: Intro - NodeJS
 
