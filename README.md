@@ -196,12 +196,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 23-4: _Arquitetura de Software Testando as Camadas- _
 - [ ] 23-5: _[Projeto - Store Manager]()_
 
-##### Bloco 24: Updates
+<!-- ##### Bloco 24: Updates
 
 - [ ] 24-1: _Updates Simples_
 - [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
 - [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [ ] 24-4: _[Projeto - Commerce]()_ -->
+
+##### Bloco 24: Node.js: ORM e Autenticação
+
+- [ ] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT - JSON Web Token_
+- [ ] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-5: _[Projeto - API de Blogs]()_ 
 
 ##### Bloco 25: Aggregation Framework
 
