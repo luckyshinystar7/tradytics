@@ -1,5 +1,6 @@
 const express = require('express');
 const User = require('../models/User');
+const userServices = require('../services/User');
 
 const app = express();
 app.use(express.json());
@@ -20,7 +21,7 @@ const post = async (req, res) => {
 
 const get = async (_req, res) => {
   try {
-    const result = await User.get();
+    const result = await userServices.getAll();
     res.status(200).json(result);
   } catch (error) {
     res.status(500).json(error.message);

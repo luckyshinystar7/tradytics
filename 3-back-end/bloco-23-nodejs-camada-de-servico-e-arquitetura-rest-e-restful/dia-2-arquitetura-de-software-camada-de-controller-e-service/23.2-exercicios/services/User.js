@@ -60,6 +60,9 @@ const validate = ({ firstName, lastName, email, password }) => {
   };
 };
 
+const getAll = async () => userModel.get();
+
 module.exports = {
   validate,
+  getAll,
 };
