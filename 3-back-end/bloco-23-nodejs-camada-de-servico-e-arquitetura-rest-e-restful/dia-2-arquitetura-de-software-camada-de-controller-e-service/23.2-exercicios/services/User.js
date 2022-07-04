@@ -60,12 +60,18 @@ const validate = ({ firstName, lastName, email, password }) => {
   };
 };
 
-const getAll = async () => userModel.get();
+const getAll = () => userModel.get();
 
-const getById = async (id) => userModel.getById(id);
+const getById = (id) => userModel.getById(id);
+
+const edit = (id, reqBody) => {
+  if (!getById(id)) return null;
+  return userModel.edit(id, reqBody);
+};
 
 module.exports = {
   validate,
   getAll,
   getById,
+  edit,
 };

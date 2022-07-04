@@ -19,13 +19,11 @@ const get = async () => {
 const getById = async (id) => {
   const query = 'SELECT * FROM users_crud.users WHERE id = ?';
   const [[result]] = await connection.query(query, [id]);
+  if (!result || result === []) return null;
   return result;
 };
 
 const edit = async (id, { firstName, lastName, email, password }) => {
-  const querySelect = 'SELECT * FROM users_crud.users WHERE id = ?';
-  const [[result]] = await connection.query(querySelect, [id]);
-  if (!result || result === []) return { message: 'User not Found' };
   const queryUpdate = 'UPDATE users_crud.users SET `first_name` = ?,'
     + ' `last_name` = ?, `email` = ?, `password` = ? WHERE id = ?;';
   await connection.query(queryUpdate, [firstName, lastName, email, password, id]);

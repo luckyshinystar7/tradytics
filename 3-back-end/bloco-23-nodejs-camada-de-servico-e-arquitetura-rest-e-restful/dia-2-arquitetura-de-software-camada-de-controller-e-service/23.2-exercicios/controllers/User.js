@@ -42,13 +42,17 @@ const getById = async (req, res) => {
 
 const put = async (req, res) => {
   try {
-    const validation = await User.validate(req.body);
+    const id = Number(req.params.id);
+    const result = await userServices.getById(id);
+    if (!result || result === []) return res.status(404).json({ message: 'User Not Found' });
+
+    const validation = await userServices.validate(req.body);
     if (validation.error) {
       res.status(400).json(validation);
       return;
     }
-    const id = Number(req.params.id);
-    const edit = await User.edit(id, req.body);
+
+    const edit = await userServices.edit(id, req.body);
     return res.status(200).json(edit);
   } catch (error) {
     return res.status(500).json(error.message);
