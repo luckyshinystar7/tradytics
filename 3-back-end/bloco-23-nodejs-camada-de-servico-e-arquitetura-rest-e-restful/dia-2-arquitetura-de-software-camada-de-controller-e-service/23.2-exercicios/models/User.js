@@ -6,8 +6,8 @@ async function insert({ firstName, lastName, email, password }) {
   await connection.query(insertQuery, [firstName, lastName, email, password]);
 
   const getQuery = 'SELECT `id` FROM users_crud.users order by id desc limit 1;';
-  const [[result]] = await connection.query(getQuery);
-  return { id: result.id, firstName, lastName, email };
+  const [[lastRow]] = await connection.query(getQuery);
+  return { id: lastRow.id, firstName, lastName, email };
 }
 
 const get = async () => {

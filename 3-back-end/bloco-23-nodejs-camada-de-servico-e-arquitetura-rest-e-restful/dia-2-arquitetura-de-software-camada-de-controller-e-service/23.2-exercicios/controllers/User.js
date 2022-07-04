@@ -1,5 +1,4 @@
 const express = require('express');
-const User = require('../models/User');
 const userServices = require('../services/User');
 
 const app = express();
@@ -7,12 +6,12 @@ app.use(express.json());
 
 const post = async (req, res) => {
   try {
-    const validation = await User.validate(req.body);
+    const validation = await userServices.validate(req.body);
     if (validation.error) {
       res.status(400).json(validation);
       return;
     }
-    const insert = await User.insert(req.body);
+    const insert = await userServices.create(req.body);
     return res.status(201).json(insert);
   } catch (error) {
     return res.status(500).json(error.message);

@@ -60,6 +60,8 @@ const validate = ({ firstName, lastName, email, password }) => {
   };
 };
 
+const create = (reqBody) => userModel.insert(reqBody);
+
 const getAll = () => userModel.get();
 
 const getById = (id) => userModel.getById(id);
@@ -74,4 +76,5 @@ module.exports = {
   getAll,
   getById,
   edit,
+  create,
 };
