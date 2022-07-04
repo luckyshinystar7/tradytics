@@ -62,7 +62,10 @@ const validate = ({ firstName, lastName, email, password }) => {
 
 const getAll = async () => userModel.get();
 
+const getById = async (id) => userModel.getById(id);
+
 module.exports = {
   validate,
   getAll,
+  getById,
 };
