@@ -12,6 +12,8 @@ app.use(express.json());
 
 app.get('/ping', rescue(cepControllers.getAll));
 
+app.get('/cep/:cep', rescue(cepControllers.getCep));
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
