@@ -1,9 +1,9 @@
-const cepServices = require('../services/cepServices')
+// const cepServices = require('../services/cepServices')
 
-const getAll = async (_req, res) => {
-  const ceps = await cepServices.getAll();
+const getAll = (_req, res) => {
+  // const ceps = await cepServices.getAll();
 
-  return res.status(200).json(ceps);
+  res.status(200).json({ "message": "pong!" });
 };
 
 module.exports = {

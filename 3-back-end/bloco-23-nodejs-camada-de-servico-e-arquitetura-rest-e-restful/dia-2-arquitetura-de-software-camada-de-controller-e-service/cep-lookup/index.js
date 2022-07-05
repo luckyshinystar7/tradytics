@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/ping', () => rescue(cepControllers.getAll));
+app.get('/ping', rescue(cepControllers.getAll));
 
 const PORT = process.env.PORT;
 
