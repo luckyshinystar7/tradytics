@@ -9,6 +9,6 @@ const getAll = async () => {
   return ceps;
 };
 
-module.exports({
+module.exports = {
   getAll,
-});
+};
