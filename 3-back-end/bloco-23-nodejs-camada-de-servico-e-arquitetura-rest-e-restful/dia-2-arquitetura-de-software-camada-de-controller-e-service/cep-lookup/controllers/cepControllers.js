@@ -10,10 +10,11 @@ const getAll = (_req, res) => {
 
 };
 
-const getCep = (req, res) => {
+const getByCep = async (req, res) => {
   try {
-    const cep = req.body.params;
-    result = cepServices.getCep(cep);
+    const { cep } = req.params;
+    result = await cepServices.getByCep(cep);
+    console.log(result.error.code);
     res.status(200).json(result);
   } catch (error) {
     res.status(500).json({ error: error.message });
@@ -22,5 +23,5 @@ const getCep = (req, res) => {
 
 module.exports = {
   getAll,
-  getCep,
+  getByCep,
 };

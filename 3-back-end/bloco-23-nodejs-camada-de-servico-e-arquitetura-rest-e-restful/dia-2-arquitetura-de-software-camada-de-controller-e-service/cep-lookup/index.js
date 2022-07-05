@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.get('/ping', rescue(cepControllers.getAll));
 
-app.get('/cep/:cep', rescue(cepControllers.getCep));
+app.get('/cep/:cep', rescue(cepControllers.getByCep));
 
 const PORT = process.env.PORT;
 
