@@ -17,11 +17,12 @@ const add = async (req, res) => {
   res.send(newProduct);
 }
 
-router.post('/delete-product/:id', async (req, res) => {
+
+const deleteById = async (req, res) => {
   const products = await ProductModel.exclude(req.params.id);
 
   res.send(products);
-});
+};
 
 router.post('/update-product/:id', async (req, res) => {
   const { name, brand } = req.body;
@@ -34,4 +35,5 @@ router.post('/update-product/:id', async (req, res) => {
 module.exports = {
   getAll,
   add,
+  deleteById,
 }
