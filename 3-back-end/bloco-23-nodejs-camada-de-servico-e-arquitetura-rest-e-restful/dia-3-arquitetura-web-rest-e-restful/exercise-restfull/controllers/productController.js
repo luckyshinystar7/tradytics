@@ -1,9 +1,7 @@
 const express = require('express');
 const ProductModel = require('../models/productModel');
 
-const router = express.Router();
-
-const getAll = async(_req, res) => {
+const getAll = async (_req, res) => {
   const products = await ProductModel.getAll();
 
   res.send(products);
@@ -37,4 +35,4 @@ module.exports = {
   add,
   deleteById,
   update,
-}
+};
