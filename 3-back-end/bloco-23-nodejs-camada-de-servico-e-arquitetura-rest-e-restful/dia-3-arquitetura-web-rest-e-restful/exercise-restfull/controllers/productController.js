@@ -9,13 +9,13 @@ const getAll = async(_req, res) => {
   res.send(products);
 };
 
-router.post('/add-product', async (req, res) => {
+const add = async (req, res) => {
   const { name, brand } = req.body;
 
   const newProduct = await ProductModel.add(name, brand);
 
   res.send(newProduct);
-});
+}
 
 router.post('/delete-product/:id', async (req, res) => {
   const products = await ProductModel.exclude(req.params.id);
@@ -33,4 +33,5 @@ router.post('/update-product/:id', async (req, res) => {
 
 module.exports = {
   getAll,
+  add,
 }
