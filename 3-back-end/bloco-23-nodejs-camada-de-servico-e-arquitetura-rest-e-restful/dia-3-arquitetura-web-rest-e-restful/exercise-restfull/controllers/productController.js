@@ -3,17 +3,11 @@ const ProductModel = require('../models/productModel');
 
 const router = express.Router();
 
-router.get('/list-products', async (req, res) => {
+const getAll = async(_req, res) => {
   const products = await ProductModel.getAll();
 
   res.send(products);
-});
-
-router.get('/get-by-id/:id', async (req, res) => {
-  const product = await ProductModel.getById(req.params.id);
-
-  res.send(product);
-});
+};
 
 router.post('/add-product', async (req, res) => {
   const { name, brand } = req.body;
@@ -37,4 +31,6 @@ router.post('/update-product/:id', async (req, res) => {
   res.send(products);
 });
 
-module.exports = router;
+module.exports = {
+  getAll,
+}
