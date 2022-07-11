@@ -1,5 +1,3 @@
-const express = require('express');
-const ProductModel = require('../models/productModel');
 const productService = require('../services/productService')
 
 const getAll = async (_req, res) => {
@@ -24,7 +22,7 @@ const add = async (req, res) => {
 }
 
 const deleteById = async (req, res) => {
-  const products = await ProductModel.exclude(req.params.id);
+  const products = await productService.exclude(req.params.id);
 
   res.send(products);
 };

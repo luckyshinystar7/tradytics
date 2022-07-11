@@ -12,7 +12,7 @@ const getAll = async () => {
 const getById = async (id) => {
   try {
     const result = await productModel.getById(id);
-    if (!result) return null;
+    if (!result.length) return null;
     return result;
   } catch (err) {
     console.error(err);
@@ -32,8 +32,20 @@ const add = async (name, brand) => {
 
 const update = async (id, name, brand) => {
   try {
-    const result = await productModel.update(id, name, brand);    
+    const result = await productModel.update(id, name, brand);
     return result;
+  } catch (err) {
+    console.error(err);
+    return process.exit(1);
+  }
+};
+
+const exclude = async (id) => {
+  try {
+    const product = await getById(id);
+    if (!product) return { message: "produto não encontrado" };
+    await productModel.exclude(id);
+    return { message: `Id ${id} removido com sucesso` };
   } catch (err) {
     console.error(err);
     return process.exit(1);
@@ -45,4 +57,5 @@ module.exports = {
   getById,
   add,
   update,
+  exclude,
 };
