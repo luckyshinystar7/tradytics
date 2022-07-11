@@ -16,7 +16,6 @@ const add = async (req, res) => {
   res.send(newProduct);
 }
 
-
 const deleteById = async (req, res) => {
   const products = await ProductModel.exclude(req.params.id);
 
