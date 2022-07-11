@@ -1,37 +1,43 @@
-const express = require('express');
-const ProductModel = require('../models/productModel');
+const productService = require('../services/productService')
 
 const getAll = async (_req, res) => {
-  const products = await ProductModel.getAll();
+  const products = await productService.getAll();
 
-  res.send(products);
+  res.status(200).json(products);
+};
+
+const getById = async (req, res) => {
+  const id = Number(req.params.id);
+  const product = await productService.getById(id);
+
+  res.status(200).json(product);
 };
 
 const add = async (req, res) => {
   const { name, brand } = req.body;
 
-  const newProduct = await ProductModel.add(name, brand);
+  const newProduct = await productService.add(name, brand);
 
-  res.send(newProduct);
+  res.status(201).json(newProduct);
 }
 
-
 const deleteById = async (req, res) => {
-  const products = await ProductModel.exclude(req.params.id);
+  const products = await productService.exclude(req.params.id);
 
-  res.send(products);
+  res.status(204).json(products);
 };
 
 const update = async (req, res) => {
   const { name, brand } = req.body;
 
-  const products = await ProductModel.update(req.params.id, name, brand);
+  const products = await productService.update(req.params.id, name, brand);
 
-  res.send(products);
+  res.status(200).json(products);
 };
 
 module.exports = {
   getAll,
+  getById,
   add,
   deleteById,
   update,
