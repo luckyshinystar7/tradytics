@@ -7,10 +7,10 @@ productRouter.get('/list', ProductController.getAll);
 
 productRouter.get('/:id', ProductController.getById);
 
-productRouter.post('/add', ProductController.add);
+productRouter.post('/', ProductController.add);
 
-productRouter.delete('/delete/:id', ProductController.deleteById);
+productRouter.delete('/:id', ProductController.deleteById);
 
-productRouter.put('/update/:id', ProductController.update);
+productRouter.put('/:id', ProductController.update);
 
 module.exports = productRouter;
