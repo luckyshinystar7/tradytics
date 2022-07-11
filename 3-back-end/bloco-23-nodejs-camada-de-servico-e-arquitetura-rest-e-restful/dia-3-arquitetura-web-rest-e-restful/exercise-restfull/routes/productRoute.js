@@ -5,6 +5,8 @@ productRouter = Router();
 
 productRouter.get('/list', ProductController.getAll);
 
+productRouter.get('/:id', ProductController.getAll);
+
 productRouter.post('/add', ProductController.getAll);
 
 productRouter.delete('/delete/:id', ProductController.deleteById);
