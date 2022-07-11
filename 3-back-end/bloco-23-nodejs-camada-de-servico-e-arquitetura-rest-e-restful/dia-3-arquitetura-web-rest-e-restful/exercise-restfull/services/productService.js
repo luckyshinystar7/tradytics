@@ -30,8 +30,19 @@ const add = async (name, brand) => {
   }
 };
 
+const update = async (id, name, brand) => {
+  try {
+    const result = await productModel.update(id, name, brand);    
+    return result;
+  } catch (err) {
+    console.error(err);
+    return process.exit(1);
+  }
+};
+
 module.exports = {
   getAll,
   getById,
   add,
+  update,
 };

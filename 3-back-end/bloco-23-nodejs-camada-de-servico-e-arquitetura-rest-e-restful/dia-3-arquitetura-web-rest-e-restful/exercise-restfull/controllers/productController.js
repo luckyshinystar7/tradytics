@@ -32,7 +32,7 @@ const deleteById = async (req, res) => {
 const update = async (req, res) => {
   const { name, brand } = req.body;
 
-  const products = await ProductModel.update(req.params.id, name, brand);
+  const products = await productService.update(req.params.id, name, brand);
 
   res.send(products);
 };
