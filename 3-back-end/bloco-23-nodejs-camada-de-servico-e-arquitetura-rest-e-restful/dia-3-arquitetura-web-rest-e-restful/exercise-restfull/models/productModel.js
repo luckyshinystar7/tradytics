@@ -17,14 +17,19 @@ const add = async (name, brand) => {
 };
 
 const getAll = async () => {
-  try {
-    const [rows] = await connection.query('SELECT * FROM products');
-    return rows;
-  } catch (err) {
-    console.error(err);
-    return process.exit(1);
-  }
+  const [rows] = await connection.query('SELECT * FROM products');
+  return rows;
 };
+
+// const getAll = async () => {
+//   try {
+//     const [rows] = await connection.query('SELECT * FROM products');
+//     return rows;
+//   } catch (err) {
+//     console.error(err);
+//     return process.exit(1);
+//   }
+// };
 
 const getById = async (id) => {
   try {
@@ -41,7 +46,7 @@ const update = async (id, name, brand) => {
   try {
     const [result] = await connection.query(
       'UPDATE products SET name = ?, brand = ? WHERE id = ?',
-       [name, brand, id],
+      [name, brand, id],
     );
     return result;
   } catch (err) {

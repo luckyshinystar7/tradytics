@@ -1,8 +1,9 @@
 const express = require('express');
 const ProductModel = require('../models/productModel');
+const productService = require('../services/productServices')
 
 const getAll = async (_req, res) => {
-  const products = await ProductModel.getAll();
+  const products = await productService.getAll();
 
   res.send(products);
 };
