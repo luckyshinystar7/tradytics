@@ -1,19 +1,11 @@
 const connection = require('./connection');
 
 const add = async (name, brand) => {
-  try {
-    const [
-      result,
-    ] = await connection.query(
-      'INSERT INTO products (name, brand) VALUES (?, ?);',
-      [name, brand],
-    );
-
-    return { id: result.insertId, name, brand };
-  } catch (err) {
-    console.error(err);
-    return process.exit(1);
-  }
+  const [result] = await connection.query(
+    'INSERT INTO products (name, brand) VALUES (?, ?);',
+    [name, brand]
+  );
+  return { id: result.insertId, name, brand };
 };
 
 const getAll = async () => {
@@ -22,8 +14,8 @@ const getAll = async () => {
 };
 
 const getById = async (id) => {
-    const [result] = await connection.query('SELECT * FROM products WHERE id = ?', [id]);
-    return result;
+  const [result] = await connection.query('SELECT * FROM products WHERE id = ?', [id]);
+  return result;
 };
 
 const update = async (id, name, brand) => {

@@ -20,7 +20,18 @@ const getById = async (id) => {
   }
 };
 
+const add = async (name, brand) => {
+  try {
+    const result = await productModel.add(name, brand);
+    return { id: result.id, name, brand };
+  } catch (err) {
+    console.error(err);
+    return process.exit(1);
+  }
+};
+
 module.exports = {
   getAll,
   getById,
+  add,
 };
