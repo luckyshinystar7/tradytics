@@ -19,27 +19,17 @@ const getById = async (id) => {
 };
 
 const update = async (id, name, brand) => {
-  try {
-    const [result] = await connection.query(
-      'UPDATE products SET name = ?, brand = ? WHERE id = ?',
-      [name, brand, id],
-    );
-    return result;
-  } catch (err) {
-    console.error(err);
-    return process.exit(1);
-  }
+  const [result] = await connection.query(
+    'UPDATE products SET name = ?, brand = ? WHERE id = ?',
+    [name, brand, id],
+  );
+  return result;
 };
 
 const exclude = async (id) => {
-  try {
-    const product = await getById(id);
-    if (!product) return {};
-    await connection.query('DELETE FROM products WHERE id = ?', [id]);
-  } catch (err) {
-    console.error(err);
-    return process.exit(1);
-  }
+  const product = await getById(id);
+  if (!product) return {};
+  await connection.query('DELETE FROM products WHERE id = ?', [id]);
 };
 
 module.exports = { add, getAll, getById, update, exclude };
