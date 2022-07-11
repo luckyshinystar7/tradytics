@@ -23,7 +23,7 @@ const getAll = async () => {
 
 const getById = async (id) => {
     const [result] = await connection.query('SELECT * FROM products WHERE id = ?', [id]);
-    return result[0];
+    return result;
 };
 
 const update = async (id, name, brand) => {

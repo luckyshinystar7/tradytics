@@ -5,9 +5,9 @@ productRouter = Router();
 
 productRouter.get('/list', ProductController.getAll);
 
-productRouter.get('/:id', ProductController.getAll);
+productRouter.get('/:id', ProductController.getById);
 
-productRouter.post('/add', ProductController.getAll);
+productRouter.post('/add', ProductController.add);
 
 productRouter.delete('/delete/:id', ProductController.deleteById);
 
