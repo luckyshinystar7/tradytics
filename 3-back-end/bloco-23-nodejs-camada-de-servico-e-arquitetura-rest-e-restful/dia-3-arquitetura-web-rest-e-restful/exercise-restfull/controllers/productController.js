@@ -1,11 +1,18 @@
 const express = require('express');
 const ProductModel = require('../models/productModel');
-const productService = require('../services/productServices')
+const productService = require('../services/productService')
 
 const getAll = async (_req, res) => {
   const products = await productService.getAll();
 
   res.send(products);
+};
+
+const getById = async (req, res) => {
+  const id = Number(req.params.id);
+  const product = await productService.getById(id);
+
+  res.send(product);
 };
 
 const add = async (req, res) => {
@@ -32,6 +39,7 @@ const update = async (req, res) => {
 
 module.exports = {
   getAll,
+  getById,
   add,
   deleteById,
   update,
