@@ -194,7 +194,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
 - [x] 23-3: _Arquitetura de Software Rest e Restfull- _
 - [ ] 23-4: _Arquitetura de Software Testando as Camadas- _
-- [x] 23-5: _[Projeto - Store Manager]()_
+- [x] 23-5: _[Projeto - Store Manager](https://github.com/tryber/sd-019-b-store-manager/pull/150)_
 
 <!-- ##### Bloco 24: Updates
 
