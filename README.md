@@ -230,12 +230,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 26-3: _NodeJS - Arquitetura_
 - [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_ -->
 
-##### Bloco 26: Intro - NodeJS
+##### Bloco 26: TypeScript
 
-- [ ] 26-1: _NodeJS - Introdução_
-- [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
-- [ ] 26-4: _[Projeto - A CLI of Ice and Fire]()_
+- [ ] 26-1: _TypeScript - Introdução_
+- [ ] 26-2: _TypeScript - Tipagem Estática e Generics_
+- [ ] 26-3: _Express com TypeScript_
+- [ ] 26-4: _[Projeto - Trybe Smith]()_
 
 ##### Bloco 27: NodeJS
 
