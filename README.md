@@ -246,8 +246,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 27: Programação Orientada a Objetos (POO) e Solid
 
 - [ ] 27-1: _Introdução à Orientação a Objetos_
-- [ ] 27-2: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 27-3: _[Projeto - Cookmaster]()_
+- [ ] 27-2: _Herança e Interfaces_
+- [ ] 27-3: _Polimofrismo_
+- [ ] 27-4: _SOLID - Introdução e Princípios S, O e D_
+- [ ] 27-5: _SOLID - Princípios L e I_
+- [ ] 27-6: _[Projeto - Trybers and Dragons]()_
 
 ##### Bloco 28: NodeJS
 
