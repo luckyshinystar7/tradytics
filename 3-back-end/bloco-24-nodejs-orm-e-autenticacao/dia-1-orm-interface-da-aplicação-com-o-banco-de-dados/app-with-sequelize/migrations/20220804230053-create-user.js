@@ -11,6 +11,9 @@ module.exports = {
       fullName: {
         type: Sequelize.STRING
       },
+      email: {
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
@@ -21,7 +24,7 @@ module.exports = {
       }
     });
   },
-  async down(queryInterface, Sequelize) {
+  async down(queryInterface, _Sequelize) {
     await queryInterface.dropTable('Users');
   }
 };
