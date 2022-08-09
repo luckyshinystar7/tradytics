@@ -13,7 +13,7 @@ module.exports = {
     });
   },
 
-  async down (queryInterface, _Sequelize) {
+  async down (queryInterface, Sequelize) {
     /**
      * Add reverting commands here.
      *
