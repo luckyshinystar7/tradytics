@@ -1,8 +1,8 @@
 const express = require('express');
 const bookService = require('../services/bookService');
-const router = express.router();
+const bookRouter = express.Router();
 
-router.getAll('/', async (_req, res) => {
+bookRouter.get('/', async (_req, res) => {
   try {
     const books = await bookService.getAll();
     return res.status(200).json(books);
@@ -11,4 +11,4 @@ router.getAll('/', async (_req, res) => {
   }
 });
 
-module.exports = router;
+module.exports = bookRouter;
