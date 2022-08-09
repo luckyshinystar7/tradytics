@@ -23,6 +23,17 @@ bookRouter.put('/:id', async (req, res) => {
   }
 });
 
+bookRouter.delete('/:id', async (req, res) => {
+  try {
+    const {id} = req.params;
+    const removedBook = await bookService.remove(id);
+    if (removedBook) return res.status(204).json({message: `Book ${id} deleted!`});
+    return res.status(500).json({message:'Algo deu errado!'})
+  } catch (error) {
+    res.status(500).json({ message: error.message })
+  }
+});
+
 bookRouter.post('/', async (req, res) => {
   const newBook = await bookService.create(req.body);
   return res.status(201).json(newBook);
