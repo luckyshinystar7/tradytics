@@ -24,7 +24,7 @@ app.get('/employees', async (_req, res) => {
   };
 });
 
-// rota contendo carregamento Eager Loading, observar include e exclude da linha 26 e 27
+// rota contendo carregamento Eager Loading, observar include e exclude da linha 33 e 34
 // app.get('/employees/:id', async (req, res) => {
 //   try {
 //     const { id } = req.params;
