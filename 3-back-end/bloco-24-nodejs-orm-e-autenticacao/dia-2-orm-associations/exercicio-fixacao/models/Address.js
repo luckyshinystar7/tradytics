@@ -8,11 +8,11 @@ module.exports = (sequelize, DataTypes) => {
     employeeId: { type: DataTypes.INTEGER, foreignKey: true },
     // A declaração da Foreign Key é opcional no model
   },
-  {
-    timestamps: false,
-    tableName: 'Addresses',
-    underscored: true,
-  });
+    {
+      timestamps: false,
+      tableName: 'Addresses',
+      underscored: true,
+    });
 
   Address.associate = (models) => {
     Address.belongsTo(models.Employee,
