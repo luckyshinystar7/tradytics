@@ -3,6 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
+const verifyJWT = require('./middlewares/auth');
 
 const secret = 'apenasParaAprendizado';
 
@@ -45,10 +46,19 @@ app.post('/login', validateUser, (req, res) => {
     return res.json({ token });
   }
   if (username === 'admin' && password === 's3nh4S3gur4???') {
-    const token = jwt.sign({ username, admin: true }, secret, { expiresIn: '1h' });
+    const token = jwt.sign({ data: { username, admin: true } }, secret, { expiresIn: '1h' });
     return res.json({ token });
   }
   res.status(401).end();
+});
+
+app.get('/users/me', verifyJWT, (req, res) => {
+  try {
+    const { username, admin } = req.body;
+    return res.status(200).json({ username, admin });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
 });
 
 app.use(middlewares.error);
