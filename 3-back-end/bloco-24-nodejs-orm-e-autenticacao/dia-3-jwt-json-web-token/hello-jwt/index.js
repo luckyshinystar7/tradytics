@@ -2,6 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
+
+const secret = 'apenasParaAprendizado';
 
 const { PORT } = process.env;
 
@@ -22,6 +25,27 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/ping', controllers.ping);
+
+const validateUser = (req, res, next) => {
+  const { username, password } = req.body;
+  if (!username || username.length < 5) {
+    return res.status(400).json({ message: 'Invalid username' });
+  }
+  if (!password || password.length < 5) {
+    return res.status(400).json({ message: 'Invalid password' });
+  }
+  return next();
+};
+
+app.post('/login', validateUser, (req, res) => {
+  const { username, password } = req.body;
+
+  if (username === 'admin' && password === '12345') {
+    const token = jwt.sign({ username, admin: false }, secret, { expiresIn: '1h' });
+    return res.json({ token });
+  }
+  res.status(401).end();
+});
 
 app.use(middlewares.error);
 
