@@ -4,6 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const verifyJWT = require('./middlewares/auth');
+const adminVerifier = require('./middlewares/admin');
 
 const secret = 'apenasParaAprendizado';
 
@@ -56,6 +57,14 @@ app.get('/users/me', verifyJWT, (req, res) => {
   try {
     const { username, admin } = req.body;
     return res.status(200).json({ username, admin });
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+});
+
+app.get('/top-secret', adminVerifier, (_req, res) => {
+  try {
+    return res.status(200).json({ secretInfo: 'Peter Parker é o Homem-Arannha' });
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
