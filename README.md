@@ -95,7 +95,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 12: Ciclo de Vida de Componentes e React Router
 
-- ~[] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_~
+<!-- - [] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_ -->
 - [x] 12-1: _Ciclo de vida de componentes em React [Ex01](https://github.com/elthonvilla/exercise-dog-image) [Ex02](https://github.com/elthonvilla/exercises-lifecycle-step-by-step)_
 - [x] 12-2: _React Router [Ex01](https://github.com/elthonvilla/comprehension-exercises-router) [Ex02](https://github.com/elthonvilla/exercise-pokedex-router)_
 - [x] 12-3: _[Projeto - TrybeTunes](https://github.com/tryber/sd-017-project-trybetunes/pull/3)_
@@ -193,8 +193,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 23-1: _Arquitetura de Software - Camada de Model_
 - [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
-- [x] 23-3: _Arquitetura de Software Rest e Restfull- _
-- [x] 23-4: _Arquitetura de Software Testando as Camadas- _
+- [x] 23-3: _Arquitetura de Software Rest e Restfull-
+- [x] 23-4: _Arquitetura de Software Testando as Camadas-
 - [x] 23-5: _[Projeto - Store Manager](https://github.com/elthonvilla/trybe-projects/tree/store-manager)_
 
 <!-- ##### Bloco 24: Updates
