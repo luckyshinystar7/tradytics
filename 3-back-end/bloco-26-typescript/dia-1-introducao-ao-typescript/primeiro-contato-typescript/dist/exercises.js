@@ -1,7 +1,7 @@
 "use strict";
 // ./exercises.ts
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.losangle = exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
+exports.trapeze = exports.lozenge = exports.rectangle = exports.square = exports.triangle = exports.sumArray = exports.add = exports.personAge = exports.greeter = void 0;
 function greeter(name) {
     return `Olá ${name}!`;
 }
@@ -30,8 +30,13 @@ function rectangle(base, height) {
     return base * height;
 }
 exports.rectangle = rectangle;
-// ex01 -
-function losangle(higherDiagonal, lowerDiagonal) {
+// ex01
+function lozenge(higherDiagonal, lowerDiagonal) {
     return (higherDiagonal * lowerDiagonal) / 2;
 }
-exports.losangle = losangle;
+exports.lozenge = lozenge;
+// ex02
+function trapeze(minorBase, majorBase, height) {
+    return ((minorBase + majorBase) * height) / 2;
+}
+exports.trapeze = trapeze;

@@ -29,7 +29,11 @@ export function rectangle(base: number, height: number): number {
 }
 
 // ex01
-
 export function lozenge(higherDiagonal: number, lowerDiagonal: number): number {
   return (higherDiagonal * lowerDiagonal) / 2;
+}
+
+// ex02
+export function trapeze(minorBase: number, majorBase: number, height: number): number {
+  return ((minorBase + majorBase) * height) / 2;
 }

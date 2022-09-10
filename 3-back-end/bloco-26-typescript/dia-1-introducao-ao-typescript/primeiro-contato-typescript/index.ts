@@ -22,3 +22,8 @@ console.log(`Retângulo de base 100cm e altura 200cm: ${Exercise.rectangle(100, 
 console.log(`Losango que tem D = 32cm e d = 18cm: ${Exercise.lozenge(32, 18)}cm²`);
 console.log(`Losango que tem D = 200cm e d = 50cm: ${Exercise.lozenge(200, 50)}cm²`);
 console.log(`Losango que tem D = 75cm e d = 25cm: ${Exercise.lozenge(75, 25)}cm²`);
+
+// ex02
+console.log(`Trapézio que tem B = 100cm, b = 70cm e altura = 50cm: ${Exercise.trapeze(100, 70, 50)}cm²`);
+console.log(`Trapézio que tem B = 75cm, b = 50cm e altura = 35cm: ${Exercise.trapeze(75, 50, 35)}cm²`);
+console.log(`Trapézio que tem B = 150cm, b = 120cm e altura = 80cm: ${Exercise.trapeze(150, 120, 80)}cm²`);
