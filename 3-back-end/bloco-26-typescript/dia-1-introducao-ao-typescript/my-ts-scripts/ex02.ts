@@ -1,6 +1,6 @@
 // Exercício 2: Crie uma enum que represente os meses do ano.
 
-enum meses {
+enum mes {
   janeiro = 1,
   fevereiro,
   março,
@@ -14,3 +14,5 @@ enum meses {
   novembro,
   dezembro,
 }
+
+export default mes;
