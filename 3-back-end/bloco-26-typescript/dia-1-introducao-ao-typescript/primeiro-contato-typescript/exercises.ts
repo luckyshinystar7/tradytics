@@ -28,3 +28,8 @@ export function rectangle(base: number, height: number): number {
   return base * height;
 }
 
+// ex01
+
+export function losangle(higherDiagonal: number, lowerDiagonal: number): number {
+  return (higherDiagonal * lowerDiagonal) / 2;
+}
