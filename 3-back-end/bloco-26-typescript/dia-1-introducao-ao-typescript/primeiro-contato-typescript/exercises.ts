@@ -30,6 +30,6 @@ export function rectangle(base: number, height: number): number {
 
 // ex01
 
-export function losangle(higherDiagonal: number, lowerDiagonal: number): number {
+export function lozenge(higherDiagonal: number, lowerDiagonal: number): number {
   return (higherDiagonal * lowerDiagonal) / 2;
 }

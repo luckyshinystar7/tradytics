@@ -19,6 +19,6 @@ console.log(`Retângulo de base 5cm e altura 30cm: ${Exercise.rectangle(5, 30)}c
 console.log(`Retângulo de base 100cm e altura 200cm: ${Exercise.rectangle(100, 200)}cm²`);
 
 // ex01
-console.log(`Losango que tem D = 32cm e d = 18cm: ${Exercise.losangle(32, 18)}cm²`);
-console.log(`Losango que tem D = 200cm e d = 50cm: ${Exercise.losangle(200, 50)}cm²`);
-console.log(`Losango que tem D = 75cm e d = 25cm: ${Exercise.losangle(75, 25)}cm²`);
+console.log(`Losango que tem D = 32cm e d = 18cm: ${Exercise.lozenge(32, 18)}cm²`);
+console.log(`Losango que tem D = 200cm e d = 50cm: ${Exercise.lozenge(200, 50)}cm²`);
+console.log(`Losango que tem D = 75cm e d = 25cm: ${Exercise.lozenge(75, 25)}cm²`);
