@@ -96,3 +96,17 @@ class House {
 }
 
 // 3. Crie uma classe cujo objeto represente um Voo.
+class Flight {
+  code:number;
+  origin:string;
+  destination:string;
+
+  constructor (code:number, origin:string, destination:string) {
+    this.code = code;
+    this.origin = origin;
+    this.destination = destination;
+  }
+}
+
+const flight1 = new Flight (152 , 'São Paulo', 'Oslo');
+console.log(flight1);
