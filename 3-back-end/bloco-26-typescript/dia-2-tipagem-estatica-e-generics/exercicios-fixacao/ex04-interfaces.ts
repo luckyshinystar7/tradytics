@@ -53,3 +53,10 @@ interface Cat {
 }
 
 //3. Crie uma interface cujo objeto represente uma Aeronave.
+interface Aiplane extends Car {
+  brand:string;
+  model:string;
+  year:number|string;
+  capacity:number;
+  autonomy:number;
+}
