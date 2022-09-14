@@ -81,4 +81,18 @@ console.log(dog2.status());
 console.log(dog1, dog2);
 
 // 2. Crie uma classe cujo objeto represente uma Casa.
+class House {
+  endereco:string;
+  numero: number;
+  cep?: number|string;
+  complemento?: string;
+
+  constructor (endereco:string , numero: number,cep?: number|string, complemento?: string) {
+    this.endereco = endereco;
+    this.cep = cep;
+    this.numero = numero;
+    this.complemento = complemento;
+  }
+}
+
 // 3. Crie uma classe cujo objeto represente um Voo.
