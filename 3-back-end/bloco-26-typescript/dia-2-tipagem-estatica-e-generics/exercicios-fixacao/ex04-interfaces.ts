@@ -39,6 +39,11 @@ let teacher: Teacher = {
 
 // EXERCICIOS
 //1. Crie uma interface cujo objeto represente um Automóvel.
+interface Car {
+  brand:string;
+  model:string;
+  year:number|string;
+}
 
 //2. Crie uma interface cujo objeto represente um Felino.
 
