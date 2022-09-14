@@ -46,5 +46,10 @@ interface Car {
 }
 
 //2. Crie uma interface cujo objeto represente um Felino.
+interface Cat {
+  nome:string;
+  raca:string;
+  peso:number;
+}
 
 //3. Crie uma interface cujo objeto represente uma Aeronave.
