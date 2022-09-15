@@ -1,0 +1,4 @@
+DB_USER=typeYourUserHere
+DB_PASSWORD=typeYourPasswordHere
+DB_DATABASE=books_api
+DB_HOSTNAME=localhost
