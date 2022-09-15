@@ -1,23 +1,23 @@
 // Ex01
-enum Color {
+export enum Color {
   Black = "Preto",
   Blue = "Azul",
   Green = "Verde",
   Silver = "Prata",
 }
   
-enum Doors {
+export enum Doors {
   DRIVER = "da motorista",
   RIDE = "da carona",
   BEHIND = "traseira"
 }
 
-enum Direction {
+export enum Direction {
   RIGHT = "Direita",
   LEFT = "Esquerda"
 }
 
-class Car {
+export class Car {
   brand:string;
   color:Color;
   doors:number;
