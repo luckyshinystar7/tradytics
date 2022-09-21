@@ -25,7 +25,7 @@ function myFunc (x:any) {
   x.sayHello();
 }
 
-const eu = new Subclass();
+const eu = new Superclass();
 const vc = new Subclass();
 
 myFunc(eu);
