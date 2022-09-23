@@ -23,14 +23,16 @@
 
 import Person from "./Person"
 
-export default class Student extends Person {
+  class Student extends Person {
   private _enrollment:string;
   private _examsGrades:number[];
   private _worksGrades:number[];
 
   constructor(name:string, birthDate:Date) {
     super(name, birthDate);
-    this._enrollment = this.generateEnrollment() 
+    this._enrollment = this.generateEnrollment();
+    this._examsGrades = [];
+    this._worksGrades = [];
   }
 
   get enrollment():string {
@@ -47,12 +49,12 @@ export default class Student extends Person {
 
   set examsGrades(grades:number[]) {
     this.validateExamGrades(grades);
-    this.worksGrades = [...grades];
+    this._examsGrades = [...grades];
   }
 
   set worksGrades(grades:number[]) {
     this.validateWorkGrades(grades);
-    this.worksGrades = [...grades];
+    this._worksGrades = [...grades];
   }
 
   private generateEnrollment():string {
@@ -71,3 +73,12 @@ export default class Student extends Person {
     }
   }
 }
+
+// Para validar:
+const marta = new Student('Marta',new Date(1999,5,20));
+console.log(marta.enrollment);
+console.log(marta.name);
+console.log(marta.examsGrades);
+marta.examsGrades = [9,5,8];
+console.log(marta.examsGrades);
+marta.examsGrades = [9,5,8,2,3];
