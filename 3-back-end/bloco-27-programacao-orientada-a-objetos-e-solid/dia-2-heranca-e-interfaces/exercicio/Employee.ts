@@ -10,3 +10,10 @@
     - generateRegistration: retorna uma string única gerada como registro
 */
 
+export default interface Employee {
+  registration: number;
+  salary: number;
+  admissionDate: Date;
+  
+  generaRegistration(): string;
+}
