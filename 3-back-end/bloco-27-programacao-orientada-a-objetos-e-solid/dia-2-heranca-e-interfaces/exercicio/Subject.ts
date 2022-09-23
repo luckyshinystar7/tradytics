@@ -34,3 +34,10 @@ export default class Subject {
     }
   }
 }
+
+// Para validar
+const java = new Subject('java');
+console.log(java.name);
+java.name = 'JavaScript';
+console.log(java.name);
+java.name = 'd';
