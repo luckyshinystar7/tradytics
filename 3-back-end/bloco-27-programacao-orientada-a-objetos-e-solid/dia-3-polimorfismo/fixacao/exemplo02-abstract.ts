@@ -21,9 +21,9 @@ const m2 = new Mammal2('Tatu');
 const myMove2 = (animal: Animal2) => {
   animal.move();
 }
-myMove2(a);
-myMove2(b);
-myMove2(m);
+myMove2(a2);
+myMove2(b2);
+myMove2(m2);
 /*
 Saída:
 Tubarão está nadando.
