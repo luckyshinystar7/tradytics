@@ -1,0 +1,9 @@
+No trabalho do mês, foi solicitado que você criasse uma implementação de um tabuleiro de xadrez, com algumas peças que podem se mover no tabuleiro.
+
+A título de exemplo, neste problema desconsidere que as peças podem ser adversárias, e pense em como você implementaria um peão e uma torre.
+
+Ambos, Peão e Torre, devem possuir um método mover, respeitando as regras de movimentação de um peão e de uma torre no xadrez.
+
+As regras são bem simples: Um peão só pode se mover uma casa para frente, desde que não tenha outra peça em sua frente. Uma torre pode se mover quantas casas quiser para frente, para trás ou para um dos lados, entretanto parando antes de qualquer outra peça que esteja em uma destas 4 direções.
+
+Essa implementação é mais complexa, portanto sugiro que imagine mentalmente os passos macro para a resolução, mas não tente (ao menos não agora) implementar.
