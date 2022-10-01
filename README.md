@@ -263,11 +263,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 28-1: _Projeto - TFT: Trybe Futebol Clube_
 
-##### Bloco 29: NodeJS
+<!-- ##### Bloco 29: NodeJS
 
 - [ ] 29-1: _NodeJS - JWT - (JSON Web Token)_
 - [ ] 29-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 29-3: _[Projeto - Cookmaster V2]()_
+- [ ] 29-3: _[Projeto - Cookmaster V2]()_ -->
+
+##### Bloco 29: MongoDB
+
+- [ ] 29-1: _Introdução ao MongoDB_
+- [ ] 29-2: _Filter Operators_
+- [ ] 29-3: _Operadores de consulta_
+- [ ] 29-4: _Updates Simples_
+- [ ] 29-5: _Updates Complexos - Arrays_
+- [ ] 29-6: _[Projeto - Commerce]()_
 
 ##### Bloco 30: Introdução - Deploy
 
