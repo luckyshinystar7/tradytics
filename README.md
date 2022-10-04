@@ -261,7 +261,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 28: Projeto - Trybe Futebol Clube
 
-- [ ] 28-1: _Projeto - TFT: Trybe Futebol Clube_
+- [ ] 28-1: _Projeto - [TFC: Trybe Futebol Clube](https://github.com/elthonvilla/trybe-projects/tree/trybe-futebol-clube)_
 
 <!-- ##### Bloco 29: NodeJS
 
