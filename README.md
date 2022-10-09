@@ -278,11 +278,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 29-5: _Updates Complexos - Arrays_
 - [ ] 29-6: _[Projeto - Commerce]()_
 
-##### Bloco 30: Introdução - Deploy
+##### Bloco 30: MongoDB com Node.js e POO
+
+- [ ] 30-1: _Mongoose e arquitetura MSC - Model_
+- [ ] 30-2: _Mongoose e arquitetura MSC - Service e Controller_
+- [ ] 30-3: _[Projeto - Car Shop]()_
+
+<!-- ##### Bloco 30: Introdução - Deploy
 
 - [ ] 30-1: _Infraestrutura - Deploy com Heroku_
 - [ ] 30-2: _Deploy - Gerenciadores de Processos_
-- [ ] 30-3: _[Projeto - Stranger Things]()_
+- [ ] 30-3: _[Projeto - Stranger Things]()_ -->
 
 ##### Bloco 31: Projeto
 
