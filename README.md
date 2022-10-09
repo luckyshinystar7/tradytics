@@ -251,7 +251,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 27-3: _Polimofrismo_
 - [ ] 27-4: _SOLID - Introdução e Princípios S, O e D_
 - [ ] 27-5: _SOLID - Princípios L e I_
-- [ ] 27-6: _[Projeto - Trybers and Dragons](https://github.com/elthonvilla/trybe-projects/tree/trybers-and-dragons)_
+- [x] 27-6: _[Projeto - Trybers and Dragons](https://github.com/elthonvilla/trybe-projects/tree/trybers-and-dragons)_
 
 <!-- ##### Bloco 28: NodeJS
 
@@ -261,7 +261,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 28: Projeto - Trybe Futebol Clube
 
-- [ ] 28-1: _[Projeto - TFC: Trybe Futebol Clube](https://github.com/elthonvilla/trybe-projects/tree/trybe-futebol-clube)_
+- [x] 28-1: _[Projeto - TFC: Trybe Futebol Clube](https://github.com/elthonvilla/trybe-projects/tree/trybe-futebol-clube)_
 
 <!-- ##### Bloco 29: NodeJS
 
