@@ -1,0 +1,61 @@
+🚀 Exercício 2: Notamos também que tanto nossa classe de pessoa estudante quanto a classe de pessoa professora possuem um método parecido, que retorna uma string única gerada para servir de identificador daquele tipo de pessoa (respectivamente, a matrícula e o registro). Para termos mais reuso de código e adequar melhor nosso sistema à POO:
+
+A: Transforme nossa interface de pessoa funcionária em uma classe de pessoa funcionária que herda da nossa classe pessoa.
+
+B: Faça com que nossa classe de pessoa professora herde da classe de pessoa funcionária.
+
+C: Por último crie uma nova interface que será implementada por nossas classes pessoa estudante e pessoa funcionária que dirá que a instância delas deve ser matriculável.
+
+
+Nossa nova modelagem para esses componentes ficará assim:
+
+1`Interface`: Enrollable
+2`Attributes`:
+3    - enrollment: identificador único da matrícula
+4`Methods`:
+5    - generateEnrollment: retorna uma string única gerada como matrícula
+
+1`Class`: Student
+2`Extends`: Person
+3`Implements`: Enrollable
+4`Attributes`:
+5    - examsGrades: notas de provas
+6    - worksGrades: notas de trabalhos
+7`Methods`:
+8    - Getters/Setters
+9    - constructor: deve receber como parâmetro nome e data de nascimento e preencher a matrícula automaticamente
+10    - sumGrades: retorna a soma das notas da pessoa estudante
+11    - sumAverageGrade: retorna a média das notas da pessoa estudante
+12`Validations`:
+13    - A matrícula deve possuir no mínimo 16 caracteres
+14    - A pessoa estudante deve possuir no máximo 4 notas de provas
+15    - A pessoa estudante deve possuir no máximo 2 nostas de trabalhos
+
+1`Class`: Employee
+2`Extends`: Person
+3`Implements`: Enrollable
+4`Attributes`:
+5    - salary: valor do salário
+6    - admissionDate: data de admissão
+7`Methods`:
+8    - Getters/Setters
+9    - constructor: deve receber como parâmetro nome, data de nascimento, salário e preencher a matrícula automaticamente
+10`Validations`:
+11    - A matrícula deve possuir no mínimo 16 caracteres
+12    - O salário não pode ser negativo.
+13    - A data de admissão não pode ser no futuro
+
+1`Class`: Teacher
+2`Extends`: Employee
+3`Attributes`:
+4    - subject: a disciplina lecionada pela pessoa professora
+5`Methods`:
+6    - Getters/Setters
+7    - constructor: deve receber como parâmetro nome, data de nascimento, salário e a disciplina
+8`Validations`:
+9    - A matrícula deve possuir no mínimo 16 caracteres
+10    - O salário não pode ser negativo.
+11    - A data de admissão não pode ser no futuro
+
+
+Para testar crie duas pessoas estudantes e duas pessoas professoras.
