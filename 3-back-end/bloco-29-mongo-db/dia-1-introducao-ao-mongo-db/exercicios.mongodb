@@ -20,8 +20,17 @@ db.bios.find().limit(3).pretty()
 db.bios.find().limit(2).skip(5)
 
 // Utilizando o mongoimport, importe o arquivo books.json para a sua instância local do MongoDB e utilize a coleção books para construir as seguintes consultas:
+// importando banco em 2 passos:
+// 1- copiando o json para dentro da pasta tmp do docker
+// docker cp books.json mongo_db:/tmp/books.json
+
+// 2- importando com o mongoimport
+// docker exec mongo_db mongoimport -d class -c books --file /tmp/books.json
 
 // 🚀 Exercício 7: Retorne a quantidade de documentos da coleção books.
+show databases
+// use class
+db.books.countDocuments()
 
 // 🚀 Exercício 8: Conte quantos livros existem com o status = "PUBLISH".
 
