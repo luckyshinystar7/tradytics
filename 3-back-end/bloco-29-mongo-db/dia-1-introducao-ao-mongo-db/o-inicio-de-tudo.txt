@@ -1,0 +1,24 @@
+Criando um container no docker com mongo:
+
+  # Baixa a imagem:
+  docker pull mongo
+
+  # Cria um container usando a imagem mongo e expõe a porta 27017:
+  docker run -p 127.0.0.1:27017:27017 --name <nome-do-container> -d mongo
+
+Executando shell dentro do container Criando
+
+  # Executa o shell do Mongo no Docker
+  docker exec -it <nome-do-contêiner-ou-id> mongo
+
+  # Executa o shell do Mongosh no Docker para ter acesso a recursos adicionais
+  docker exec -it <nome-do-contêiner-ou-id> mongosh
+
+Importando arquivos locais para dentro do contêiner utilizando mongoimport
+A ferramenta mongoimport importa conteúdo de um arquivo JSON, CSV ou TSV criada por mongoexport ou, potencialmente, outra ferramenta de exportação de terceiros. Utilizamos esse recurso num contêiner da seguinte forma:
+
+  # No primeiro passo, copiamos o arquivo que será importado para dentro do nosso contêiner.
+  docker cp nome-do-arquivo.json <nome-do-contêiner-ou-id>:/tmp/nome-do-arquivo.json.json
+
+  # No segundo passo, realizamos a importação do arquivo JSON para o MongoDB.
+  docker exec <nome-do-contêiner-ou-id> mongoimport -d <nome-do-banco> -c <nome-da-coleção> --file /tmp/nome-do-arquivo.json
