@@ -29,10 +29,11 @@ db.bios.find().limit(2).skip(5)
 
 // 🚀 Exercício 7: Retorne a quantidade de documentos da coleção books.
 show databases
-// use class
+use class
 db.books.countDocuments()
 
 // 🚀 Exercício 8: Conte quantos livros existem com o status = "PUBLISH".
+db.books.countDocuments({'status': 'PUBLISH'})
 
 // 🚀 Exercício 9: Exiba os atributos title, isbn e pageCount dos 3 primeiros livros. NÃO retorne o atributo _id.
 
