@@ -1,16 +1,16 @@
-// Utilize os dados do arquivo restaurants.js para os exercicios a seguir:
+// 1 - Utilize os dados do arquivo restaurants.js para os exercicios a seguir:
 
-  // 1. Selecione e faça a contagem dos restaurantes presentes nos bairros Queens, Staten Island e Bronx. (utilizando o atributo borough)
+  // 1.1. Selecione e faça a contagem dos restaurantes presentes nos bairros Queens, Staten Island e Bronx. (utilizando o atributo borough)
     db.restaurants.find({'borough': {$in: ['Queens', 'Staten Island', "Bronx"]}})
 
-  // 2. Selecione e faça a contagem dos restaurantes que não possuem culinária do tipo American. (utilizando o atributo cuisine)
+  // 1.2. Selecione e faça a contagem dos restaurantes que não possuem culinária do tipo American. (utilizando o atributo cuisine)
+    db.restaurants.find({'cousine': {$ne: 'American'}}).count()
+
+  // 1.3. Selecione e faça a contagem dos restaurantes que possuem avaliação maior ou igual a 8. (utilizando o atributo rating)
     
 
-  // 3. Selecione e faça a contagem dos restaurantes que possuem avaliação maior ou igual a 8. (utilizando o atributo rating)
+  // 1.4. Selecione e faça a contagem dos restaurantes que possuem avaliação menor que 4.
     
 
-  // 4. Selecione e faça a contagem dos restaurantes que possuem avaliação menor que 4.
-    
-
-  // 5. Selecione e faça a contagem dos restaurantes que não possuem as avaliações 5, 6 e 7.
+  // 1.5. Selecione e faça a contagem dos restaurantes que não possuem as avaliações 5, 6 e 7.
 
