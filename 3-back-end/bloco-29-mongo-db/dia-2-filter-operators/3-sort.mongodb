@@ -1,0 +1,7 @@
+// 3. Faça os desafios 1 e 2 abaixo sobre o sort() utilizando a coleção restaurants criada anteriormente.
+
+//     3.1. Ordene alfabeticamente os restaurantes pelo nome (atributo name).
+        db.restaurants.find().sort({name: 1})
+
+//     3.2. Ordene os restaurantes de forma decrescente baseado nas avaliações.
+
