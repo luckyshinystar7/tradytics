@@ -18,10 +18,15 @@
         {'borough': {$in: ['Queens', 'Staten Island', 'Brooklyn']}},
         {'rating': {$gt: 4}}
       ]}
-    ).
+    )
     
     // 2.4. Selecione e faça a contagem dos restaurantes onde nem o campo avaliação seja igual a 1, nem o campo culinária seja do tipo American.
-    
+    db.restaurants.find({
+      $nor:[
+          {'rating': 1},
+          {'cuisine': 'American'}
+        ]      
+    }).count()
     
     // 2.5. Selecione e faça a contagem dos restaurantes em que a avaliação seja maior que 6 ou menor que 10, E esteja localizado no bairro Brooklyn OU não possuem culinária do tipo Delicatessen.
 
