@@ -4,4 +4,4 @@
         db.restaurants.find().sort({name: 1})
 
 //     3.2. Ordene os restaurantes de forma decrescente baseado nas avaliações.
-
+        db.restaurants.find().sort({'rating': -1})
