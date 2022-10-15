@@ -1,0 +1,50 @@
+// db.filmes.find()
+
+// Busque: filmes lançados antes do ano 2000
+db.filmes.find({'ano': {$lt: 2000}})
+
+// Filmes no ano 2000 ou antes
+db.filmes.find({'ano': {$lte: 2000}})
+
+// Filmes que foram lançados nos anos posteriores a 1993
+db.filmes.find({'ano': {$gt: 1993}})
+
+// Filmes que foram lançados a partir de 1993
+db.filmes.find({'ano': {$gte: 1993}})
+
+// Filmes que foram lançados de 1993 até 2000
+db.filmes.find({$and: [
+  {'ano': {$gte: 1993}}, {'ano': {$lte: 2000}}
+  ]})
+  // outra solução:
+db.filmes.find({'ano': {$gte: 1993, $lte: 2000}})
+
+// Filmes que foram lançados em 1993
+db.filmes.find({'ano': {$eq: 1993}})
+
+// Filmes que tem 7 avaliações boas
+db.filmes.find({'avaliacao.bom': 7})
+
+// Filmes que não tem 8 avaliações ruins
+db.filmes.find({'avaliacao.ruim':{
+  $not: {$eq: 8}
+}})
+  // outra solução
+db.filmes.find({'avaliacao.ruim': {$ne: 8}})
+
+// Filmes que foram lançados em 2001, 1968 ou 1995.
+db.filmes.find({'ano': {$in: [2001, 1968, 1995]}})
+
+// Filmes que não foram lançados nem em 2013 nem em 2008
+db.filmes.find({'ano': {$nin: [2013, 2008]}})
+
+// Filmes que foram lançados nos anos posteriores a 2000 e receberam a partir de 8 avaliações boas
+db.filmes.find({
+  $and: [
+    {'ano': {$gt: 2000}},
+    {'avaliacao.bom': {$gte: 8}}
+  ]
+})
+  // outra solução
+db.filmes.find({ano: {$gt: 2000}, 'avaliacao.bom': {$gte: 8}})
+
