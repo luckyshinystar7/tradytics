@@ -5,5 +5,6 @@
         db.restaurants.deleteOne({'cuisine': 'Ice Cream, Gelato, Yogurt, Ices'})
 
 //     4.2. Remova todos os restaurantes que possuem culinária do tipo American.
-
+        db.restaurants.find({'cuisine': 'American'})
+        db.restaurants.deleteMany({'cuisine': 'American'})
 
