@@ -13,7 +13,12 @@
     ).count()
     
     // 2.3. Selecione e faça a contagem dos restaurantes localizados nos bairros Queens, Staten Island e Brooklyn e possuem avaliação maior que 4.
-    db.restaurants.find().limit(1)
+    db.restaurants.countDocuments(
+      {$and: [
+        {'borough': {$in: ['Queens', 'Staten Island', 'Brooklyn']}},
+        {'rating': {$gt: 4}}
+      ]}
+    ).
     
     // 2.4. Selecione e faça a contagem dos restaurantes onde nem o campo avaliação seja igual a 1, nem o campo culinária seja do tipo American.
     
