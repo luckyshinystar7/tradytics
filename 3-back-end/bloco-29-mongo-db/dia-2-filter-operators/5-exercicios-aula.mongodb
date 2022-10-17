@@ -48,3 +48,51 @@ db.filmes.find({
   // outra solução
 db.filmes.find({ano: {$gt: 2000}, 'avaliacao.bom': {$gte: 8}})
 
+// Filmes que foram lançados nos anos posteriores a 2000 ou receberam a partir de 8 avaliações boas
+
+db.filmes.find({
+  $or: [
+    {'ano': {$gt: 2000}},
+    {'avaliacao.bom': {$gte: 8}}
+  ]
+})
+
+// Encontrar filmes que não foram dirigidos pelo Michael Bay
+
+db.filmes.find({'director': {$ne: 'Michael Bay'}})
+
+// Filmes que não foram dirigidos pelo Michael Bay e não receberam 10 avaliações ruins
+//
+
+db.filmes.find({$and: [
+  {'diretor': {$ne: 'Michael Bay'}},
+  {'avaliacao.ruim': {$ne: 10}}
+]})
+
+// outra solução, considerando que  !a && !b === !(a || b)
+db.filmes.find({
+  $nor: [
+    {diretor: 'Michael Bay'},
+    {'avaliacao.ruim': 10}
+  ]
+})
+
+// ORDENAÇÃO DE RESULTADOS
+
+// Ordenar os filmes pelo título em ordem crescente
+
+db.filmes.find().sort({titulo: 1})
+
+// Filmes pela quantidade de avaliações boas em ordem descrecente
+
+db.filmes.find().sort({"avaliacao.bom": -1})
+
+// Ordenar pelos filmes mais recentes e os que estiverem no mesmo ano, em ordem alfabética
+
+db.filmes.find().sort({ano: 1, titulo: 1})
+
+// REMOÇÕES DO BANCO
+
+db.filmes.deleteOne({}) // para deletar o primeiro que satisfaz a condição
+
+db.filmes.deleteMany({}) // deletar todos que satisfazem a condição, se não houver condição deleta todos os documentos da collection.
