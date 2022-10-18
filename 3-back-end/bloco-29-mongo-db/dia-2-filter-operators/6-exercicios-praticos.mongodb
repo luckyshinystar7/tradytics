@@ -80,7 +80,17 @@ db.superheroes.find({
 })
 
 // Exercício 15: Selecione todos os super-heróis que pesem entre 80kg e 100kg, sejam Humanos ou Mutantes e não sejam publicados pela DC Comics.
-
+db.superheroes.find({
+  $and: [
+    {'aspects.weight': {$gte: 80}},
+    {'aspects.weight': {$lte: 100}},
+    {'publisher': {$ne: 'DC Comics'}},
+    $or: [
+      {'race': 'Human'},
+      {'race': 'Mutant'}
+    ]
+  ]
+})
 
 // Exercício 16: Retorne o total de documentos que não contêm o campo race.
 
