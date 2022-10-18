@@ -85,10 +85,10 @@ db.superheroes.find({
     {'aspects.weight': {$gte: 80}},
     {'aspects.weight': {$lte: 100}},
     {'publisher': {$ne: 'DC Comics'}},
-    $or: [
+    {$or: [
       {'race': 'Human'},
       {'race': 'Mutant'}
-    ]
+    ]}
   ]
 })
 
@@ -96,7 +96,7 @@ db.superheroes.find({
 db.superheroes.find({'race': {$exists: 0}}).count()
 
 // Exercício 17: Retorne o total de documentos que contêm o campo hairColor.
-
+db.superheroes.find({'aspects.hairColor': {$exists: 1}}).count()
 
 // Exercício 18: Remova apenas um documento publicado pela Sony Pictures.
 
