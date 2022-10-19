@@ -78,7 +78,11 @@
     });
     
     // 10. 🚀 Retorne os filmes da categoria "sci-fi" ou que possua o ratings maior do que 199, exibindo apenas os campos title, ratings e category.
-    
+    db.movies.find({$or: [
+      {'category': 'sci-fi'},
+      {'ratings': {$gt: 199}}
+    ]},
+    {'title': 1, 'ratings': 1, 'category':1, '_id': 0});
     
     // 11. Retorne os filmes em que o ratings possua tamanho 4 e que seja da category "adventure" ou "family", mas que não tenha o imdbRating menor que 7.
     
