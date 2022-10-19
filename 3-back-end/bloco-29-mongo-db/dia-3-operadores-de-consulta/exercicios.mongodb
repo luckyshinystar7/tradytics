@@ -1,7 +1,12 @@
 // Utilizando a collection movies faça os exercícios a seguir:
     
     // 1. Utilizando o operador $all, retorne todos os filmes que contenham action e adventure no array category.
-    
+    db.movies.find({category: {
+      $all: [
+        'action', 'adventure'
+      ]
+    }});
+
     
     // 2. 🚀 Agora retorne os filmes que contenham action e sci-fi no array category e possuem nota do IMDB maior do que 7.
     
