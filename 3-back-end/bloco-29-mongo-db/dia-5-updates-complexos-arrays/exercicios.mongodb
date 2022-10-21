@@ -57,8 +57,18 @@ db.movies.updateOne(
 );
 db.movies.find({}); 
 
-// 🚀 Exercício 3: Remova a categoria "action" do filme Batman.
-
+// 🚀 Exercício 3: Remova a categoria "action" do filme Batman. (o primeiro elemento do array)
+db.movies.updateOne(
+  {
+    title: "Batman"
+  },
+  {
+    $pop: {
+      category: -1
+    }
+  }
+)
+db.movies.find({}); 
 
 // 🚀 Exercício 4: Remova o primeiro elemento do array category do filme Batman.
 
