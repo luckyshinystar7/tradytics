@@ -31,8 +31,10 @@ db.movies.updateOne(
   {$set: {budget: 15, imdbRating: 5.5}},
   )
 db.movies.find({title: "Home Alone"})
-// Exercício 4: Aumente em 2 o imdbRating do filme Batman.
 
+// Exercício 4: Aumente em 2 o imdbRating do filme Batman.
+db.movies.updateOne({title: "Batman"}, {$inc: {imdbRating: 2}})
+db.movies.find({title: "Batman"})
 
 // Exercício 5: Aumente em 5 o budget do filme Home Alone.
 
