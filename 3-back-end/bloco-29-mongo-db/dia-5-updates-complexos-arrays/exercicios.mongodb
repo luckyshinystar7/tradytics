@@ -57,7 +57,20 @@ db.movies.updateOne(
 );
 db.movies.find({}); 
 
-// 🚀 Exercício 3: Remova a categoria "action" do filme Batman. (o primeiro elemento do array)
+// 🚀 Exercício 3: Remova a categoria "action" do filme Batman.
+db.movies.updateOne(
+  {
+    title: "Batman"
+  },
+  {
+    $pull: {
+      category: "action"
+    }
+  }
+)
+db.movies.find({}); 
+
+// 🚀 Exercício 4: Remova o primeiro elemento do array category do filme Batman.
 db.movies.updateOne(
   {
     title: "Batman"
@@ -69,9 +82,6 @@ db.movies.updateOne(
   }
 )
 db.movies.find({}); 
-
-// 🚀 Exercício 4: Remova o primeiro elemento do array category do filme Batman.
-
 
 // 🚀 Exercício 5: Remova o último elemento do array category do filme Batman.
 
