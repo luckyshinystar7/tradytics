@@ -26,8 +26,11 @@ db.movies.updateOne({title: "Godzilla"}, {$set: {budget: 1}})
 db.movies.find({title: "Godzilla"})
 
 // Exercício 3: Altere budget para 15 e imdbRating para 5.5 no filme Home Alone.
-
-
+db.movies.updateOne(
+  { title: "Home Alone"},
+  {$set: {budget: 15, imdbRating: 5.5}},
+  )
+db.movies.find({title: "Home Alone"})
 // Exercício 4: Aumente em 2 o imdbRating do filme Batman.
 
 
