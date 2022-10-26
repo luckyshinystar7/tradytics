@@ -276,7 +276,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 29-3: _Operadores de consulta_
 - [x] 29-4: _Updates Simples_
 - [x] 29-5: _Updates Complexos - Arrays_
-- [x] 29-6: _[Projeto - Commerce]()_
+- [x] 29-6: _[Projeto - Commerce](https://github.com/elthonvilla/trybe-projects/tree/commerce)_
 
 ##### Bloco 30: MongoDB com Node.js e POO
 
