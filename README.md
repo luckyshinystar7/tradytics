@@ -296,13 +296,21 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 32: Arquitetura de Software
+##### Bloco 32: Python
+
+- [ ] 35-1: _Aprendendo Python_
+- [ ] 35-2: _Testes e Exceções_
+- [ ] 35-3: _Entrada e Saída de dados_
+- [ ] 36-4: _Entrada e Saída de dados_
+- [ ] 35-5: _[Projeto - Tech news]()_
+
+<!-- ##### Bloco 32: Arquitetura de Software
 
 - [ ] 32-1: _Arquitetura - Princípios SOLID_
 - [ ] 32-2: _ORM - Interface da aplicação com o banco de dados_
 - [ ] 32-3: _Arquitetura de Software - DDD_
 - [ ] 32-4: _Boas práticas na escrita de testes_
-- [ ] 32-3: _[Projeto - API de Blogs]()_
+- [ ] 32-3: _[Projeto - API de Blogs]()_ -->
 
 ##### Bloco 33: Sockets
 
