@@ -280,8 +280,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 30: MongoDB com Node.js e POO
 
-- [x] 30-1: _Mongoose e arquitetura MSC - Model [Ex](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
-- [x] 30-2: _Mongoose e arquitetura MSC - Service e Controller [Ex](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
+- [x] 30-1: _Mongoose e arquitetura MSC - Model [Ex01](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
+- [x] 30-2: _Mongoose e arquitetura MSC - Service e Controller [Ex01](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
 - [ ] 30-3: _[Projeto - Car Shop]()_
 
 <!-- ##### Bloco 30: Introdução - Deploy
