@@ -298,11 +298,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 32: Python
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [ ] 32-1: _Aprendendo Python_
+- [ ] 32-2: _Entrada e Saída de dados_
+- [ ] 32-3: _Testes e Exceções_
+- [ ] 32-4: _[Projeto - Job Insights]()_
 
 <!-- ##### Bloco 32: Arquitetura de Software
 
