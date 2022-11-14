@@ -311,17 +311,18 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 32-4: _Boas práticas na escrita de testes_
 - [ ] 32-3: _[Projeto - API de Blogs]()_ -->
 
-##### Bloco 33: Sockets
+##### Bloco 33: Padrões de Projeto
+
+- [ ] 30-1: _P.O.O. em Python_
+- [ ] 30-2: _Padrões - Iterator, Adapter, Strategy_
+- [ ] 30-3: _Padrões - Decorator, Observer, Factory_
+- [ ] 30-3: _[Projeto - Relatórios de Estoque]()_
+
+<!-- ##### Bloco 33: Sockets
 
 - [ ] 30-1: _Sockets - TCP/UDP & NET_
 - [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
-
-##### Bloco 33: Sockets
-
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
+- [ ] 30-3: _[Projeto - Webchat]()_ -->
 
 ##### Bloco 34: Projeto
 
