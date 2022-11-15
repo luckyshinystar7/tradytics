@@ -282,7 +282,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 30-1: _Mongoose e arquitetura MSC - Model [Ex01](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
 - [x] 30-2: _Mongoose e arquitetura MSC - Service e Controller [Ex01](https://github.com/elthonvilla/guia-mongodb-com-nodejs-e-poo)_
-- [x] 30-3: _[Projeto - Car Shop]()_
+- [x] 30-3: _[Projeto - Car Shop](https://github.com/elthonvilla/trybe-projects/tree/carshop)_
 
 <!-- ##### Bloco 30: Introdução - Deploy
 
