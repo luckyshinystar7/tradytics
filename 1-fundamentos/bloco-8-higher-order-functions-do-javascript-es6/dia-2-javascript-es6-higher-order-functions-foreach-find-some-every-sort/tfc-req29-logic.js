@@ -488,8 +488,6 @@ const homeTeamLeaderboardGenerate = (matches) => {
   return result;
 }
 
-const queBiito = homeTeamLeaderboardGenerate(matches);
-
 const orderTeams = (b, a) => { // ordena lista de times conforme solicitado  
   let cmp = a['totalPoints'] - b['totalPoints'];
   if (cmp === 0) { // somente se pontuação é igual, compara vitórias
@@ -504,9 +502,11 @@ const orderTeams = (b, a) => { // ordena lista de times conforme solicitado
   return cmp;
 }
 
-const organizou = queBiito.sort(orderTeams);
+const homeTeamLeaderboard = homeTeamLeaderboardGenerate(matches);
 
-console.log(queBiito);
+homeTeamLeaderboard.sort(orderTeams);
+
+console.log(homeTeamLeaderboard);
 
 // console.log(gatherInfo(filterHomeTeam(1)));
 
