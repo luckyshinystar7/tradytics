@@ -324,9 +324,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 30-2: _Sockets - Socket.io_
 - [ ] 30-3: _[Projeto - Webchat]()_ -->
 
-##### Bloco 34: Projeto
+##### Bloco 34: Redes e Raspagem de Dados
 
-- [ ] 34-1: _[Projeto - Trybeer V2]()_
+- [ ] 34-1: Arquitetura de redes
+- [ ] 34-2: Raspagem de dados
+- [ ] 34-3: Outras ferramentas de raspagem de dados
+- [ ] 34-4: _[Projeto - Tech News]()_
+
+<!-- ##### Bloco 34: Projeto
+
+- [ ] 34-1: _[Projeto - Trybeer V2]()_ -->
 
 <!-- ## Ciência da Computação :hourglass_flowing_sand: -->
 
