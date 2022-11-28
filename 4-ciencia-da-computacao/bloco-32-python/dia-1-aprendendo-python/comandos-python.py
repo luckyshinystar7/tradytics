@@ -17,3 +17,10 @@ fruits.extend(["pera", "melão", "kiwi"])  # acrescenta uma lista de frutas a li
 fruits.index("maçã")  # retorna o índice onde a fruta está localizada, neste caso, 1
 
 fruits.sort()  # ordena a lista de frutas
+
+# SOBRE TUPLAS
+# São similares a listas, porém não podem ser modificados durante a execução do programa.
+
+user = ("Will", "Marcondes", 42)  # elementos são definidos separados por vírgula, envolvidos por parênteses
+
+user[0]  # acesso também por índices
