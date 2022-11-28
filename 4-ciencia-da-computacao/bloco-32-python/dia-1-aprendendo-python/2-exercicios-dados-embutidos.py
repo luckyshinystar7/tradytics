@@ -27,3 +27,5 @@ info["recorrente"] = "Sim"
 info
 
 # Exercício 9: Remova a propriedade cuja chave é “origem” e imprima o objeto no console.
+del info["origem"]
+info
