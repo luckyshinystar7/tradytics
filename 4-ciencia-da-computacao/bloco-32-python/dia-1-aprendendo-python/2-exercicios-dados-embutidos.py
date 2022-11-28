@@ -29,3 +29,11 @@ info
 # Exercício 9: Remova a propriedade cuja chave é “origem” e imprima o objeto no console.
 del info["origem"]
 info
+
+# Exercício 10: Após uma consulta do banco de dados, temos linhas que contém nome, sobrenome e idade como: "Thiago", "Nobre", 29. Que estrutura vista anteriormente seria recomendada dado que após esta consulta somente exibimos estes valores?
+# eu usaria uma lista de dict da seguinte maneira:
+db = [{"nome": "Thiago", "sobrenome": "Nobre", "idade": "29"}]
+
+# Resposta do Gabarito: A estrutura recomendada é a tuple. Caso houvesse necessidade de editar os valores ou adicionar mais valores, usaríamos uma list.
+
+# Exercício 11: Realizar a contagem de quantas vezes cada elemento aparece em uma sequência é uma técnica muito útil na solução de alguns problemas. Qual é a estrutura mais recomendada para o armazenamento desta contagem?
