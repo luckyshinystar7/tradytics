@@ -14,3 +14,16 @@ trybe_course[0] = "Fundamentos"
 var = set()
 var.add("Elthon")
 var
+
+# Utilizando o código abaixo, faça os exercícios 8 e 9:
+info = {
+  "personagem": "Margarida",
+  "origem": "Pato Donald",
+  "nota": "Namorada do personagem principal nos quadrinhos do Pato Donald",
+}
+# De olho na dica 👀: Em Python, precisamos colocar a chave do objeto entre aspas.
+# Exercício 8: Insira no objeto uma nova propriedade com o nome de chave “recorrente” e o valor “Sim”. Em seguida, imprima o objeto no console.
+info["recorrente"] = "Sim"
+info
+
+# Exercício 9: Remova a propriedade cuja chave é “origem” e imprima o objeto no console.
