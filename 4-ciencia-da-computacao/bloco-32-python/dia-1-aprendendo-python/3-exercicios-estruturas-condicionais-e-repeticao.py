@@ -36,4 +36,6 @@ filtered_ratings = [rating
 print(filtered_ratings)  
 
 # Exercício 14: Percorra a lista do exercício 13 e imprima “Múltiplo de 3” se o elemento for divisível por 3.
-
+for x in new_ratings:
+    if (x % 3) == 0:
+        print(f'O número {x} é múltiplo de 3.')
