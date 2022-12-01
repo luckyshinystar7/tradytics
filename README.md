@@ -351,12 +351,20 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 35-3: _Redes de computadores, ferramentas e segurança_
 - [ ] 35-4: _[Projeto - Explorando os protocolos]()_ -->
 
-##### Bloco 36: Python
+##### Bloco 36: Estrutura de Dados I: Arrays, Listas, Filas e Pilhas
+
+- [ ] 36-1: _Arquitetura de Computadores_
+- [ ] 36-2: _Arrays_
+- [ ] 36-3: _Nó e Listas Encadeadas_
+- [ ] 36-4: _Pilhas e Filas_
+- [ ] 36-5: _[Projeto - TING: Trybe Is Not Google]()_
+
+<!-- ##### Bloco 36: Python
 
 - [ ] 35-1: _Aprendendo Python_
 - [ ] 35-2: _Testes e Exceções_
 - [ ] 35-3: _Entrada e Saída de dados_
 - [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [ ] 35-5: _[Projeto - Tech news]()_ -->
 
 # [...]
