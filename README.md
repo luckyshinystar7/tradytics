@@ -337,12 +337,19 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 <!-- ## Ciência da Computação :hourglass_flowing_sand: -->
 
-##### Bloco 35: Introdução - Ciência da Computação
+##### Bloco 35: Algoritmos
+
+- [ ] 35-1: _Complexidade de Algoritmos_
+- [ ] 35-2: _Recursividade e Estratégias para solução de problemas_
+- [ ] 35-3: _Algoritmos de ordenação e busca_
+- [ ] 35-4: _[Projeto - Algoritmos]()_
+
+<!-- ##### Bloco 35: Introdução - Ciência da Computação
 
 - [ ] 35-1: _Arquitetura de Computadores_
 - [ ] 35-2: _Arquitetura de redes_
 - [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [ ] 35-4: _[Projeto - Explorando os protocolos]()_ -->
 
 ##### Bloco 36: Python
 
