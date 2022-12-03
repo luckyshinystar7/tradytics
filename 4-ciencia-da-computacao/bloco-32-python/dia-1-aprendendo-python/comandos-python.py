@@ -116,7 +116,26 @@ for index in range(5):
 # A compreensão de listas em Python possui uma sintaxe fácil e compacta para criação de listas, seja a partir de uma string ou de outra lista. É uma maneira concisa de criação que executa uma operação em cada item da lista já existente.
 min_rating = 3.0
 filtered_restaurants = [restaurant
+# filtered_restaurants = [restaurant["name"]  # trocando a linha anterior por essa estariamos pedindo somente o nome do restaurante
                          for restaurant in restaurants
                          if restaurant["nota"] > min_rating] # 'if' nas comprehensions funciona como se fosse um filter das hofs em JavaScript
 print(filtered_restaurants)  # imprime a lista de restaurantes, sem o B e D
+
+# LIST COMPREHENSION COM STRINGS
+names_list = ['Duda', 'Rafa', 'Cris', 'Yuri']
+new_names_list = [name for name in names_list if 'a' in name]
+
+# Aqui o for percorre cada nome em "names_list", verifica se existe a letra "a" nele,
+# o adiciona à variável "name", e então gera nossa nova lista "new_names_list"
+print(new_names_list)
+
+# Saída
+['Duda', 'Rafa']
+
+# WHILE
+n = 10
+last, next = 0, 1
+while last < n:
+    print(last)
+    last, next = next, last + next
 
