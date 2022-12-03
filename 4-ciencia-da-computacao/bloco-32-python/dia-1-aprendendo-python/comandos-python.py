@@ -111,3 +111,12 @@ print(filtered_restaurants)  # imprime a lista de restaurantes, sem o B e D
 # utilizando range em um for
 for index in range(5):
     print(index)
+
+# LIST COMPREHENSION (Compreensão de listas)
+# A compreensão de listas em Python possui uma sintaxe fácil e compacta para criação de listas, seja a partir de uma string ou de outra lista. É uma maneira concisa de criação que executa uma operação em cada item da lista já existente.
+min_rating = 3.0
+filtered_restaurants = [restaurant
+                         for restaurant in restaurants
+                         if restaurant["nota"] > min_rating] # 'if' nas comprehensions funciona como se fosse um filter das hofs em JavaScript
+print(filtered_restaurants)  # imprime a lista de restaurantes, sem o B e D
+
