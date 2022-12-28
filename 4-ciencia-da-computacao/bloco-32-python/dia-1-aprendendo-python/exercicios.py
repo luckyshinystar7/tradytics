@@ -53,3 +53,14 @@ def maior_nome(lista):
 # custam R$ 80,00. Crie uma função que retorne dois valores em uma tupla
 # contendo a quantidade de latas de tinta a serem compradas
 # e o preço total a partir do tamanho de uma parede (em m²).
+def tinta(area):
+    latas = 0
+    if (area % 54):
+        latas = (area // 54) + 1
+    else:
+        latas = area // 54
+    preco = latas * 80
+    return (latas, preco)
+
+
+tinta(432)
