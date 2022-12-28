@@ -23,6 +23,8 @@ def media(a):
 
 # Exercício 3: Faça um programa que, dado um valor n qualquer, tal que n > 1,
 # imprima na tela um quadrado feito de asteriscos de lado de tamanho n.
+# Dica: Python sabe multiplicar sequências! Por exemplo, 3 * 'bla' = blablabla.
+# Isso se aplica a listas também, caso você precise.
 def square(n):
     i = 0
     while i < n:
@@ -30,4 +32,18 @@ def square(n):
         i = i + 1
 
 
-square(2)
+# square(2)
+
+
+# Exercício 4: Crie uma função que receba uma lista de nomes e retorne o nome
+# com a maior quantidade de caracteres. Por exemplo, para ["José", "Lucas",
+# "Nádia", "Fernanda", "Cairo", "Joana"], o retorno deve ser "Fernanda".
+def maior_nome(lista):
+    nome = ""
+    for e in lista:
+        if len(e) > len(nome):
+            nome = e
+    return nome
+
+
+maior_nome(["José", "Lucas", "Nádia", "Fernanda", "Cairo", "Joana"])
