@@ -28,7 +28,7 @@ def media(a):
 def square(n):
     i = 0
     while i < n:
-        print(n*'*')
+        print(n * "*")
         i = i + 1
 
 
@@ -55,7 +55,7 @@ def maior_nome(lista):
 # e o preço total a partir do tamanho de uma parede (em m²).
 def tinta(area):
     latas = 0
-    if (area % 54):
+    if area % 54:
         latas = (area // 54) + 1
     else:
         latas = area // 54
@@ -63,4 +63,14 @@ def tinta(area):
     return (latas, preco)
 
 
-tinta(432)
+# tinta(432)
+
+# Exercício 6: Crie uma função que receba os três lado de um triângulo e
+# informe qual o tipo de triângulo formado ou "não é triangulo", caso não
+# seja possível formar um triângulo.
+
+# Três lados formam um triângulo quando a soma de quaisquer dois lados
+# for maior que o terceiro;
+# Triângulo Equilátero: três lados iguais;
+# Triângulo Isósceles: quaisquer dois lados iguais;
+# Triângulo Escaleno: três lados diferentes.
