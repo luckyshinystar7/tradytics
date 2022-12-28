@@ -74,3 +74,15 @@ def tinta(area):
 # Triângulo Equilátero: três lados iguais;
 # Triângulo Isósceles: quaisquer dois lados iguais;
 # Triângulo Escaleno: três lados diferentes.
+def triangulo(a, b, c):
+    if (a + b <= c or a + c <= b or b + c <= a):
+        print("nao e um triangulo")
+    elif (a == b == c):
+        print("triangulo equilatero")
+    elif (a == b or a == c or b == c):
+        print("triangulo isoceles")
+    else:
+        print("triangulo escaleno")
+
+
+triangulo(3, 4, 5)
