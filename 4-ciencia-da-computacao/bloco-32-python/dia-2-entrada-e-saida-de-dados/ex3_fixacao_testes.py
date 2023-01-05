@@ -27,5 +27,17 @@ ex3_file.close()
 
 # Agora vamos acessar o arquivo conforme enunciado
 names_and_grades = open("ex3_file.txt", mode="r")
-print(names_and_grades)
+content = names_and_grades.read()
 names_and_grades.close()
+
+students_below_six = []
+students_list = content.split("\n")
+
+for line in students_list:
+    student_and_grade = line.split(" ")
+    if int(student_and_grade[1]) < 6:
+        students_below_six.append(student_and_grade[0] + "\n")
+
+reproved_students = open("reproved_students.txt", mode="w")
+reproved_students.writelines(students_below_six)
+reproved_students.close()
