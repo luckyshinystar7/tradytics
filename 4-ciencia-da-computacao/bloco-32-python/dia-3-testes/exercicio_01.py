@@ -9,7 +9,7 @@
 
 def fizz_buzz(number: int):
     my_list = []
-    for x in (range(1, number)):
+    for x in (range(1, number + 1)):
         if x % 3 == 0 and x % 5 == 0:
             my_list.append("FizzBuzz")
         elif x % 3 == 0:
