@@ -9,7 +9,7 @@ import random
 def cria_txt():
     lista_1 = ["druida\n", "carro\n", "biblioteca\n", "javascript\n"]
     lista_2 = ["empatia\n", "runescape\n", "caraguatatuba\n", "elefante\n"]
-    lista_3 = ["geografia\n", "paralelepipedo\n", "trem\n", "pizzaria\n"]
+    lista_3 = ["geografia\n", "paralelepipedo\n", "trem\n", "pizzaria"]
     LINES = lista_1 + lista_2 + lista_3
     with open("palavras_ex03.txt", mode="w") as file:
         file.writelines(LINES)
