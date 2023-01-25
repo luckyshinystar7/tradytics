@@ -7,6 +7,7 @@
 # De olho na dica 👀: Se você quiser sobrescrever métodos decorados
 # com o @property, precisará fazer algumas adaptações na superclasse.
 # Dê uma olhada nesta resposta no stack overflow para mais informações.
+# https://stackoverflow.com/questions/42763283/access-superclass-property-setter-in-subclass/42763554#42763554
 
 from eletrodomestico import Eletrodomestico
 
