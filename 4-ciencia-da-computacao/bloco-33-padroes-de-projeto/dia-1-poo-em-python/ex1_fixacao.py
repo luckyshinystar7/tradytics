@@ -42,3 +42,17 @@ class Pessoa:
         if ventilador.preco <= self.saldo_na_conta:
             self.saldo_na_conta -= ventilador.preco
             self.ventilador = ventilador
+
+    def __str__(self):  # 1.4
+        if self.ventilador is None:
+            return f"{self.nome} possui {self.saldo_na_conta} reais."
+        else:
+            return f"{self.nome} possui {self.saldo_na_conta}\
+ reais e um ventilador."
+
+
+ventilador_arno = Ventilador("preto", potencia=160, tensao=120, preco=150)
+pessoa = Pessoa("Jorgin", saldo_na_conta=1000)
+pessoa.comprar_ventilador(ventilador_arno)
+
+print(pessoa)
