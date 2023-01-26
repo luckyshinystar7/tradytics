@@ -35,8 +35,7 @@ class Tv:
     def modificar_canal(self, canal):
         if not 1 <= canal <= 99:
             raise ValueError
-        else:
-            self.__canal = canal
+        self.__canal = canal
 
     def ligar_desligar(self):
         if self.__ligada:
