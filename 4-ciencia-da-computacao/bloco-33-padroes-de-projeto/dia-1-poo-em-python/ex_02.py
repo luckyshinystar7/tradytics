@@ -4,7 +4,7 @@
 import statistics
 
 
-class Estatistica:
+class estatistica:
     @classmethod
     def media(cls, my_list):
         return sum(my_list) / len(my_list)

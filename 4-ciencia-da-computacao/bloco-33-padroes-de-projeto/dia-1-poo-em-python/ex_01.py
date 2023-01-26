@@ -17,7 +17,7 @@
 # lançar uma exceção (ValueError) caso o valor esteja fora dos limites
 # ligar_desligar - alterna o estado da TV entre ligado e desligado (True/False)
 
-class Tv:
+class tv:
     def __init__(self, tamanho):
         self.__volume = 50
         self.__canal = 1

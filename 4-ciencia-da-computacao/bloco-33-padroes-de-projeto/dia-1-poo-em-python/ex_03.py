@@ -4,20 +4,20 @@
 # Quadrado - lado, area, perimetro
 # Retangulo - base, altura, area, perimetro
 # Circulo - raio, area, perimetro
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 
-class FiguraGeometrica:
+class figura_geometrica(ABC):
     @abstractmethod
-    def area(self):
+    def area(cls):
         pass
 
     @abstractmethod
-    def perimetro(self):
+    def perimetro(cls):
         pass
 
 
-class Quadrado(FiguraGeometrica):
+class quadrado(figura_geometrica):
     def __init__(self, base):
         self.base = base
 
@@ -28,7 +28,7 @@ class Quadrado(FiguraGeometrica):
         return 4 * self.base
 
 
-class Retangulo(FiguraGeometrica):
+class retangulo(figura_geometrica):
     def __init__(self, base, altura):
         self.base = base
         self.altura = altura
@@ -40,7 +40,7 @@ class Retangulo(FiguraGeometrica):
         return 2 * self.base + 2 * self.altura
 
 
-class Circulo(FiguraGeometrica):
+class circulo(figura_geometrica):
     def __init__(self, raio):
         self.raio = raio
 
