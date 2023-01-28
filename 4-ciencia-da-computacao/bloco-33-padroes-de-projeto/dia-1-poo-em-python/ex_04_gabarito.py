@@ -33,21 +33,21 @@ from abc import abstractmethod, ABC
 from datetime import datetime
 
 
-class manipulador_de_log(ABC):
+class ManipuladorDeLog(ABC):
     @classmethod
     @abstractmethod
     def log(cls, msg):
         raise NotImplementedError
 
 
-class log_em_arquivo(manipulador_de_log):
+class LogEmArquivos(ManipuladorDeLog):
     @classmethod
     def log(cls, msg):
         with open('log.txt', 'a') as arquivo:
             print(msg, file=arquivo)
 
 
-class log_em_tela(manipulador_de_log):
+class LogEmTela(ManipuladorDeLog):
     @classmethod
     def log(cls, msg):
         print(msg)

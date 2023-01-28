@@ -7,7 +7,7 @@
 from abc import abstractmethod, ABC
 
 
-class figura_geometrica(ABC):
+class FiguraGeometrica(ABC):
     @abstractmethod
     def area(cls):
         pass
@@ -17,7 +17,7 @@ class figura_geometrica(ABC):
         pass
 
 
-class quadrado(figura_geometrica):
+class Quadrado(FiguraGeometrica):
     def __init__(self, base):
         self.base = base
 
@@ -28,7 +28,7 @@ class quadrado(figura_geometrica):
         return 4 * self.base
 
 
-class retangulo(figura_geometrica):
+class Retangulo(FiguraGeometrica):
     def __init__(self, base, altura):
         self.base = base
         self.altura = altura
@@ -40,7 +40,7 @@ class retangulo(figura_geometrica):
         return 2 * self.base + 2 * self.altura
 
 
-class circulo(figura_geometrica):
+class Circulo(FiguraGeometrica):
     def __init__(self, raio):
         self.raio = raio
 
