@@ -4,16 +4,16 @@
 # Quadrado - lado, area, perimetro
 # Retangulo - base, altura, area, perimetro
 # Circulo - raio, area, perimetro
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 
-class FiguraGeometrica:
+class FiguraGeometrica(ABC):
     @abstractmethod
-    def area(self):
+    def area(cls):
         pass
 
     @abstractmethod
-    def perimetro(self):
+    def perimetro(cls):
         pass
 
 
