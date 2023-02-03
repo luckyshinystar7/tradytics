@@ -313,10 +313,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 33: Padrões de Projeto
 
-- [ ] 30-1: _P.O.O. em Python_
-- [ ] 30-2: _Padrões - Iterator, Adapter, Strategy_
+- [x] 30-1: _P.O.O. em Python_
+- [x] 30-2: _Padrões - Iterator, Adapter, Strategy_
 - [ ] 30-3: _Padrões - Decorator, Observer, Factory_
-- [ ] 30-3: _[Projeto - Relatórios de Estoque]()_
+- [x] 30-3: _[Projeto - Relatórios de Estoque](https://github.com/elthonvilla/trybe-projects/tree/inventory-report)_
 
 <!-- ##### Bloco 33: Sockets
 
