@@ -13,3 +13,6 @@ def contains_duplicate(numbers):
         previous_number = number
 
     return False
+
+# A ordem de complexidade do código é linear, O(n) no pior caso,
+# O(1) no melhor caso e O(n) no caso médio.
