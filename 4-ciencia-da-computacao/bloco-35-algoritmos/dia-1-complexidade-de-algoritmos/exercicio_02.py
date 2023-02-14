@@ -13,3 +13,7 @@
 # resultado para (1, 1) = False
 # Qual seria a ordem de complexidade da solução para este problema?
 # E a complexidade de espaço?
+
+# R: Considerando que a matriz seria criada com uma lista de listas,
+# tanto a complexidade da solução quanto a de espaço seriam constantes
+# constante = O(1)
