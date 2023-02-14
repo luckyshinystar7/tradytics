@@ -329,7 +329,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 34-1: Arquitetura de redes
 - [x] 34-2: Raspagem de dados
 - [x] 34-3: Outras ferramentas de raspagem de dados
-- [x] 34-4: _[Projeto - Tech News]()_
+- [x] 34-4: _[Projeto - Tech News](https://github.com/elthonvilla/trybe-projects/tree/tech-news)_
 
 <!-- ##### Bloco 34: Projeto
 
