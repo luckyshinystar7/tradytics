@@ -5,4 +5,4 @@ def even_elements(n):
     return (n//2)
 
 
-print(even_elements(7))
+print(even_elements(17))
