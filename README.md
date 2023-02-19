@@ -342,7 +342,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 35-1: _Complexidade de Algoritmos_
 - [x] 35-2: _Recursividade e Estratégias para solução de problemas_
 - [x] 35-3: _Algoritmos de ordenação e busca_
-- [x] 35-4: _[Projeto - Algoritmos]()_
+- [x] 35-4: _[Projeto - Algoritmos](https://github.com/elthonvilla/trybe-projects/tree/algorithms)_
 
 <!-- ##### Bloco 35: Introdução - Ciência da Computação
 
