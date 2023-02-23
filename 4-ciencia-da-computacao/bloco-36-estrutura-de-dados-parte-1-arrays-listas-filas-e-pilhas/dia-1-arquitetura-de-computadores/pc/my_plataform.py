@@ -1,3 +1,5 @@
+# Ex 02
+
 import platform
 
 print(
