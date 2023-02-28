@@ -301,7 +301,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 32-1: _Aprendendo Python_
 - [x] 32-2: _Entrada e Saída de dados_
 - [x] 32-3: _Testes e Exceções_
-- [x] 32-4: _[Projeto - Job Insights]()_
+- [x] 32-4: _[Projeto - Job Insights](https://github.com/elthonvilla/trybe-projects/tree/job-insights)_
 
 <!-- ##### Bloco 32: Arquitetura de Software
 
