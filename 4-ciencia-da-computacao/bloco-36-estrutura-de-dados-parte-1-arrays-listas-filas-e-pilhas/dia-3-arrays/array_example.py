@@ -28,6 +28,10 @@ class ListaArray:
         # removeremos o item, retornando-o
         return self.data.pop(index)
 
+    def update(self, index, value):
+        # atualiza o item na posição indicada
+        self.data[index] = value
+
 
 # vamos inicializar e preencher uma estrutura de dados array
 array = ListaArray()
