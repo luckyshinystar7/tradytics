@@ -24,6 +24,10 @@ class ListaArray:
         # insere um elemento no índice informado
         self.data.insert(index, value)
 
+    def remove(self, index):
+        # removeremos o item, retornando-o
+        return self.data.pop(index)
+
 
 # vamos inicializar e preencher uma estrutura de dados array
 array = ListaArray()
