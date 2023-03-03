@@ -2,7 +2,7 @@
 
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Elthon]()_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
-_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
+_"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia."_
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
@@ -355,8 +355,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 36-1: _Arquitetura de Computadores_
 - [ ] 36-2: _Arrays_
-- [ ] 36-3: _Nó e Listas Encadeadas_
-- [ ] 36-4: _Pilhas e Filas_
+- [x] 36-3: _Nó e Listas Encadeadas_
+- [] 36-4: _Pilhas e Filas_
 - [ ] 36-5: _[Projeto - TING: Trybe Is Not Google]()_
 
 <!-- ##### Bloco 36: Python
