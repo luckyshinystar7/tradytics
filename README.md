@@ -369,6 +369,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 37: Estrutura de Dados II: Hashmaps e Sets
 
-- [ ] 37-1: _Hashmap e Dict_
-- [ ] 37-2: _Set_
+- [x] 37-1: _Hashmap e Dict_
+- [x] 37-2: _Set_
 - [ ] 37-3: _[Projeto - Restaurant Orders]()_
