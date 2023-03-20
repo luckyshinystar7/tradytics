@@ -294,7 +294,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 31-1: _[Projeto - App de Delivery]()_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :white_check_mark:
 
 ##### Bloco 32: Python
 
@@ -371,4 +371,4 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 37-1: _Hashmap e Dict_
 - [x] 37-2: _Set_
-- [ ] 37-3: _[Projeto - Restaurant Orders]()_
+- [x] 37-3: _[Projeto - Restaurant Orders](https://github.com/elthonvilla/trybe-projects/tree/restaurant-orders)_
