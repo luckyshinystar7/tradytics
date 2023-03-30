@@ -181,7 +181,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 22.3: _Mocha, CHai e Sinon - Testes de Back-end com Node.js_
 - [x] 22.4: _Express - HTTP com Node.js_
 - [x] 22.5: _Express - Middlewares_
-- [x] 22.6: _[Projeto - Talker Manager](https://github.com/tryber/sd-019-b-project-talker-manager/pull/113)_
+- [x] 22.6: _[Projeto - Talker Manager](https://github.com/elthonvilla/trybe-projects/tree/talker-manager)_
+<!-- - [x] 22.6: _[Projeto - Talker Manager](https://github.com/tryber/sd-019-b-project-talker-manager/pull/113)_ -->
 
 <!-- ##### Bloco 23: Introdução - NoSQL
 
