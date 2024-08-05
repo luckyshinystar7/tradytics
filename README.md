@@ -1,5 +1,8 @@
 # Trybe
 
+🔗Website LINK: https://tradytics.com/
+![tradytics com](https://github.com/user-attachments/assets/b44498b9-adf7-4973-984f-61de5468ee0c)
+
 Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Elthon]()_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia."_
